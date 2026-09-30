@@ -42,6 +42,9 @@ public class AethermonCore implements ModInitializer {
         menuModule = new com.aethermon.core.menu.MenuModule(economyModule.getService());
         menuModule.init();
 
+        // Claims shortcut commands (/claim, /claims, /unclaim)
+        com.aethermon.core.claims.ClaimCommands.register();
+
         LOGGER.info("AethermonCore ready.");
     }
 
