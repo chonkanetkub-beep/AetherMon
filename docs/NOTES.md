@@ -238,11 +238,10 @@ Login/Online Rewards → Quests → Lucky Draw → World Boss → Keys/Crates
 - No GitHub yet — local only for now
 - No real-money code at all in this phase
 
-### Gotcha: Impactor is already installed
-- `Impactor-Fabric-5.3.5+1.21.1.jar` is in mods/
-- AethermonCore must implement Impactor's EconomyService interface
-- This makes Cobblemon NPC shops, rewards etc. use our Coins automatically
-- If we DON'T implement it, Impactor falls back to its own currency — conflict risk
+### Impactor removal
+- Owner requested removing Impactor's economy ($500 starting dollars).
+- `Impactor-Fabric-5.3.5+1.21.1.jar` will be moved to `mods-backup/removed-2026-09-30/` upon next server restart.
+- AethermonCore now owns `/balance`, `/bal`, `/money`, `/coins`, and `/gems` exclusively.
 
 ---
 
