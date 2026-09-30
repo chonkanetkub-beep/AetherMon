@@ -1,4 +1,4 @@
 {
   "type": "location",
-  "allow": "!v.world.is_of('minecraft:overworld')"
+  "allow": "v.world.is_of('multiworld:survival') || v.world.is_of('minecraft:the_nether') || v.world.is_of('minecraft:the_end')"
 }
