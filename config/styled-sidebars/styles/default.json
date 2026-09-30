@@ -1,0 +1,25 @@
+{
+  "config_name": "Default",
+  "update_tick_time": 20,
+  "page_change": 5,
+  "title_change": 10,
+  "scroll_speed": 1,
+  "scroll_loop": true,
+  "title": [
+    "<b><#66d1f2>Styled Sidebars"
+  ],
+  "lines": [
+    "",
+    "<gray>» <white>Time:",
+    "<gray> ▪ <yellow>%server:time%",
+    "",
+    "<gray>» <white>Players:",
+    "<gray> ▪ <yellow>%server:online%</yellow>/<orange>%server:max_players%",
+    "",
+    "<gray>» <white>Ping:",
+    "<gray> ▪ %player:ping_colored% <yellow>ms",
+    "",
+    "<red>Please change config in",
+    "<red><underline>/config/styled-sidebars"
+  ]
+}

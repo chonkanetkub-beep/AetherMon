@@ -1,0 +1,9 @@
+namespace: minecraft
+path: overworld
+# Note: Multiworld does not support gamerules in this yml file.
+# Lobby gamerules are set via console commands instead:
+#   execute in minecraft:overworld run gamerule doMobSpawning false
+#   execute in minecraft:overworld run gamerule doWeatherCycle false
+#   execute in minecraft:overworld run gamerule doDaylightCycle false
+#   execute in minecraft:overworld run gamerule keepInventory true
+# These are saved automatically to lobby/level.dat and persist on restart.

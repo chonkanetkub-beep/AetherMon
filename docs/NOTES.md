@@ -205,6 +205,47 @@ This blocks ALL Pokémon spawning in the lobby without touching individual speci
 
 ---
 
+## 2026-09-30 — Phase 2 Decisions & Audit (AethermonCore)
+
+### Language & tooling
+- Language: **Java** (Java 21, matches server JDK)
+- Build: **Gradle wrapper** (no Gradle install needed, bundled in project)
+- Mod loader: **Fabric Loom**
+- Package root: `com.aethermon.core`
+- Mod ID: `aethermoncore`
+
+### What to install (mods, not custom code)
+- **Essential Commands** → /home /sethome /tpa /back /warp
+- **Flan** → land claims
+
+### What to build in AethermonCore (Java mod)
+Economy → Sidebar/Menu → Homes → Server Shop → Player Shop →
+Login/Online Rewards → Quests → Lucky Draw → World Boss → Keys/Crates
+
+### Economy decisions
+- Two currencies from day 1: Coins 🪙 and Gems 💎
+- Starting balance: 50,000 Coins, 25 Gems
+- AethermonCore implements Impactor's economy API so Cobblemon hooks in automatically
+- All balance changes go through one EconomyService — never direct DB writes
+
+### Claims & homes decisions
+- Homes: default=1, member=2, staff=5, admin=unlimited
+- Claims (Flan): other players CAN battle wild Pokémon inside any claim
+- Claims: players CAN build inside their own claim, NOT others
+- PvP battles inside claims: DISABLED — players use /duel command instead
+
+### Other decisions
+- No GitHub yet — local only for now
+- No real-money code at all in this phase
+
+### Gotcha: Impactor is already installed
+- `Impactor-Fabric-5.3.5+1.21.1.jar` is in mods/
+- AethermonCore must implement Impactor's EconomyService interface
+- This makes Cobblemon NPC shops, rewards etc. use our Coins automatically
+- If we DON'T implement it, Impactor falls back to its own currency — conflict risk
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]

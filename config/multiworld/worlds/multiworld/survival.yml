@@ -1,0 +1,4 @@
+namespace: multiworld
+path: survival
+environment: NORMAL
+seed: 1730141072

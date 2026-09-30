@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "aethermoncore",
+  "version": "${version}",
+  "name": "AethermonCore",
+  "description": "Core gameplay systems for the Aethermon Cobblemon server.",
+  "authors": ["Antoinekub"],
+  "license": "ARR",
+  "environment": "server",
+  "entrypoints": {
+    "main": ["com.aethermon.core.AethermonCore"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "impactor": "*"
+  }
+}

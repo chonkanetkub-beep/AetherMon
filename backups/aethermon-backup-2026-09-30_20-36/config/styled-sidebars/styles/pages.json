@@ -1,0 +1,36 @@
+{
+  "require": {
+    "type": "permission",
+    "permission": "example.permission",
+    "operator": 2
+  },
+  "config_name": "Paged example",
+  "update_tick_time": 20,
+  "page_change": 5,
+  "title_change": 10,
+  "scroll_speed": 1,
+  "scroll_loop": true,
+  "title": [
+    "<b><dark_gray>→ <gr:blue:white>Example Paged Sidebar</gr> ←"
+  ],
+  "pages": [
+    [
+      "<rb>Hello world on out MC server!",
+      "Pls change configs!",
+      "<gray>[1 / 3]"
+    ],
+    [
+      "<green>%server:mod_name styled-sidebars%",
+      "<gray>%server:mod_description styled-sidebars%",
+      "<gray>[2 / 3]"
+    ],
+    [
+      "<gray>» <white>Time:",
+      "<gray> ▪ <yellow>%server:time%",
+      "",
+      "<gray>» <white>Players:",
+      "<gray> ▪ <yellow>%server:online%</yellow>/<orange>%server:max_players%",
+      "<gray>[3 / 3]"
+    ]
+  ]
+}

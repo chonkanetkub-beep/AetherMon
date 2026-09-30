@@ -1,0 +1,29 @@
+{
+  "config_name": "Right Text",
+  "update_tick_time": 20,
+  "page_change": 5,
+  "title_change": 10,
+  "scroll_speed": 1,
+  "scroll_loop": true,
+  "title": [
+    "<b><#66d1f2>Styled Sidebars on The Right"
+  ],
+  "lines": [
+    "",
+    [
+      "<gray>» <white>Time: ",
+      "<yellow>%server:time%"
+    ],
+    [
+      "<gray>» <white>Players: ",
+      "<yellow>%server:online%</yellow>/<orange>%server:max_players%"
+    ],
+    [
+      "<gray>» <white>Ping: ",
+      "%player:ping_colored% <yellow>ms"
+    ],
+    "",
+    "<red>Please change config in",
+    "<red><underline>/config/styled-sidebars"
+  ]
+}

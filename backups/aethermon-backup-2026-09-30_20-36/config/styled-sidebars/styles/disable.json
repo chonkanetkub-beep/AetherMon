@@ -1,0 +1,11 @@
+{
+  "config_name": "Disabled",
+  "update_tick_time": 9999,
+  "page_change": 5,
+  "title_change": 10,
+  "scroll_speed": 1,
+  "scroll_loop": true,
+  "title": [
+    ""
+  ]
+}

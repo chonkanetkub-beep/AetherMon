@@ -1,0 +1,65 @@
+{
+  "config_name": "Scrolling example",
+  "update_tick_time": 3,
+  "page_change": 5,
+  "title_change": 1,
+  "scroll_speed": 2,
+  "scroll_loop": true,
+  "title": [
+    "<b><dark_gray>→ <rb:1:1:0>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.05>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.1>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.15>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.2>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.25>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.3>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.35>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.4>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.45>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.5>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.55>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.6>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.65>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.7>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.75>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.8>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.85>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.9>Example Sidebar</rb> ←",
+    "<b><dark_gray>→ <rb:1:1:0.95>Example Sidebar</rb> ←"
+  ],
+  "lines": [
+    "                                     ",
+    "<rb>Hello %player:name%",
+    "                                     ",
+    "<gray>» <white>Time:",
+    "<gray> ▪ <yellow>%server:time%",
+    "                                     ",
+    "<gray>» <white>World:",
+    "<gray> ▪ <yellow>%world:name%",
+    "<gray> ▪ <orange>%world:time%",
+    "                                     ",
+    "<gray>» <white>Players:",
+    "<gray> ▪ <yellow>%server:online%</yellow>/<orange>%server:max_players%",
+    "                                     ",
+    "<gray>» <white>Ping:",
+    "<gray> ▪ %player:ping_colored% <yellow>ms",
+    "                                     ",
+    "<gray>» <white>Position:",
+    "<gray> ▪ <yellow>%player:pos_x% / %player:pos_y% / %player:pos_z% ",
+    "                                     ",
+    {
+      "values": [
+        "<gray>» <white>TPS / MSPT:",
+        "<gray> ▪ <yellow>%server:tps_colored% / <orange>%server:mspt_colored% ms",
+        "                                     ",
+        "<gray>» <white>Memory:",
+        "<gray> ▪ <yellow>%server:used_ram% / <orange>%server:max_ram% ms"
+      ],
+      "require": {
+        "type": "permission",
+        "permission": "group.admin",
+        "operator": 3
+      }
+    }
+  ]
+}
