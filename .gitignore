@@ -49,6 +49,7 @@ eula.txt
 # --- Mod JARs (too large for Git; list them in docs instead) ---
 mods/*.jar
 mods-backup/*.jar
+mods-backup/**/*.jar
 
 # --- Showdown battle engine data ---
 showdown/
