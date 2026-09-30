@@ -1,0 +1,7 @@
+{
+  "listingDurationHours": 48,
+  "taxRatePercent": 2.0,
+  "maxListingsPerPlayer": 10,
+  "minPrice": 1.0,
+  "maxPrice": 1.0E7
+}

@@ -304,6 +304,31 @@ Login/Online Rewards → Quests → Lucky Draw → World Boss → Keys/Crates
 
 ---
 
+## 2026-10-01 — Player Market / Auction House Module (Task 5)
+
+### Player Market (/ah, /market)
+- Implemented `MarketModule` in `AethermonCore`:
+  - 100% server-side 54-slot chest GUI (`MarketGui.java`) with zero client mod required.
+  - Backed by SQLite tables `market_listings` and `market_deliveries`.
+  - Full item preservation using `ItemStack.CODEC` with `RegistryOps<NbtElement>` — preserves all NBT, custom names, Cobblemon Pokémon data, lore, and component metadata.
+  - Features:
+    - 45 listings per page with pagination controls.
+    - Search filtering (`/ah search <query>` or interactive).
+    - Player listing limits (default 10 active listings per player).
+    - Configurable tax rate (default 2% sink) and listing expiration (default 48 hours).
+    - Auto-expiration system: expired items automatically convert into claimable items in the player's delivery box.
+    - Offline earnings delivery: offline sales deposit earnings into `market_deliveries` so players can claim them with `/ah claim` or the GUI.
+    - Self-listing management: "Your Active Listings" view allows cancelling any listing and instantly retrieving items.
+- Commands:
+  - `/ah` or `/market`: opens main Market GUI.
+  - `/ah sell <price> [coins|gems]`: lists held item.
+  - `/ah search <query>`: opens market filtered by keyword.
+  - `/ah listings`: opens active listings manager.
+  - `/ah mail` or `/ah claim` or `/ah deliveries`: opens delivery collection box.
+- Integrated with `/menu` slot 16.
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]

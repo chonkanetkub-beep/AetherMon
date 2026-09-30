@@ -109,7 +109,55 @@ public class DatabaseManager {
                 ON player_homes (player_uuid)
                 """);
 
-            AethermonCore.LOGGER.info("Database schema ready (economy & homes).");
+            // ── Market: player-to-player listings ───────────────────────
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS market_listings (
+                    id                INTEGER PRIMARY KEY AUTOINCREMENT,
+                    seller_uuid       TEXT    NOT NULL,
+                    seller_name       TEXT    NOT NULL,
+                    item_nbt          TEXT    NOT NULL,
+                    item_id           TEXT    NOT NULL,
+                    item_count        INTEGER NOT NULL,
+                    item_display_name TEXT    NOT NULL,
+                    currency          TEXT    NOT NULL DEFAULT 'COINS',
+                    price             NUMERIC NOT NULL,
+                    created_at        TEXT    NOT NULL DEFAULT (datetime('now')),
+                    expires_at        TEXT    NOT NULL,
+                    status            TEXT    NOT NULL DEFAULT 'ACTIVE'
+                )
+                """);
+
+            stmt.execute("""
+                CREATE INDEX IF NOT EXISTS idx_market_status
+                ON market_listings (status, created_at DESC)
+                """);
+
+            stmt.execute("""
+                CREATE INDEX IF NOT EXISTS idx_market_seller
+                ON market_listings (seller_uuid, status)
+                """);
+
+            // ── Market: delivery box for offline sales & returned items ──
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS market_deliveries (
+                    id                INTEGER PRIMARY KEY AUTOINCREMENT,
+                    player_uuid       TEXT    NOT NULL,
+                    type              TEXT    NOT NULL,
+                    currency          TEXT,
+                    amount            NUMERIC,
+                    item_nbt          TEXT,
+                    item_display_name TEXT,
+                    claimed           INTEGER NOT NULL DEFAULT 0,
+                    created_at        TEXT    NOT NULL DEFAULT (datetime('now'))
+                )
+                """);
+
+            stmt.execute("""
+                CREATE INDEX IF NOT EXISTS idx_market_deliveries_player
+                ON market_deliveries (player_uuid, claimed)
+                """);
+
+            AethermonCore.LOGGER.info("Database schema ready (economy, homes & market).");
 
         } catch (SQLException e) {
             throw new RuntimeException("Failed to initialise database schema", e);

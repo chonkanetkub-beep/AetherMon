@@ -22,6 +22,7 @@ public class AethermonCore implements ModInitializer {
     private com.aethermon.core.menu.MenuModule menuModule;
     private com.aethermon.core.homes.HomesModule homesModule;
     private com.aethermon.core.shop.ShopModule shopModule;
+    private com.aethermon.core.market.MarketModule marketModule;
 
     @Override
     public void onInitialize() {
@@ -43,6 +44,10 @@ public class AethermonCore implements ModInitializer {
         shopModule = new com.aethermon.core.shop.ShopModule(economyModule.getService());
         shopModule.init();
 
+        // Module: Player Market (/ah, /market)
+        marketModule = new com.aethermon.core.market.MarketModule(economyModule.getDatabaseManager(), economyModule.getService());
+        marketModule.init();
+
         // Module: Menu (/menu, /help, /gui server-side chest GUI)
         menuModule = new com.aethermon.core.menu.MenuModule(economyModule.getService());
         menuModule.init();
@@ -58,4 +63,5 @@ public class AethermonCore implements ModInitializer {
     public EconomyModule getEconomyModule()   { return economyModule; }
     public com.aethermon.core.homes.HomesModule getHomesModule() { return homesModule; }
     public com.aethermon.core.shop.ShopModule getShopModule() { return shopModule; }
+    public com.aethermon.core.market.MarketModule getMarketModule() { return marketModule; }
 }
