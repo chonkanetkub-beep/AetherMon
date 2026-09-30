@@ -279,6 +279,31 @@ Login/Online Rewards → Quests → Lucky Draw → World Boss → Keys/Crates
 
 ---
 
+## 2026-10-01 — Server Shop Module (Task 4)
+
+### Server Shop (/shop, /sell)
+- Implemented `ShopModule` in `AethermonCore`:
+  - 100% server-side chest GUI (`ShopGui.java`) with zero client mod required.
+  - Category selector with live wallet indicators (Coins 🪙 & Gems 💎).
+  - 5 default categories configured in `config/aethermoncore/shop.json`:
+    - Poké Balls (Poké Ball, Great Ball, Ultra Ball, Dusk, Quick, Timer, Heal)
+    - Medicine (Potion, Super, Hyper, Max, Full Restore, Revive, Max Revive)
+    - Evolution Stones (Fire, Water, Thunder, Leaf, Moon, Sun, Shiny, Dusk, Dawn)
+    - Berries & Food (Oran, Sitrus, Lum, Leppa, Golden Apple)
+    - Minerals & Ores (Iron, Gold, Diamond, Emerald, Copper, Coal, Torches)
+  - Interactive shopping controls:
+    - **Left-Click**: Buy 1
+    - **Shift-Left-Click**: Buy 16 (bulk)
+    - **Right-Click**: Sell 1
+    - **Shift-Right-Click**: Sell All of that item from player's inventory
+- Quick sell commands:
+  - `/sell hand`: sells the currently held item if defined in shop.
+  - `/sell all`: scans inventory and auto-sells all sellable shop items, depositing total coins/gems.
+  - `/shop reload`: reloads `shop.json` without server restart (admin permission level 2).
+- Integrated with `/menu` slot 15.
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]

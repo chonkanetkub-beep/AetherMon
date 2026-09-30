@@ -83,20 +83,20 @@
     "Visitor": {
       "flan:door": true,
       "flan:button_lever": true,
+      "flan:break": false,
+      "flan:fence_gate": true,
+      "flan:hurt_player": false,
+      "flan:enderchest": true,
+      "flan:animal_interact": true,
       "flan:pressure_plate": true,
       "flan:enchantment": true,
       "flan:trapdoor": true,
-      "flan:fence_gate": true,
+      "flan:place": false,
       "flan:portal": true,
-      "flan:enderchest": true,
+      "flan:hurt_animal": true,
       "flan:bed": true,
       "flan:itemframe_rotate": true,
-      "flan:trading": true,
-      "flan:animal_interact": true,
-      "flan:hurt_animal": true,
-      "flan:hurt_player": false,
-      "flan:place": false,
-      "flan:break": false
+      "flan:trading": true
     },
     "Co-Owner": {
       "flan:armorstand": true,
@@ -170,10 +170,10 @@
   },
   "globalDefaultPerms": {
     "*": {
-      "flan:hurt_player": "ALLFALSE",
       "flan:disable_monster_spawn": "ALLFALSE",
       "flan:edit_potions": "ALLFALSE",
       "flan:flight": "ALLTRUE",
+      "flan:hurt_player": "ALLFALSE",
       "flan:lock_items": "ALLTRUE",
       "flan:may_flight": "ALLFALSE",
       "flan:no_hunger": "ALLFALSE",

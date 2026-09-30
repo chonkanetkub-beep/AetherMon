@@ -1,0 +1,324 @@
+{
+  "categories": [
+    {
+      "id": "balls",
+      "displayName": "§c§lPoké Balls",
+      "iconItem": "cobblemon:poke_ball",
+      "iconSlot": 11,
+      "items": [
+        {
+          "itemId": "cobblemon:poke_ball",
+          "displayName": "Poké Ball",
+          "currency": "COINS",
+          "buyPrice": 200,
+          "sellPrice": 50,
+          "slot": 10
+        },
+        {
+          "itemId": "cobblemon:great_ball",
+          "displayName": "Great Ball",
+          "currency": "COINS",
+          "buyPrice": 600,
+          "sellPrice": 150,
+          "slot": 11
+        },
+        {
+          "itemId": "cobblemon:ultra_ball",
+          "displayName": "Ultra Ball",
+          "currency": "COINS",
+          "buyPrice": 1200,
+          "sellPrice": 300,
+          "slot": 12
+        },
+        {
+          "itemId": "cobblemon:dusk_ball",
+          "displayName": "Dusk Ball",
+          "currency": "COINS",
+          "buyPrice": 1000,
+          "sellPrice": 250,
+          "slot": 13
+        },
+        {
+          "itemId": "cobblemon:quick_ball",
+          "displayName": "Quick Ball",
+          "currency": "COINS",
+          "buyPrice": 1000,
+          "sellPrice": 250,
+          "slot": 14
+        },
+        {
+          "itemId": "cobblemon:timer_ball",
+          "displayName": "Timer Ball",
+          "currency": "COINS",
+          "buyPrice": 1000,
+          "sellPrice": 250,
+          "slot": 15
+        },
+        {
+          "itemId": "cobblemon:heal_ball",
+          "displayName": "Heal Ball",
+          "currency": "COINS",
+          "buyPrice": 500,
+          "sellPrice": 125,
+          "slot": 16
+        }
+      ]
+    },
+    {
+      "id": "medicine",
+      "displayName": "§d§lMedicine",
+      "iconItem": "cobblemon:potion",
+      "iconSlot": 12,
+      "items": [
+        {
+          "itemId": "cobblemon:potion",
+          "displayName": "Potion",
+          "currency": "COINS",
+          "buyPrice": 300,
+          "sellPrice": 75,
+          "slot": 10
+        },
+        {
+          "itemId": "cobblemon:super_potion",
+          "displayName": "Super Potion",
+          "currency": "COINS",
+          "buyPrice": 700,
+          "sellPrice": 175,
+          "slot": 11
+        },
+        {
+          "itemId": "cobblemon:hyper_potion",
+          "displayName": "Hyper Potion",
+          "currency": "COINS",
+          "buyPrice": 1500,
+          "sellPrice": 375,
+          "slot": 12
+        },
+        {
+          "itemId": "cobblemon:max_potion",
+          "displayName": "Max Potion",
+          "currency": "COINS",
+          "buyPrice": 2500,
+          "sellPrice": 600,
+          "slot": 13
+        },
+        {
+          "itemId": "cobblemon:full_restore",
+          "displayName": "Full Restore",
+          "currency": "COINS",
+          "buyPrice": 3000,
+          "sellPrice": 750,
+          "slot": 14
+        },
+        {
+          "itemId": "cobblemon:revive",
+          "displayName": "Revive",
+          "currency": "COINS",
+          "buyPrice": 2000,
+          "sellPrice": 500,
+          "slot": 15
+        },
+        {
+          "itemId": "cobblemon:max_revive",
+          "displayName": "Max Revive",
+          "currency": "COINS",
+          "buyPrice": 4000,
+          "sellPrice": 1000,
+          "slot": 16
+        }
+      ]
+    },
+    {
+      "id": "evolution",
+      "displayName": "§6§lEvolution Stones",
+      "iconItem": "cobblemon:fire_stone",
+      "iconSlot": 13,
+      "items": [
+        {
+          "itemId": "cobblemon:fire_stone",
+          "displayName": "Fire Stone",
+          "currency": "COINS",
+          "buyPrice": 5000,
+          "sellPrice": 1250,
+          "slot": 9
+        },
+        {
+          "itemId": "cobblemon:water_stone",
+          "displayName": "Water Stone",
+          "currency": "COINS",
+          "buyPrice": 5000,
+          "sellPrice": 1250,
+          "slot": 10
+        },
+        {
+          "itemId": "cobblemon:thunder_stone",
+          "displayName": "Thunder Stone",
+          "currency": "COINS",
+          "buyPrice": 5000,
+          "sellPrice": 1250,
+          "slot": 11
+        },
+        {
+          "itemId": "cobblemon:leaf_stone",
+          "displayName": "Leaf Stone",
+          "currency": "COINS",
+          "buyPrice": 5000,
+          "sellPrice": 1250,
+          "slot": 12
+        },
+        {
+          "itemId": "cobblemon:moon_stone",
+          "displayName": "Moon Stone",
+          "currency": "COINS",
+          "buyPrice": 5000,
+          "sellPrice": 1250,
+          "slot": 13
+        },
+        {
+          "itemId": "cobblemon:sun_stone",
+          "displayName": "Sun Stone",
+          "currency": "COINS",
+          "buyPrice": 5000,
+          "sellPrice": 1250,
+          "slot": 14
+        },
+        {
+          "itemId": "cobblemon:shiny_stone",
+          "displayName": "Shiny Stone",
+          "currency": "COINS",
+          "buyPrice": 6000,
+          "sellPrice": 1500,
+          "slot": 15
+        },
+        {
+          "itemId": "cobblemon:dusk_stone",
+          "displayName": "Dusk Stone",
+          "currency": "COINS",
+          "buyPrice": 6000,
+          "sellPrice": 1500,
+          "slot": 16
+        },
+        {
+          "itemId": "cobblemon:dawn_stone",
+          "displayName": "Dawn Stone",
+          "currency": "COINS",
+          "buyPrice": 6000,
+          "sellPrice": 1500,
+          "slot": 17
+        }
+      ]
+    },
+    {
+      "id": "farming",
+      "displayName": "§a§lBerries \u0026 Food",
+      "iconItem": "cobblemon:oran_berry",
+      "iconSlot": 14,
+      "items": [
+        {
+          "itemId": "cobblemon:oran_berry",
+          "displayName": "Oran Berry",
+          "currency": "COINS",
+          "buyPrice": 100,
+          "sellPrice": 25,
+          "slot": 11
+        },
+        {
+          "itemId": "cobblemon:sitrus_berry",
+          "displayName": "Sitrus Berry",
+          "currency": "COINS",
+          "buyPrice": 300,
+          "sellPrice": 75,
+          "slot": 12
+        },
+        {
+          "itemId": "cobblemon:lum_berry",
+          "displayName": "Lum Berry",
+          "currency": "COINS",
+          "buyPrice": 400,
+          "sellPrice": 100,
+          "slot": 13
+        },
+        {
+          "itemId": "cobblemon:leppa_berry",
+          "displayName": "Leppa Berry",
+          "currency": "COINS",
+          "buyPrice": 500,
+          "sellPrice": 125,
+          "slot": 14
+        },
+        {
+          "itemId": "minecraft:golden_apple",
+          "displayName": "Golden Apple",
+          "currency": "COINS",
+          "buyPrice": 2500,
+          "sellPrice": 500,
+          "slot": 15
+        }
+      ]
+    },
+    {
+      "id": "mining",
+      "displayName": "§b§lMinerals \u0026 Ores",
+      "iconItem": "minecraft:diamond",
+      "iconSlot": 15,
+      "items": [
+        {
+          "itemId": "minecraft:iron_ingot",
+          "displayName": "Iron Ingot",
+          "currency": "COINS",
+          "buyPrice": 100,
+          "sellPrice": 25,
+          "slot": 10
+        },
+        {
+          "itemId": "minecraft:gold_ingot",
+          "displayName": "Gold Ingot",
+          "currency": "COINS",
+          "buyPrice": 250,
+          "sellPrice": 60,
+          "slot": 11
+        },
+        {
+          "itemId": "minecraft:diamond",
+          "displayName": "Diamond",
+          "currency": "COINS",
+          "buyPrice": 1000,
+          "sellPrice": 250,
+          "slot": 12
+        },
+        {
+          "itemId": "minecraft:emerald",
+          "displayName": "Emerald",
+          "currency": "COINS",
+          "buyPrice": 500,
+          "sellPrice": 125,
+          "slot": 13
+        },
+        {
+          "itemId": "minecraft:copper_ingot",
+          "displayName": "Copper Ingot",
+          "currency": "COINS",
+          "buyPrice": 50,
+          "sellPrice": 10,
+          "slot": 14
+        },
+        {
+          "itemId": "minecraft:coal",
+          "displayName": "Coal",
+          "currency": "COINS",
+          "buyPrice": 40,
+          "sellPrice": 10,
+          "slot": 15
+        },
+        {
+          "itemId": "minecraft:torch",
+          "displayName": "Torches (x16)",
+          "currency": "COINS",
+          "buyPrice": 50,
+          "sellPrice": 10,
+          "slot": 16
+        }
+      ]
+    }
+  ]
+}
