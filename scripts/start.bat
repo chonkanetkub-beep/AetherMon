@@ -6,7 +6,7 @@ echo ================================================
 echo   Aethermon - Cobblemon Server (Fabric 1.21.1)
 echo ================================================
 echo.
-echo Starting server with 6GB RAM allocation...
+echo Starting server with Java 21 + 6GB RAM allocation...
 echo Press CTRL+C to stop the server gracefully.
 echo.
 
@@ -35,7 +35,10 @@ cd /d C:\AetherMon
 :: -Dfabric.server.gametest-disabled=true : Disable Fabric game tests
 :: ─────────────────────────────────────────────────────────────
 
-java -Xms2G -Xmx5G ^
+:: Hardcoded to Java 21 — do not change to system default java (that's Java 8!)
+set JAVA_BIN=C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin\java.exe
+
+"%JAVA_BIN%" -Xms2G -Xmx5G ^
   -XX:+UseG1GC ^
   -XX:+ParallelRefProcEnabled ^
   -XX:MaxGCPauseMillis=200 ^

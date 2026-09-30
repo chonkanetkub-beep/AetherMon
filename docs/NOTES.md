@@ -94,6 +94,30 @@
 
 ---
 
+## 2026-09-30 — Java Version Error Fix (Task 2 follow-up)
+
+### Problem
+Server crashed on first launch with:
+`UnsupportedClassVersionError: class file version 65.0 ... recognizes up to 52.0`
+
+### Plain English
+- `class file version 65.0` = Java 21 (what Minecraft 1.21.1 needs)
+- `class file version 52.0` = Java 8 (what was installed as system default)
+- The system `java` command pointed to Java 8 at `C:\Program Files (x86)\Common Files\Oracle\Java`
+
+### Fix
+- Installed Eclipse Temurin JDK 21 from adoptium.net
+- Installed at: `C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot`
+- Updated `start.bat` and `start.sh` to hardcode the Java 21 path
+- System default `java` is still Java 8 — that's fine, the scripts bypass it
+
+### Gotcha: whitelist was empty
+- `whitelist.json` was `[]` even after setting `white-list=true` in server.properties
+- This is because the server rewrites properties on startup — need to do `/whitelist add <name>` in console OR restart server fresh with the new properties and then add players
+- **Action needed:** Stop server → start with `start.bat` → run `/whitelist add YourName` in console
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]

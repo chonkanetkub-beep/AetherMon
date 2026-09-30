@@ -22,7 +22,11 @@ echo ""
 # See start.bat for full flag explanations
 # ──────────────────────────────────────────────
 
-java -Xms2G -Xmx5G \
+# Hardcoded to Java 21 — update this path if Java moves on the paid server
+JAVA_BIN="/usr/lib/jvm/temurin-21/bin/java"
+# If the above path doesn't work, run: which java  (after installing Java 21)
+
+"$JAVA_BIN" -Xms2G -Xmx5G \
   -XX:+UseG1GC \
   -XX:+ParallelRefProcEnabled \
   -XX:MaxGCPauseMillis=200 \
