@@ -167,6 +167,26 @@ This blocks ALL Pokémon spawning in the lobby without touching individual speci
 
 ---
 
+## ⚠️ OPEN ISSUE — Lobby Pokémon Spawning (unresolved)
+
+**Status:** Not fixed yet — deferred to come back to later.
+
+**What was tried:**
+1. `doMobSpawning false` via console — stopped vanilla mobs, not Cobblemon ❌
+2. `spawn_rules` datapack with `!v.world.is_of('minecraft:overworld')` — no effect ❌
+3. Same datapack with pack_format 48 + positive allow logic — still spawning ❌
+
+**Next things to try when we return:**
+- Run `datapack list` in console to confirm datapack is actually loading
+- Check server log on startup for any datapack errors
+- Try the `spawn_pool_world` override approach (per-species anticondition)
+- Ask in Cobblemon Discord with exact 1.7.3 version — `spawn_rules` may be 1.8+ only
+- Nuclear option: disable `enableSpawning` in Cobblemon config globally and only re-enable it in survival via a different mechanism
+
+**Workaround for now:** Pokémon in lobby are cosmetic annoyance, not game-breaking. Server is playable.
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]
