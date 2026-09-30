@@ -1,0 +1,120 @@
+## Aethermon — LuckPerms Setup Script
+## Run these commands in your SERVER CONSOLE, one section at a time.
+## Wait for each command to confirm before typing the next.
+
+## ═══════════════════════════════════════════════════════
+## SECTION 1: Create the groups
+## ═══════════════════════════════════════════════════════
+
+lp creategroup default
+lp creategroup member
+lp creategroup staff
+lp creategroup admin
+
+## Set inheritance chain: admin > staff > member > default
+## (each higher group inherits everything from the group below it)
+lp group admin parent add staff
+lp group staff parent add member
+lp group member parent add default
+
+## Set group weights (higher = takes priority in conflicts)
+lp group default setweight 0
+lp group member setweight 10
+lp group staff setweight 50
+lp group admin setweight 100
+
+## ═══════════════════════════════════════════════════════
+## SECTION 2: DEFAULT group permissions
+## These are the basics every player gets automatically
+## ═══════════════════════════════════════════════════════
+
+## -- Cobblemon (players need these to actually play) --
+lp group default permission set cobblemon.command.pc true
+lp group default permission set cobblemon.command.pokebox true
+lp group default permission set cobblemon.command.pokegive false
+lp group default permission set cobblemon.command.starter true
+
+## -- FastRTP --
+lp group default permission set fastrtp.rtp true
+
+## -- Blossom Warps --
+lp group default permission set blossom.warps.warp true
+lp group default permission set blossom.warps.list true
+
+## -- Spawn (setworldspawnpoint mod) --
+lp group default permission set minecraft.command.spawnpoint false
+
+## -- Basic Minecraft commands players expect to have --
+lp group default permission set minecraft.command.me true
+lp group default permission set minecraft.command.msg true
+lp group default permission set minecraft.command.teammsg true
+
+## ═══════════════════════════════════════════════════════
+## SECTION 3: MEMBER group permissions
+## Trusted players — gets everything default has, plus:
+## ═══════════════════════════════════════════════════════
+
+## (member inherits default, so only add extras here)
+## Add member-specific perks here later when you add /home etc.
+lp group member permission set blossom.warps.warp true
+
+## ═══════════════════════════════════════════════════════
+## SECTION 4: STAFF group permissions
+## Moderators — gets everything member has, plus:
+## ═══════════════════════════════════════════════════════
+
+## -- Teleport tools --
+lp group staff permission set minecraft.command.teleport true
+lp group staff permission set minecraft.command.tp true
+
+## -- Player management --
+lp group staff permission set minecraft.command.kick true
+lp group staff permission set minecraft.command.ban false
+lp group staff permission set minecraft.command.ban-ip false
+
+## -- Whitelist (staff can add players) --
+lp group staff permission set minecraft.command.whitelist true
+
+## -- Blossom warps (staff can create warps) --
+lp group staff permission set blossom.warps.setwarp true
+lp group staff permission set blossom.warps.delwarp true
+
+## -- Gamemode (staff can go to spectator to investigate) --
+lp group staff permission set minecraft.command.gamemode.spectator true
+
+## -- See LuckPerms info --
+lp group staff permission set luckperms.user.info true
+lp group staff permission set luckperms.group.info true
+
+## ═══════════════════════════════════════════════════════
+## SECTION 5: ADMIN group permissions
+## Full control — gets everything staff has, plus:
+## ═══════════════════════════════════════════════════════
+
+## -- Full LuckPerms control --
+lp group admin permission set luckperms.* true
+
+## -- All Cobblemon admin commands --
+lp group admin permission set cobblemon.command.* true
+
+## -- All game commands --
+lp group admin permission set minecraft.command.* true
+
+## ═══════════════════════════════════════════════════════
+## SECTION 6: Set auto-join group
+## All new players automatically get "member" rank
+## (since everyone on the whitelist is already trusted)
+## ═══════════════════════════════════════════════════════
+
+lp group default parent add member
+## NOTE: This makes member the base for all players.
+## If you want to MANUALLY promote players, skip this line
+## and instead promote with: lp user <name> parent add member
+
+## ═══════════════════════════════════════════════════════
+## SECTION 7: Assign yourself as admin
+## Replace YOUR_USERNAME with your actual Minecraft name
+## ═══════════════════════════════════════════════════════
+
+## lp user YOUR_USERNAME parent add admin
+## lp user FRIEND_USERNAME parent add admin
