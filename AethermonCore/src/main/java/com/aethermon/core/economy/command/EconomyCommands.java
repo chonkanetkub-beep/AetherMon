@@ -48,18 +48,34 @@ public class EconomyCommands {
 
     public void register() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+            AethermonCore.LOGGER.info("[Economy] Registering economy commands...");
 
-            // /balance [coins|gems]
-            var balCmd = literal("balance")
+            // /balance, /bal, /money (show both Coins and Gems by default, or specific currency if passed)
+            for (String alias : new String[]{"balance", "bal", "money"}) {
+                dispatcher.register(literal(alias)
+                    .requires(src -> src.hasPermissionLevel(0))
+                    .executes(ctx -> showBothBalances(ctx.getSource()))
+                    .then(literal("coins").executes(ctx -> showBalance(ctx.getSource(), Currency.COINS)))
+                    .then(literal("coin").executes(ctx -> showBalance(ctx.getSource(), Currency.COINS)))
+                    .then(literal("gems").executes(ctx -> showBalance(ctx.getSource(), Currency.GEMS)))
+                    .then(literal("gem").executes(ctx -> showBalance(ctx.getSource(), Currency.GEMS))));
+            }
+
+            // Direct shortcuts: /coins, /coin, /gems, /gem
+            dispatcher.register(literal("coins")
                 .requires(src -> src.hasPermissionLevel(0))
-                .executes(ctx -> showBalance(ctx.getSource(), Currency.COINS))
-                .then(literal("coins").executes(ctx -> showBalance(ctx.getSource(), Currency.COINS)))
-                .then(literal("gems") .executes(ctx -> showBalance(ctx.getSource(), Currency.GEMS)));
+                .executes(ctx -> showBalance(ctx.getSource(), Currency.COINS)));
+            dispatcher.register(literal("coin")
+                .requires(src -> src.hasPermissionLevel(0))
+                .executes(ctx -> showBalance(ctx.getSource(), Currency.COINS)));
+            dispatcher.register(literal("gems")
+                .requires(src -> src.hasPermissionLevel(0))
+                .executes(ctx -> showBalance(ctx.getSource(), Currency.GEMS)));
+            dispatcher.register(literal("gem")
+                .requires(src -> src.hasPermissionLevel(0))
+                .executes(ctx -> showBalance(ctx.getSource(), Currency.GEMS)));
 
-            dispatcher.register(balCmd);
-            dispatcher.register(literal("bal").redirect(dispatcher.getRoot().getChild("balance")));
-
-            // /pay <player> <amount> [coins|gems]
+            // /pay <player> <amount> [coins|coin|gems|gem]
             dispatcher.register(literal("pay")
                 .requires(src -> src.hasPermissionLevel(0))
                 .then(argument("player", StringArgumentType.word())
@@ -71,11 +87,17 @@ public class EconomyCommands {
                         .then(literal("coins").executes(ctx -> pay(ctx.getSource(),
                             StringArgumentType.getString(ctx, "player"),
                             DoubleArgumentType.getDouble(ctx, "amount"), Currency.COINS)))
+                        .then(literal("coin").executes(ctx -> pay(ctx.getSource(),
+                            StringArgumentType.getString(ctx, "player"),
+                            DoubleArgumentType.getDouble(ctx, "amount"), Currency.COINS)))
                         .then(literal("gems").executes(ctx -> pay(ctx.getSource(),
+                            StringArgumentType.getString(ctx, "player"),
+                            DoubleArgumentType.getDouble(ctx, "amount"), Currency.GEMS)))
+                        .then(literal("gem").executes(ctx -> pay(ctx.getSource(),
                             StringArgumentType.getString(ctx, "player"),
                             DoubleArgumentType.getDouble(ctx, "amount"), Currency.GEMS))))));
 
-            // /eco give|take|set <player> <amount> [coins|gems]
+            // /eco give|take|set <player> <amount> [coins|coin|gems|gem]
             dispatcher.register(literal("eco")
                 .requires(src -> src.hasPermissionLevel(3)) // op level 3 = admin
                 .then(literal("give")
@@ -87,7 +109,13 @@ public class EconomyCommands {
                             .then(literal("coins").executes(ctx -> adminGive(ctx.getSource(),
                                 StringArgumentType.getString(ctx, "player"),
                                 DoubleArgumentType.getDouble(ctx, "amount"), Currency.COINS)))
+                            .then(literal("coin").executes(ctx -> adminGive(ctx.getSource(),
+                                StringArgumentType.getString(ctx, "player"),
+                                DoubleArgumentType.getDouble(ctx, "amount"), Currency.COINS)))
                             .then(literal("gems").executes(ctx -> adminGive(ctx.getSource(),
+                                StringArgumentType.getString(ctx, "player"),
+                                DoubleArgumentType.getDouble(ctx, "amount"), Currency.GEMS)))
+                            .then(literal("gem").executes(ctx -> adminGive(ctx.getSource(),
                                 StringArgumentType.getString(ctx, "player"),
                                 DoubleArgumentType.getDouble(ctx, "amount"), Currency.GEMS))))))
                 .then(literal("take")
@@ -99,7 +127,13 @@ public class EconomyCommands {
                             .then(literal("coins").executes(ctx -> adminTake(ctx.getSource(),
                                 StringArgumentType.getString(ctx, "player"),
                                 DoubleArgumentType.getDouble(ctx, "amount"), Currency.COINS)))
+                            .then(literal("coin").executes(ctx -> adminTake(ctx.getSource(),
+                                StringArgumentType.getString(ctx, "player"),
+                                DoubleArgumentType.getDouble(ctx, "amount"), Currency.COINS)))
                             .then(literal("gems").executes(ctx -> adminTake(ctx.getSource(),
+                                StringArgumentType.getString(ctx, "player"),
+                                DoubleArgumentType.getDouble(ctx, "amount"), Currency.GEMS)))
+                            .then(literal("gem").executes(ctx -> adminTake(ctx.getSource(),
                                 StringArgumentType.getString(ctx, "player"),
                                 DoubleArgumentType.getDouble(ctx, "amount"), Currency.GEMS))))))
                 .then(literal("set")
@@ -111,13 +145,37 @@ public class EconomyCommands {
                             .then(literal("coins").executes(ctx -> adminSet(ctx.getSource(),
                                 StringArgumentType.getString(ctx, "player"),
                                 DoubleArgumentType.getDouble(ctx, "amount"), Currency.COINS)))
+                            .then(literal("coin").executes(ctx -> adminSet(ctx.getSource(),
+                                StringArgumentType.getString(ctx, "player"),
+                                DoubleArgumentType.getDouble(ctx, "amount"), Currency.COINS)))
                             .then(literal("gems").executes(ctx -> adminSet(ctx.getSource(),
+                                StringArgumentType.getString(ctx, "player"),
+                                DoubleArgumentType.getDouble(ctx, "amount"), Currency.GEMS)))
+                            .then(literal("gem").executes(ctx -> adminSet(ctx.getSource(),
                                 StringArgumentType.getString(ctx, "player"),
                                 DoubleArgumentType.getDouble(ctx, "amount"), Currency.GEMS)))))));
         });
     }
 
     // ── Command handlers ──────────────────────────────────────
+
+    private int showBothBalances(ServerCommandSource source) {
+        if (!(source.getEntity() instanceof ServerPlayerEntity player)) {
+            source.sendError(Text.literal("Only players can view balance."));
+            return 0;
+        }
+        UUID uuid = player.getUuid();
+        economy.getBalance(uuid, Currency.COINS).thenAccept(coins -> {
+            economy.getBalance(uuid, Currency.GEMS).thenAccept(gems -> {
+                player.sendMessage(Text.literal("§8§m───────────────────────────────"));
+                player.sendMessage(Text.literal(" §6§lAethermon Wallet"));
+                player.sendMessage(Text.literal("  §fCoins: §e" + Currency.COINS.format(coins) + " §6🪙"));
+                player.sendMessage(Text.literal("  §fGems:  §b" + Currency.GEMS.format(gems) + " §3💎"));
+                player.sendMessage(Text.literal("§8§m───────────────────────────────"));
+            });
+        });
+        return 1;
+    }
 
     private int showBalance(ServerCommandSource source, Currency currency) {
         if (!(source.getEntity() instanceof ServerPlayerEntity player)) {
@@ -126,7 +184,7 @@ public class EconomyCommands {
         }
         economy.getBalance(player.getUuid(), currency).thenAccept(bal ->
             player.sendMessage(Text.literal(
-                "§6Your " + currency.displayName + " balance: §e" + currency.format(bal)))
+                "§6Your " + currency.displayName + " balance: §e" + currency.format(bal) + " " + currency.symbol))
         );
         return 1;
     }

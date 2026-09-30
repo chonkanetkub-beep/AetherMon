@@ -18,6 +18,9 @@ lobby/
 */data/
 *.mca
 *.mcr
+*.db
+*.mv.db
+config/aethermoncore/data/
 
 # --- Logs ---
 logs/

@@ -1,0 +1,18 @@
+{
+  "economyEnabled": true,
+  "shopEnabled": true,
+  "marketEnabled": true,
+  "homesEnabled": true,
+  "rewardsEnabled": true,
+  "questsEnabled": true,
+  "luckyDrawEnabled": true,
+  "worldBossEnabled": true,
+  "startingCoins": 50000,
+  "startingGems": 25,
+  "homeLimitDefault": 1,
+  "homeLimitMember": 2,
+  "homeLimitStaff": 5,
+  "homeLimitAdmin": 2147483647,
+  "payTaxPercent": 0.0,
+  "shopTaxPercent": 5.0
+}
