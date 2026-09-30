@@ -87,7 +87,29 @@ public class DatabaseManager {
                 ON economy_transactions (player_uuid, timestamp DESC)
                 """);
 
-            AethermonCore.LOGGER.info("Database schema v{} ready.", SCHEMA_VERSION);
+            // ── Homes: player saved homes ──────────────────────────────
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS player_homes (
+                    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+                    player_uuid TEXT    NOT NULL,
+                    home_name   TEXT    NOT NULL,
+                    world       TEXT    NOT NULL,
+                    x           REAL    NOT NULL,
+                    y           REAL    NOT NULL,
+                    z           REAL    NOT NULL,
+                    yaw         REAL    NOT NULL,
+                    pitch       REAL    NOT NULL,
+                    created_at  TEXT    NOT NULL DEFAULT (datetime('now')),
+                    UNIQUE(player_uuid, home_name)
+                )
+                """);
+
+            stmt.execute("""
+                CREATE INDEX IF NOT EXISTS idx_player_homes_uuid
+                ON player_homes (player_uuid)
+                """);
+
+            AethermonCore.LOGGER.info("Database schema ready (economy & homes).");
 
         } catch (SQLException e) {
             throw new RuntimeException("Failed to initialise database schema", e);

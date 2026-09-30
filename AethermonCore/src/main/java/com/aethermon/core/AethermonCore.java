@@ -20,6 +20,7 @@ public class AethermonCore implements ModInitializer {
     private CoreConfig config;
     private EconomyModule economyModule;
     private com.aethermon.core.menu.MenuModule menuModule;
+    private com.aethermon.core.homes.HomesModule homesModule;
 
     @Override
     public void onInitialize() {
@@ -33,6 +34,10 @@ public class AethermonCore implements ModInitializer {
         economyModule = new EconomyModule();
         economyModule.init();
 
+        // Module: Homes (/sethome, /home, /delhome, /homes stored in SQLite)
+        homesModule = new com.aethermon.core.homes.HomesModule(economyModule.getDatabaseManager());
+        homesModule.init();
+
         // Module: Menu (/menu, /help, /gui server-side chest GUI)
         menuModule = new com.aethermon.core.menu.MenuModule(economyModule.getService());
         menuModule.init();
@@ -43,4 +48,5 @@ public class AethermonCore implements ModInitializer {
     public static AethermonCore getInstance() { return instance; }
     public CoreConfig getConfig()             { return config; }
     public EconomyModule getEconomyModule()   { return economyModule; }
+    public com.aethermon.core.homes.HomesModule getHomesModule() { return homesModule; }
 }

@@ -61,4 +61,6 @@ public class EconomyModule {
 
     /** Access the service from other modules. Always use this — never touch DB directly. */
     public EconomyService getService() { return service; }
+
+    public DatabaseManager getDatabaseManager() { return db; }
 }

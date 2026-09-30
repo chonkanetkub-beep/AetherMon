@@ -258,6 +258,27 @@ Login/Online Rewards → Quests → Lucky Draw → World Boss → Keys/Crates
 
 ---
 
+## 2026-10-01 — Homes & Land Claims Module (Task 3)
+
+### Homes (Built into AethermonCore)
+- Implemented `HomesModule` storing homes in `aethermon.db` SQLite (`player_homes` table).
+- Full cross-world teleportation (`/home [name]`, `/sethome [name]`, `/delhome <name>`, `/homes`).
+- Permission-based limits via LuckPerms:
+  - Default: 1 home
+  - Member: 2 homes (`aethermon.homes.2`)
+  - Staff: 5 homes (`aethermon.homes.5`)
+  - Admin: Unlimited (`aethermon.homes.unlimited`)
+- Full test coverage with JUnit 5 (`HomeServiceTest`).
+
+### Land Claims (Flan 1.21.1)
+- Installed `flan-1.21.1-1.12.8-fabric.jar` (zero client mod required).
+- Configured claim policies per owner specification:
+  - Visitors CAN battle wild Pokémon inside claims (`flan:hurt_animal: true`, `flan:animal_interact: true`).
+  - Visitors CANNOT place or break blocks inside other claims (`flan:place: false`, `flan:break: false`).
+  - PvP inside claims is globally DISABLED (`flan:hurt_player: ALLFALSE`). Players use `/duel`.
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]
