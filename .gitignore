@@ -1,0 +1,56 @@
+# =============================================================
+#  Aethermon Server — .gitignore
+#  We commit: configs, docs, scripts
+#  We NEVER commit: world data, logs, secrets, compiled files
+# =============================================================
+
+# --- World & dimension data (NEVER commit these) ---
+world/
+lobby/
+*/region/
+*/entities/
+*/poi/
+*/data/
+*.mca
+*.mcr
+
+# --- Logs ---
+logs/
+crash-reports/
+*.log
+*.log.gz
+
+# --- Secrets & credentials ---
+rcon.password
+*.secret
+*.env
+.env*
+ops.json
+whitelist.json
+banned-players.json
+banned-ips.json
+usercache.json
+
+# --- Minecraft runtime files ---
+.fabric/
+.mixin.out/
+libraries/
+versions/
+eula.txt
+
+# --- Mod JARs (too large for Git; list them in docs instead) ---
+mods/*.jar
+mods-backup/*.jar
+
+# --- Showdown battle engine data ---
+showdown/
+
+# --- OS junk ---
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# --- IDE files ---
+.vscode/
+.idea/
+*.iml
