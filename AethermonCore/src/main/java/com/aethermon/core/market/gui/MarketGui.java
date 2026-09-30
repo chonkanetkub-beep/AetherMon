@@ -60,28 +60,37 @@ public class MarketGui extends GenericContainerScreenHandler {
                 economy.getBalance(player.getUuid(), Currency.GEMS).thenAccept(gems -> {
                     if (player.getServer() == null) return;
                     player.getServer().execute(() -> {
-                        Map<Integer, MarketListing> map = populateBrowse(inv, listings, page, searchFilter, coins, gems, player);
+                        try {
+                            Map<Integer, MarketListing> map = populateBrowse(inv, listings, page, searchFilter, coins, gems, player);
 
-                        player.openHandledScreen(new NamedScreenHandlerFactory() {
-                            @Override
-                            public Text getDisplayName() {
-                                String title = "§6§lPlayer Market";
-                                if (searchFilter != null && !searchFilter.isBlank()) {
-                                    title += " §7(Filter: " + searchFilter + ")";
+                            player.openHandledScreen(new NamedScreenHandlerFactory() {
+                                @Override
+                                public Text getDisplayName() {
+                                    String title = "§6§lPlayer Market";
+                                    if (searchFilter != null && !searchFilter.isBlank()) {
+                                        title += " §7(Filter: " + searchFilter + ")";
+                                    }
+                                    return Text.literal(title);
                                 }
-                                return Text.literal(title);
-                            }
 
-                            @Override
-                            public GenericContainerScreenHandler createMenu(int syncId, PlayerInventory playerInv, PlayerEntity p) {
-                                MarketGui gui = new MarketGui(syncId, playerInv, inv, player, marketService, economy, GuiMode.BROWSE, page, searchFilter);
-                                gui.slotListingMap.putAll(map);
-                                return gui;
-                            }
-                        });
+                                @Override
+                                public GenericContainerScreenHandler createMenu(int syncId, PlayerInventory playerInv, PlayerEntity p) {
+                                    MarketGui gui = new MarketGui(syncId, playerInv, inv, player, marketService, economy, GuiMode.BROWSE, page, searchFilter);
+                                    gui.slotListingMap.putAll(map);
+                                    return gui;
+                                }
+                            });
+                        } catch (Exception e) {
+                            com.aethermon.core.AethermonCore.LOGGER.error("[Market] Error opening browse GUI", e);
+                            player.sendMessage(Text.literal("§c[Market] Error opening market menu."));
+                        }
                     });
                 });
             });
+        }).exceptionally(ex -> {
+            com.aethermon.core.AethermonCore.LOGGER.error("[Market] Error in getActiveListings", ex);
+            player.sendMessage(Text.literal("§c[Market] Error loading market listings."));
+            return null;
         });
     }
 
@@ -91,22 +100,31 @@ public class MarketGui extends GenericContainerScreenHandler {
         marketService.getPlayerListings(player.getUuid()).thenAccept(listings -> {
             if (player.getServer() == null) return;
             player.getServer().execute(() -> {
-                Map<Integer, MarketListing> map = populateOwnListings(inv, listings);
+                try {
+                    Map<Integer, MarketListing> map = populateOwnListings(inv, listings, player);
 
-                player.openHandledScreen(new NamedScreenHandlerFactory() {
-                    @Override
-                    public Text getDisplayName() {
-                        return Text.literal("§6§lYour Active Listings");
-                    }
+                    player.openHandledScreen(new NamedScreenHandlerFactory() {
+                        @Override
+                        public Text getDisplayName() {
+                            return Text.literal("§6§lYour Active Listings");
+                        }
 
-                    @Override
-                    public GenericContainerScreenHandler createMenu(int syncId, PlayerInventory playerInv, PlayerEntity p) {
-                        MarketGui gui = new MarketGui(syncId, playerInv, inv, player, marketService, economy, GuiMode.OWN_LISTINGS, 0, null);
-                        gui.slotListingMap.putAll(map);
-                        return gui;
-                    }
-                });
+                        @Override
+                        public GenericContainerScreenHandler createMenu(int syncId, PlayerInventory playerInv, PlayerEntity p) {
+                            MarketGui gui = new MarketGui(syncId, playerInv, inv, player, marketService, economy, GuiMode.OWN_LISTINGS, 0, null);
+                            gui.slotListingMap.putAll(map);
+                            return gui;
+                        }
+                    });
+                } catch (Exception e) {
+                    com.aethermon.core.AethermonCore.LOGGER.error("[Market] Error opening own listings GUI", e);
+                    player.sendMessage(Text.literal("§c[Market] Error opening your listings."));
+                }
             });
+        }).exceptionally(ex -> {
+            com.aethermon.core.AethermonCore.LOGGER.error("[Market] Error in getPlayerListings", ex);
+            player.sendMessage(Text.literal("§c[Market] Error loading your listings."));
+            return null;
         });
     }
 
@@ -223,7 +241,7 @@ public class MarketGui extends GenericContainerScreenHandler {
         return map;
     }
 
-    private static Map<Integer, MarketListing> populateOwnListings(SimpleInventory inv, List<MarketListing> listings) {
+    private static Map<Integer, MarketListing> populateOwnListings(SimpleInventory inv, List<MarketListing> listings, ServerPlayerEntity player) {
         Map<Integer, MarketListing> map = new HashMap<>();
 
         ItemStack grayGlass = new ItemStack(Items.GRAY_STAINED_GLASS_PANE);
@@ -239,14 +257,25 @@ public class MarketGui extends GenericContainerScreenHandler {
 
         for (int i = 0; i < Math.min(listings.size(), 45); i++) {
             MarketListing listing = listings.get(i);
-            ItemStack stack = new ItemStack(Items.PAPER); // fallback or deserialize
-            stack.set(DataComponentTypes.CUSTOM_NAME, Text.literal("§f" + listing.itemDisplayName()));
-            stack.set(DataComponentTypes.LORE, new LoreComponent(List.of(
-                Text.literal("§7Price: §e" + listing.currency().format(listing.price()) + " " + listing.currency().symbol),
-                Text.literal("§7Count: §f" + listing.itemCount()),
-                Text.literal(""),
-                Text.literal("§c§lClick to Cancel & Retrieve")
-            )));
+            ItemStack stack = ItemSerializer.deserialize(listing.itemNbt(), player.getServer().getRegistryManager());
+            if (stack.isEmpty()) {
+                stack = new ItemStack(Items.PAPER);
+                stack.set(DataComponentTypes.CUSTOM_NAME, Text.literal("§f" + listing.itemDisplayName()));
+            }
+
+            List<Text> lore = new ArrayList<>();
+            var currentLore = stack.get(DataComponentTypes.LORE);
+            if (currentLore != null) {
+                lore.addAll(currentLore.lines());
+            }
+
+            lore.add(Text.literal(""));
+            lore.add(Text.literal("§7Price: §e" + listing.currency().format(listing.price()) + " " + listing.currency().symbol));
+            lore.add(Text.literal("§7Count: §f" + listing.itemCount()));
+            lore.add(Text.literal(""));
+            lore.add(Text.literal("§c§lClick to Cancel & Retrieve"));
+
+            stack.set(DataComponentTypes.LORE, new LoreComponent(lore));
             inv.setStack(i, stack);
             map.put(i, listing);
         }

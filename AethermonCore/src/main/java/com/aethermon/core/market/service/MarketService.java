@@ -442,8 +442,8 @@ public class MarketService {
             rs.getString("item_display_name"),
             Currency.valueOf(rs.getString("currency").toUpperCase()),
             rs.getBigDecimal("price"),
-            Instant.parse(rs.getString("created_at").replace(" ", "T") + "Z"),
-            Instant.parse(rs.getString("expires_at").replace(" ", "T") + "Z"),
+            parseInstant(rs.getString("created_at")),
+            parseInstant(rs.getString("expires_at")),
             rs.getString("status")
         );
     }
@@ -460,7 +460,19 @@ public class MarketService {
             rs.getString("item_nbt"),
             rs.getString("item_display_name"),
             rs.getInt("claimed") == 1,
-            Instant.parse(rs.getString("created_at").replace(" ", "T") + "Z")
+            parseInstant(rs.getString("created_at"))
         );
+    }
+
+    private static Instant parseInstant(String text) {
+        if (text == null || text.isBlank()) return Instant.now();
+        try {
+            if (text.endsWith("Z")) {
+                return Instant.parse(text);
+            }
+            return Instant.parse(text.replace(" ", "T") + "Z");
+        } catch (Exception e) {
+            return Instant.now();
+        }
     }
 }

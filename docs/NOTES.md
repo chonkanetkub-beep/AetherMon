@@ -329,9 +329,34 @@ Login/Online Rewards → Quests → Lucky Draw → World Boss → Keys/Crates
 
 ---
 
+## 2026-10-01 — Login & Online Rewards Module (Task 6)
+
+### Login & Playtime Rewards (/rewards, /daily, /playtime)
+- Implemented `RewardsModule` in `AethermonCore`:
+  - 100% server-side 54-slot chest GUI (`RewardsGui.java`) with zero client mod required.
+  - Backed by SQLite tables `player_daily_rewards` and `player_playtime`.
+  - Configurable via `config/aethermoncore/rewards.json`.
+  - **Daily Login Streak (30-day cycle)**:
+    - 30 customizable reward tiers configured with Coins, Gems, Cobblemon balls/potions/candies, and command execution.
+    - **Streak Freezing**: As chosen by owner, missing a day preserves player streak progress without resetting back to Day 1.
+    - Day 7, Day 14, Day 21 milestones, and Day 30 Grand Master tier with Master Ball & Rare Candies.
+  - **Online Playtime Rewards**:
+    - 4 daily milestones (15m, 30m, 60m, 120m).
+    - **AFK Detection**: Tracks position and rotation delta; pauses playtime timer if inactive for > 5 minutes (`afkThresholdSeconds`).
+    - Midnight reset for daily playtime counters and claimed tiers.
+- Commands:
+  - `/rewards` or `/daily`: opens the interactive 54-slot Rewards GUI.
+  - `/playtime`: opens playtime rewards tab or `/playtime check` for chat status.
+  - `/rewards reload`: reloads `rewards.json` hot (permission level 2).
+  - `/rewards reset <player> [daily|playtime]`: resets data for testing (permission level 2).
+- Integrated with `/menu` slot 22.
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]
 **Problem:** What went wrong or what was unclear  
 **Fix:** What was done to resolve it  
 **Gotcha:** Anything to watch out for next time
+

@@ -157,7 +157,30 @@ public class DatabaseManager {
                 ON market_deliveries (player_uuid, claimed)
                 """);
 
-            AethermonCore.LOGGER.info("Database schema ready (economy, homes & market).");
+            // ── Rewards: Daily claims & streaks ────────────────────────
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS player_daily_rewards (
+                    player_uuid     TEXT PRIMARY KEY,
+                    last_claim_date TEXT NOT NULL,
+                    current_streak  INTEGER NOT NULL DEFAULT 0,
+                    total_claims    INTEGER NOT NULL DEFAULT 0,
+                    updated_at      TEXT NOT NULL DEFAULT (datetime('now'))
+                )
+                """);
+
+            // ── Rewards: Playtime tracking & claimed daily tiers ────────
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS player_playtime (
+                    player_uuid         TEXT PRIMARY KEY,
+                    tracking_date       TEXT NOT NULL,
+                    active_seconds      INTEGER NOT NULL DEFAULT 0,
+                    claimed_tiers       TEXT NOT NULL DEFAULT '',
+                    total_playtime_secs INTEGER NOT NULL DEFAULT 0,
+                    updated_at          TEXT NOT NULL DEFAULT (datetime('now'))
+                )
+                """);
+
+            AethermonCore.LOGGER.info("Database schema ready (economy, homes, market & rewards).");
 
         } catch (SQLException e) {
             throw new RuntimeException("Failed to initialise database schema", e);

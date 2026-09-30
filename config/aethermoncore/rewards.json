@@ -1,0 +1,525 @@
+{
+  "afkThresholdSeconds": 300,
+  "dailyRewards": [
+    {
+      "day": 1,
+      "title": "Day 1 Starter",
+      "iconItem": "cobblemon:poke_ball",
+      "coins": 500,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:poke_ball",
+          "count": 5,
+          "displayName": "5x Poké Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 2,
+      "title": "Day 2 Medicine",
+      "iconItem": "cobblemon:potion",
+      "coins": 750,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:potion",
+          "count": 2,
+          "displayName": "2x Potions"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 3,
+      "title": "Day 3 Great Catch",
+      "iconItem": "cobblemon:great_ball",
+      "coins": 1000,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:great_ball",
+          "count": 3,
+          "displayName": "3x Great Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 4,
+      "title": "Day 4 Healing Boost",
+      "iconItem": "cobblemon:super_potion",
+      "coins": 1250,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:super_potion",
+          "count": 2,
+          "displayName": "2x Super Potions"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 5,
+      "title": "Day 5 Gem Sparks",
+      "iconItem": "minecraft:diamond",
+      "coins": 1500,
+      "gems": 5,
+      "items": [],
+      "commands": []
+    },
+    {
+      "day": 6,
+      "title": "Day 6 Ultra Gear",
+      "iconItem": "cobblemon:ultra_ball",
+      "coins": 2000,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:ultra_ball",
+          "count": 2,
+          "displayName": "2x Ultra Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 7,
+      "title": "Day 7 ★ Week 1 Milestone",
+      "iconItem": "cobblemon:rare_candy",
+      "coins": 5000,
+      "gems": 15,
+      "items": [
+        {
+          "itemId": "cobblemon:rare_candy",
+          "count": 1,
+          "displayName": "1x Rare Candy"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 8,
+      "title": "Day 8 Berries \u0026 Coins",
+      "iconItem": "cobblemon:oran_berry",
+      "coins": 2500,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:oran_berry",
+          "count": 5,
+          "displayName": "5x Oran Berries"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 9,
+      "title": "Day 9 Night Hunter",
+      "iconItem": "cobblemon:dusk_ball",
+      "coins": 2750,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:dusk_ball",
+          "count": 2,
+          "displayName": "2x Dusk Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 10,
+      "title": "Day 10 Hyper Aid",
+      "iconItem": "cobblemon:hyper_potion",
+      "coins": 3000,
+      "gems": 5,
+      "items": [
+        {
+          "itemId": "cobblemon:hyper_potion",
+          "count": 2,
+          "displayName": "2x Hyper Potions"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 11,
+      "title": "Day 11 Quick Catcher",
+      "iconItem": "cobblemon:quick_ball",
+      "coins": 3250,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:quick_ball",
+          "count": 2,
+          "displayName": "2x Quick Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 12,
+      "title": "Day 12 Revival Pack",
+      "iconItem": "cobblemon:revive",
+      "coins": 3500,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:revive",
+          "count": 2,
+          "displayName": "2x Revives"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 13,
+      "title": "Day 13 Miner\u0027s Touch",
+      "iconItem": "minecraft:iron_ingot",
+      "coins": 4000,
+      "gems": 5,
+      "items": [
+        {
+          "itemId": "minecraft:iron_ingot",
+          "count": 8,
+          "displayName": "8x Iron Ingots"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 14,
+      "title": "Day 14 ★ Week 2 Milestone",
+      "iconItem": "cobblemon:fire_stone",
+      "coins": 10000,
+      "gems": 25,
+      "items": [
+        {
+          "itemId": "cobblemon:fire_stone",
+          "count": 1,
+          "displayName": "1x Fire Stone"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 15,
+      "title": "Day 15 Trainer Stash",
+      "iconItem": "cobblemon:ultra_ball",
+      "coins": 4500,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:ultra_ball",
+          "count": 3,
+          "displayName": "3x Ultra Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 16,
+      "title": "Day 16 Full Restore",
+      "iconItem": "cobblemon:full_restore",
+      "coins": 5000,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:full_restore",
+          "count": 1,
+          "displayName": "1x Full Restore"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 17,
+      "title": "Day 17 Lum Boost",
+      "iconItem": "cobblemon:lum_berry",
+      "coins": 5500,
+      "gems": 5,
+      "items": [
+        {
+          "itemId": "cobblemon:lum_berry",
+          "count": 5,
+          "displayName": "5x Lum Berries"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 18,
+      "title": "Day 18 Timer Specialist",
+      "iconItem": "cobblemon:timer_ball",
+      "coins": 6000,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:timer_ball",
+          "count": 3,
+          "displayName": "3x Timer Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 19,
+      "title": "Day 19 Max Revive",
+      "iconItem": "cobblemon:max_revive",
+      "coins": 6500,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:max_revive",
+          "count": 1,
+          "displayName": "1x Max Revive"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 20,
+      "title": "Day 20 Golden Riches",
+      "iconItem": "minecraft:gold_ingot",
+      "coins": 7000,
+      "gems": 10,
+      "items": [
+        {
+          "itemId": "minecraft:gold_ingot",
+          "count": 8,
+          "displayName": "8x Gold Ingots"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 21,
+      "title": "Day 21 ★ Week 3 Milestone",
+      "iconItem": "cobblemon:rare_candy",
+      "coins": 15000,
+      "gems": 35,
+      "items": [
+        {
+          "itemId": "cobblemon:rare_candy",
+          "count": 2,
+          "displayName": "2x Rare Candies"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 22,
+      "title": "Day 22 Elite Balls",
+      "iconItem": "cobblemon:ultra_ball",
+      "coins": 8000,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:ultra_ball",
+          "count": 5,
+          "displayName": "5x Ultra Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 23,
+      "title": "Day 23 Full Recovery",
+      "iconItem": "cobblemon:full_restore",
+      "coins": 8500,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:full_restore",
+          "count": 2,
+          "displayName": "2x Full Restores"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 24,
+      "title": "Day 24 Water Energy",
+      "iconItem": "cobblemon:water_stone",
+      "coins": 9000,
+      "gems": 10,
+      "items": [
+        {
+          "itemId": "cobblemon:water_stone",
+          "count": 1,
+          "displayName": "1x Water Stone"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 25,
+      "title": "Day 25 Diamond Trove",
+      "iconItem": "minecraft:diamond",
+      "coins": 10000,
+      "gems": 15,
+      "items": [
+        {
+          "itemId": "minecraft:diamond",
+          "count": 3,
+          "displayName": "3x Diamonds"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 26,
+      "title": "Day 26 Thunder Charge",
+      "iconItem": "cobblemon:thunder_stone",
+      "coins": 12000,
+      "gems": 15,
+      "items": [
+        {
+          "itemId": "cobblemon:thunder_stone",
+          "count": 1,
+          "displayName": "1x Thunder Stone"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 27,
+      "title": "Day 27 Sweet Sitrus",
+      "iconItem": "cobblemon:sitrus_berry",
+      "coins": 14000,
+      "gems": 15,
+      "items": [
+        {
+          "itemId": "cobblemon:sitrus_berry",
+          "count": 8,
+          "displayName": "8x Sitrus Berries"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 28,
+      "title": "Day 28 ★ Month Finish Line",
+      "iconItem": "cobblemon:rare_candy",
+      "coins": 20000,
+      "gems": 40,
+      "items": [
+        {
+          "itemId": "cobblemon:rare_candy",
+          "count": 2,
+          "displayName": "2x Rare Candies"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 29,
+      "title": "Day 29 Eve of Champions",
+      "iconItem": "minecraft:emerald",
+      "coins": 25000,
+      "gems": 50,
+      "items": [
+        {
+          "itemId": "minecraft:emerald",
+          "count": 10,
+          "displayName": "10x Emeralds"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "day": 30,
+      "title": "Day 30 ★★★ GRAND MASTER",
+      "iconItem": "cobblemon:master_ball",
+      "coins": 50000,
+      "gems": 100,
+      "items": [
+        {
+          "itemId": "cobblemon:master_ball",
+          "count": 1,
+          "displayName": "1x Master Ball"
+        },
+        {
+          "itemId": "cobblemon:rare_candy",
+          "count": 3,
+          "displayName": "3x Rare Candies"
+        }
+      ],
+      "commands": []
+    }
+  ],
+  "playtimeRewards": [
+    {
+      "id": "15",
+      "requiredMinutes": 15,
+      "title": "15 Min Playtime",
+      "iconItem": "minecraft:iron_ingot",
+      "coins": 500,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:poke_ball",
+          "count": 2,
+          "displayName": "2x Poké Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "30",
+      "requiredMinutes": 30,
+      "title": "30 Min Playtime",
+      "iconItem": "minecraft:gold_ingot",
+      "coins": 1000,
+      "gems": 2,
+      "items": [
+        {
+          "itemId": "cobblemon:great_ball",
+          "count": 2,
+          "displayName": "2x Great Balls"
+        },
+        {
+          "itemId": "cobblemon:revive",
+          "count": 1,
+          "displayName": "1x Revive"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "60",
+      "requiredMinutes": 60,
+      "title": "1 Hour Playtime",
+      "iconItem": "minecraft:diamond",
+      "coins": 2500,
+      "gems": 5,
+      "items": [
+        {
+          "itemId": "cobblemon:ultra_ball",
+          "count": 2,
+          "displayName": "2x Ultra Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "120",
+      "requiredMinutes": 120,
+      "title": "2 Hours Playtime",
+      "iconItem": "minecraft:nether_star",
+      "coins": 5000,
+      "gems": 10,
+      "items": [
+        {
+          "itemId": "cobblemon:rare_candy",
+          "count": 1,
+          "displayName": "1x Rare Candy"
+        }
+      ],
+      "commands": []
+    }
+  ]
+}
