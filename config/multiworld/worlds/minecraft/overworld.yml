@@ -1,11 +1,9 @@
 namespace: minecraft
 path: overworld
-# ── Lobby world settings ──────────────────────────────────────
-# doMobSpawning: false = no Pokémon, animals, or monsters spawn in the lobby.
-# This ONLY affects the lobby (minecraft:overworld).
-# The survival world (multiworld:survival) is unaffected and spawns normally.
-gamerules:
-  doMobSpawning: "false"
-  doWeatherCycle: "false"
-  doDaylightCycle: "false"
-  keepInventory: "true"
+# Note: Multiworld does not support gamerules in this yml file.
+# Lobby gamerules are set via console commands instead:
+#   execute in minecraft:overworld run gamerule doMobSpawning false
+#   execute in minecraft:overworld run gamerule doWeatherCycle false
+#   execute in minecraft:overworld run gamerule doDaylightCycle false
+#   execute in minecraft:overworld run gamerule keepInventory true
+# These are saved automatically to lobby/level.dat and persist on restart.
