@@ -40,22 +40,26 @@ public class MenuScreenHandler extends GenericContainerScreenHandler {
     public static void open(ServerPlayerEntity player, EconomyService economy) {
         SimpleInventory inv = new SimpleInventory(27);
 
-        // Fetch balances async, then populate & open GUI
+        // Fetch balances async, then populate & open GUI on main server thread
         economy.getBalance(player.getUuid(), Currency.COINS).thenAccept(coins -> {
             economy.getBalance(player.getUuid(), Currency.GEMS).thenAccept(gems -> {
-                populate(inv, player, coins, gems);
+                if (player.getServer() != null) {
+                    player.getServer().execute(() -> {
+                        populate(inv, player, coins, gems);
 
-                player.openHandledScreen(new NamedScreenHandlerFactory() {
-                    @Override
-                    public Text getDisplayName() {
-                        return Text.literal("§6§lAethermon Main Menu");
-                    }
+                        player.openHandledScreen(new NamedScreenHandlerFactory() {
+                            @Override
+                            public Text getDisplayName() {
+                                return Text.literal("§6§lAethermon Main Menu");
+                            }
 
-                    @Override
-                    public GenericContainerScreenHandler createMenu(int syncId, PlayerInventory playerInv, PlayerEntity p) {
-                        return new MenuScreenHandler(syncId, playerInv, inv, player, economy);
-                    }
-                });
+                            @Override
+                            public GenericContainerScreenHandler createMenu(int syncId, PlayerInventory playerInv, PlayerEntity p) {
+                                return new MenuScreenHandler(syncId, playerInv, inv, player, economy);
+                            }
+                        });
+                    });
+                }
             });
         });
     }
