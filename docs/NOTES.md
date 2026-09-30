@@ -141,6 +141,32 @@ Edited `config/multiworld/worlds/minecraft/overworld.yml` to add gamerules:
 
 ---
 
+## 2026-09-30 — Cobblemon Lobby Spawn Fix (datapack)
+
+### Problem
+`doMobSpawning false` stopped vanilla mobs but NOT Pokémon.
+Cobblemon has its own spawner that completely ignores the vanilla gamerule.
+
+### Fix
+Created a Cobblemon `spawn_rules` datapack at:
+`lobby/datapacks/no-lobby-spawns/`
+
+Key file: `data/cobblemon/spawn_rules/no_overworld_spawns.json`
+```json
+{ "type": "location", "allow": "!v.world.is_of('minecraft:overworld')" }
+```
+- `type: location` = checked FIRST before any species lookup (most efficient)
+- `!v.world.is_of('minecraft:overworld')` = deny if in overworld
+
+This blocks ALL Pokémon spawning in the lobby without touching individual species files.
+
+### Gotcha
+- Datapack lives in `lobby/datapacks/` NOT in the root `datapacks/` folder
+- This is because each world has its own datapacks folder in Fabric/Vanilla
+- Must run `/datapack enable "file/no-lobby-spawns"` OR restart server
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]
