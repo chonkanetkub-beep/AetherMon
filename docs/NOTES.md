@@ -42,6 +42,34 @@
 
 ---
 
+---
+
+## 2026-09-30 — Mod Audit + Start Scripts (Task 2)
+
+### Client-only mods removed (moved to mods-backup, NOT deleted)
+17 mods moved to `mods-backup/client-only-removed-2026-09-30/`:
+- sodium, indium, ImmediatelyFast, entityculling, moreculling
+- visuality, sound-physics-remastered, InvMove, durabilitytooltip
+- morechathistory, chatsigninghider, RoughlyEnoughItems, Jade
+- betterstats, Iceberg, SmoothServerCosmetics, craftingtweaks
+
+**Gotcha:** These are fine on the CLIENT (player's PC) but must never be in the server's mods folder. They can cause startup crashes or confusing errors.
+
+### authme-fabric kept intentionally
+- Owner wants password login even with `online-mode=true`
+- This is unusual — monitor for conflicts with LuckPerms login flow
+
+### Start scripts created
+- `scripts/start.bat` — Windows (double-click to run)
+- `scripts/start.sh` — Linux/Mac (for future paid server)
+- RAM: `-Xms2G -Xmx5G` (5GB to Java, 1GB left for Windows)
+- GC: G1GC with Aikar flags (standard for Minecraft servers)
+
+### ⚠️ EULA note
+- `eula.txt` already has `eula=true` — owner accepted it themselves
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]
