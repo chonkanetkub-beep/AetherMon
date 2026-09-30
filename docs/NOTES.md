@@ -118,6 +118,29 @@ Server crashed on first launch with:
 
 ---
 
+## 2026-09-30 — Lobby Mob Spawning Fix
+
+### Problem
+Pokémon (and mobs) were spawning inside the lobby world. Owner wants lobby to be entity-free.
+
+### World setup discovered
+- Lobby = `minecraft:overworld` (default world, `level-name=lobby` in server.properties)
+- Survival = `multiworld:survival` (separate Multiworld dimension — spawn works fine here)
+- These are DIFFERENT worlds so fixing one does NOT affect the other
+
+### Fix
+Edited `config/multiworld/worlds/minecraft/overworld.yml` to add gamerules:
+- `doMobSpawning: false` — no Pokémon/mobs in lobby
+- `doWeatherCycle: false` — lobby stays sunny
+- `doDaylightCycle: false` — lobby time frozen
+- `keepInventory: true` — players keep items if they die in lobby
+
+### Gotcha: Multiworld gamerule format
+- Gamerule values MUST be quoted strings ("false" not false) in this yml
+- Changes take effect after server restart OR `/multiworld reload`
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]
