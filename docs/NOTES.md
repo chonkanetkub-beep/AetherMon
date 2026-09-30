@@ -187,6 +187,24 @@ This blocks ALL Pokémon spawning in the lobby without touching individual speci
 
 ---
 
+## 2026-09-30 — LuckPerms Groups (Task 4)
+
+### Groups created
+- `default` (weight 0) → auto-assigned to everyone
+- `member` (weight 10) → inherits default
+- `staff` (weight 50) → inherits member
+- `admin` (weight 100) → inherits staff, full permissions
+
+### Admin assigned
+- `Antoinekub` → admin group
+
+### Missing: /home /tpa /back
+- No mod installed for these yet
+- Recommended: Essential Commands (modrinth.com/mod/essential-commands)
+- Deferred — add when ready
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]
