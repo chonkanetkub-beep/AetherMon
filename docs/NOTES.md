@@ -70,6 +70,30 @@
 
 ---
 
+## 2026-09-30 — server.properties Configuration (Task 3)
+
+### Critical fixes applied
+- `spawn-animals=true` — was FALSE, would have broken all Cobblemon spawns
+- `spawn-monsters=true` — was FALSE, needed for hostile Pokémon encounters
+
+### Settings changed from default
+- `pvp=false` — global off; zone PvP to be added later
+- `white-list=true` + `enforce-whitelist=true` — locked to approved players
+- `difficulty=normal` — was easy
+- `view-distance=8` — was 10 (performance, 6GB RAM)
+- `simulation-distance=6` — was 10 (big CPU saving)
+- `max-players=10` — was 20 (small community start)
+- `spawn-protection=0` — was 16 (Multiworld/Lobby handles spawn protection)
+- `entity-broadcast-range-percentage=80` — was 100 (network saving)
+- `player-idle-timeout=30` — was 0 (kick AFK after 30 min)
+- `motd` — set to colored Aethermon server name
+
+### Gotcha: Minecraft rewrites server.properties on startup
+- When the server starts, it strips our comments and reorders lines!
+- The comments only exist in our Git history — that's fine, Git is our source of truth.
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]
