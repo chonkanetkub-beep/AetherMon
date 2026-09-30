@@ -240,8 +240,21 @@ Login/Online Rewards → Quests → Lucky Draw → World Boss → Keys/Crates
 
 ### Impactor removal
 - Owner requested removing Impactor's economy ($500 starting dollars).
-- `Impactor-Fabric-5.3.5+1.21.1.jar` will be moved to `mods-backup/removed-2026-09-30/` upon next server restart.
+- `Impactor-Fabric-5.3.5+1.21.1.jar` moved to `mods-backup/removed-2026-09-30/`.
 - AethermonCore now owns `/balance`, `/bal`, `/money`, `/coins`, and `/gems` exclusively.
+
+---
+
+## 2026-09-30 — Sidebar & Main Menu Module (AethermonCore)
+
+### Sidebar (Scoreboard)
+- Registered `%aethermon:coins%` and `%aethermon:gems%` placeholders with PlaceholderAPI (`eu.pb4:placeholder-api`).
+- Configured `config/styled-sidebars/styles/default.json` with Aethermon branding, player rank, coins, gems, online count, and ping.
+
+### Main Menu GUI (/menu, /help, /gui)
+- Implemented 100% server-side chest GUI (`MenuScreenHandler`). Zero client mod required.
+- Provides interactive menu slots for Wallet, Homes, Spawn, RTP, Land Claims, Shop, Market, and Daily Rewards.
+- Clicking menu items safely executes the underlying server command.
 
 ---
 

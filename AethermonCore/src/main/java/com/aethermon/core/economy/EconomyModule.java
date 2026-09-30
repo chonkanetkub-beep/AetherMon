@@ -53,6 +53,9 @@ public class EconomyModule {
         // Register commands
         new EconomyCommands(service).register();
 
+        // Register Placeholders
+        com.aethermon.core.economy.placeholder.PlaceholderHook.register(service);
+
         AethermonCore.LOGGER.info("[Economy] Ready. Starting balances: 50,000 Coins / 25 Gems.");
     }
 

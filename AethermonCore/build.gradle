@@ -12,7 +12,7 @@ base {
 
 repositories {
     maven { url = "https://maven.fabricmc.net/" }
-    maven { url = "https://maven.impactdev.net/repository/development/" }
+    maven { url = "https://maven.nucleoid.xyz/" }
     maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
     maven { url = "https://repo.maven.apache.org/maven2/" }
     mavenCentral()
@@ -26,6 +26,9 @@ dependencies {
 
     // Fabric API
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    // PlaceholderAPI (Optional hook)
+    modCompileOnly "eu.pb4:placeholder-api:2.4.2+1.21"
 
     // SQLite JDBC — bundled into our jar
     implementation include("org.xerial:sqlite-jdbc:3.47.1.0")

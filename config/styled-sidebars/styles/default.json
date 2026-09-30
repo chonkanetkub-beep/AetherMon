@@ -6,20 +6,18 @@
   "scroll_speed": 1,
   "scroll_loop": true,
   "title": [
-    "<b><#66d1f2>Styled Sidebars"
+    "<b><#00d2ff>AETHER<#3a7bd5>MON</b>"
   ],
   "lines": [
+    "<gray>──────────────</gray>",
+    "<gray>👤 <white>Player:</white> <yellow>%player:name%</yellow>",
+    "<gray>👑 <white>Rank:</white> <gold>%luckperms:group%</gold>",
     "",
-    "<gray>» <white>Time:",
-    "<gray> ▪ <yellow>%server:time%",
+    "<gray>🪙 <white>Coins:</white> <yellow>%aethermon:coins%</yellow>",
+    "<gray>💎 <white>Gems:</white> <light_purple>%aethermon:gems%</light_purple>",
     "",
-    "<gray>» <white>Players:",
-    "<gray> ▪ <yellow>%server:online%</yellow>/<orange>%server:max_players%",
-    "",
-    "<gray>» <white>Ping:",
-    "<gray> ▪ %player:ping_colored% <yellow>ms",
-    "",
-    "<red>Please change config in",
-    "<red><underline>/config/styled-sidebars"
+    "<gray>🌐 <white>Online:</white> <green>%server:online%</green><gray>/%server:max_players%</gray>",
+    "<gray>📶 <white>Ping:</white> %player:ping_colored%<gray>ms</gray>",
+    "<gray>──────────────</gray>"
   ]
 }

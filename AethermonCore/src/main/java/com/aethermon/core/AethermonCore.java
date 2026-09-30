@@ -19,6 +19,7 @@ public class AethermonCore implements ModInitializer {
     private static AethermonCore instance;
     private CoreConfig config;
     private EconomyModule economyModule;
+    private com.aethermon.core.menu.MenuModule menuModule;
 
     @Override
     public void onInitialize() {
@@ -31,6 +32,10 @@ public class AethermonCore implements ModInitializer {
         // Module: Economy (always loaded — everything else depends on it)
         economyModule = new EconomyModule();
         economyModule.init();
+
+        // Module: Menu (/menu, /help, /gui server-side chest GUI)
+        menuModule = new com.aethermon.core.menu.MenuModule(economyModule.getService());
+        menuModule.init();
 
         LOGGER.info("AethermonCore ready.");
     }
