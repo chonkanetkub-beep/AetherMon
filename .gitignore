@@ -7,6 +7,11 @@
 # --- World & dimension data (NEVER commit these) ---
 world/
 lobby/
+# Exception: track datapacks (they are config, not world data)
+!world/datapacks/
+!lobby/datapacks/
+!world/datapacks/**
+!lobby/datapacks/**
 */region/
 */entities/
 */poi/
