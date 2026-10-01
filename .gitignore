@@ -59,6 +59,11 @@ Thumbs.db
 .DS_Store
 desktop.ini
 
+# --- Binaries & Build Output ---
+bin/
+build/
+*.exe
+
 # --- IDE files ---
 .vscode/
 .idea/
