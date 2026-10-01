@@ -46,10 +46,8 @@ libraries/
 versions/
 eula.txt
 
-# --- Mod JARs (too large for Git; list them in docs instead) ---
-mods/*.jar
-mods-backup/*.jar
-mods-backup/**/*.jar
+# --- Mod backups (ignore backups, include active mods) ---
+mods-backup/
 
 # --- Showdown battle engine data ---
 showdown/
