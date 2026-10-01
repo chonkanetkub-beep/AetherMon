@@ -150,6 +150,38 @@ public class MenuScreenHandler extends GenericContainerScreenHandler {
         )));
         inv.setStack(16, chest);
 
+        // Slot 19: Battle Pass
+        ItemStack passItem = new ItemStack(Items.NETHER_STAR);
+        passItem.set(DataComponentTypes.CUSTOM_NAME, Text.literal("§6§lBattle Pass"));
+        passItem.set(DataComponentTypes.LORE, new LoreComponent(List.of(
+            Text.literal("§7Season 1: Aether Ascension"),
+            Text.literal("§7Level up your pass for free & premium rewards!"),
+            Text.literal(""),
+            Text.literal("§eClick to run /bp")
+        )));
+        inv.setStack(19, passItem);
+
+        // Slot 20: Mystery Crates
+        ItemStack crateItem = new ItemStack(Items.CHEST);
+        crateItem.set(DataComponentTypes.CUSTOM_NAME, Text.literal("§6§lMystery Crates"));
+        crateItem.set(DataComponentTypes.LORE, new LoreComponent(List.of(
+            Text.literal("§7Unlock crates with keys for rare items!"),
+            Text.literal("§7Physical & virtual keys accepted."),
+            Text.literal(""),
+            Text.literal("§eClick to run /crates")
+        )));
+        inv.setStack(20, crateItem);
+
+        // Slot 21: Quests
+        ItemStack questBook = new ItemStack(Items.WRITABLE_BOOK);
+        questBook.set(DataComponentTypes.CUSTOM_NAME, Text.literal("§6§lDaily & Weekly Quests"));
+        questBook.set(DataComponentTypes.LORE, new LoreComponent(List.of(
+            Text.literal("§7Complete challenges for Coins & Gems"),
+            Text.literal(""),
+            Text.literal("§eClick to run /quests")
+        )));
+        inv.setStack(21, questBook);
+
         // Slot 22: Rewards
         ItemStack book = new ItemStack(Items.BOOK);
         book.set(DataComponentTypes.CUSTOM_NAME, Text.literal("§b§lDaily Rewards"));
@@ -159,6 +191,28 @@ public class MenuScreenHandler extends GenericContainerScreenHandler {
             Text.literal("§eClick to run /rewards")
         )));
         inv.setStack(22, book);
+
+        // Slot 23: Lucky Draw
+        ItemStack ldShard = new ItemStack(Items.AMETHYST_SHARD);
+        ldShard.set(DataComponentTypes.CUSTOM_NAME, Text.literal("§d§lLucky Draw"));
+        ldShard.set(DataComponentTypes.LORE, new LoreComponent(List.of(
+            Text.literal("§7Spend Gems for a chance at Coins,"),
+            Text.literal("§7Gems, and rare items!"),
+            Text.literal(""),
+            Text.literal("§eClick to run /luckydraw")
+        )));
+        inv.setStack(23, ldShard);
+
+        // Slot 24: World Boss
+        ItemStack skull = new ItemStack(Items.WITHER_SKELETON_SKULL);
+        skull.set(DataComponentTypes.CUSTOM_NAME, Text.literal("§4§lWorld Boss"));
+        skull.set(DataComponentTypes.LORE, new LoreComponent(List.of(
+            Text.literal("§7Fight powerful bosses with friends!"),
+            Text.literal("§7Top damage dealers earn Coins & Gems."),
+            Text.literal(""),
+            Text.literal("§eClick to run /wbstatus")
+        )));
+        inv.setStack(24, skull);
     }
 
     @Override
@@ -179,7 +233,12 @@ public class MenuScreenHandler extends GenericContainerScreenHandler {
                 case 14 -> commandManager.executeWithPrefix(player.getCommandSource(), "claim");
                 case 15 -> commandManager.executeWithPrefix(player.getCommandSource(), "shop");
                 case 16 -> commandManager.executeWithPrefix(player.getCommandSource(), "ah");
+                case 19 -> commandManager.executeWithPrefix(player.getCommandSource(), "bp");
+                case 20 -> commandManager.executeWithPrefix(player.getCommandSource(), "crates");
+                case 21 -> commandManager.executeWithPrefix(player.getCommandSource(), "quests");
                 case 22 -> commandManager.executeWithPrefix(player.getCommandSource(), "rewards");
+                case 23 -> commandManager.executeWithPrefix(player.getCommandSource(), "luckydraw");
+                case 24 -> commandManager.executeWithPrefix(player.getCommandSource(), "wbstatus");
             }
         } else {
             super.onSlotClick(slotIndex, button, actionType, playerEntity);

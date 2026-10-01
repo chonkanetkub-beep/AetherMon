@@ -353,10 +353,83 @@ Login/Online Rewards → Quests → Lucky Draw → World Boss → Keys/Crates
 
 ---
 
+## 2026-10-01 — Mystery Crates & Keys Module (Task 8)
+
+### Mystery Crates (/crates, /crate, /keys)
+- Implemented `CratesModule` in `AethermonCore`:
+  - 100% server-side 54-slot chest GUIs (`CratesMenuGui`, `CratePreviewGui`, `CrateAnimationGui`) with zero client mod required.
+  - Backed by SQLite tables `player_crate_keys` and `crate_blocks`.
+  - Configurable via `config/aethermoncore/crates.json`.
+  - **4 Default Crates**:
+    - **Poké Crate** (Common): starter balls, potions, berries, stones, coins & gems.
+    - **Great Crate** (Rare): ultra balls, competitive held items (Leftovers, Choice Band, Focus Sash, Life Orb), rare candies.
+    - **Ultra Crate** (Epic): Master Balls, Ability Capsules, Exp Candy XL, high coin/gem drops.
+    - **Legendary Crate** (Mythic): Ability Patches, 2x Master Balls, Netherite, rare candies, massive jackpots.
+  - **Dual-Key Architecture**:
+    - **Virtual Keys**: Stored in SQLite per player per crate. Checked automatically when opening in GUI.
+    - **Physical Keys**: Tagged `ItemStack` keys (NBT marker `aethermon_crate_key` + lore). Tradeable in `/ah` or right-clickable on physical crate blocks.
+  - **Physical In-World Crate Blocks**:
+    - Admins can link any block (chest/ender chest/beacon/etc.) to a crate using `/crates setblock <crate_id>`.
+    - Right-click block opens crate opening animation (consumes physical or virtual key).
+    - Left-click block opens reward preview with exact drop odds.
+  - **Synchronized Opening Animation**:
+    - 26-frame continuous roulette tape engine with realistic deceleration curve.
+    - Pre-calculated winner positioning at `FINAL_STEP + 4` landing directly on slot 31.
+    - Climax delivery with levelup fanfare and server-wide announcement for rare prizes.
+- Commands:
+  - `/crates`, `/crate`, `/keys`: opens interactive Crates Menu GUI.
+  - `/crates preview <crate_id>`: opens odds inspection view.
+  - `/crates key <player> <crate_id> [amount] [physical|virtual]`: gives keys to player (admin perm level 2).
+  - `/crates keyall <crate_id> [amount] [physical|virtual]`: server-wide key drop event.
+  - `/crates setblock <crate_id>`: links target block to crate.
+  - `/crates delblock`: unlinks target block.
+  - `/crates reload`: reloads `crates.json` hot.
+- Integrated with `/menu` slot 20.
+
+---
+
+## 2026-10-01 — Battle Pass / Season Pass Module (Task 9)
+
+### Battle Pass (/bp, /pass, /battlepass)
+- Implemented `BattlePassModule` in `AethermonCore`:
+  - 100% server-side 54-slot chest GUI (`BattlePassGui.java`) with zero client mod required.
+  - Backed by SQLite table `player_battlepass` storing exp, tier, premium status, and claimed tier history per season.
+  - Configurable via `config/aethermoncore/battlepass.json`.
+  - **Season 1: Aether Ascension (30 Tiers)**:
+    - **Dual Tracks**: Free Track (available to everyone) & Premium Track (unlocked with 25 Gems).
+    - **Free Track Highlights**: Over 200,000 Coins, Poké/Great/Ultra Balls, Potions, evolutionary stones, Rare Candies.
+    - **Premium Track Highlights**: Additional Coins, Gems, Master Balls, Ability Capsules, Ability Patches, Held items (Choice Scarf, Leftovers, Focus Sash, Life Orb), Netherite Ingots, and Crate Keys.
+    - **Tier 30 Grand Champion**:
+      - Free: 100,000 Coins + 10 Gems.
+      - Premium: Master Ball + Ability Patch + 50 Gems!
+  - **Automated Progression Hooks**:
+    - Hooked into Cobblemon `POKEMON_CAPTURED` event (+50 Pass EXP per capture).
+    - Hooked into Cobblemon `BATTLE_VICTORY` event (+40 Pass EXP per victory).
+    - Levelup toast and broadcast when reaching Tier 30.
+  - **Interactive 54-Slot GUI**:
+    - Displays Free track row, Tier status indicator row, and Premium track row with 7 tiers per page.
+    - Live visual cues: green glint on claimable rewards, checkmarks on claimed, locked indicators on unreached tiers.
+    - Real-time ASCII progress bar and total EXP counter.
+    - "Claim All Available Rewards" button (one-click mass claiming).
+    - In-GUI "Unlock Premium Pass" button directly deducting Gems and activating the track in real-time.
+- Commands:
+  - `/bp`, `/pass`, `/battlepass`: opens the Battle Pass GUI.
+  - `/bp claim`: claims all unlocked rewards for both tracks.
+  - `/bp buy`: unlocks the Premium Pass for the season using Gems.
+  - `/bp addexp <player> <amount>`: grants Pass EXP (admin perm level 2).
+  - `/bp settier <player> <tier>`: sets player tier directly (admin perm level 2).
+  - `/bp unlockpremium <player>`: grants Premium Pass (admin perm level 2).
+  - `/bp reload`: reloads `battlepass.json` hot.
+- Integrated with `/menu` slot 19.
+
+---
+
 ## Template for future entries
 
 ### YYYY-MM-DD — [Task Name]
 **Problem:** What went wrong or what was unclear  
 **Fix:** What was done to resolve it  
 **Gotcha:** Anything to watch out for next time
+
+
 

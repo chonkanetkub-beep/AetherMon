@@ -1,0 +1,596 @@
+{
+  "season": 1,
+  "seasonName": "§6§lSeason 1: Aether Ascension",
+  "seasonDescription": "Level up your Battle Pass by catching Pokémon, battling, and completing quests!",
+  "expPerTier": 1000,
+  "maxTier": 30,
+  "premiumCostGems": 25,
+  "catchPokemonExp": 50,
+  "winBattleExp": 40,
+  "questCompletedExp": 150,
+  "dailyLoginExp": 100,
+  "tiers": [
+    {
+      "tier": 1,
+      "freeReward": {
+        "id": "t1_free",
+        "displayName": "§61,000 Coins",
+        "itemId": "minecraft:gold_ingot",
+        "type": "COINS",
+        "amount": 1000,
+        "lore": ["§7Starter coins for Season 1!"]
+      },
+      "premiumReward": {
+        "id": "t1_prem",
+        "displayName": "§b5 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 5,
+        "lore": ["§bInstant 5 Gems bonus!"]
+      }
+    },
+    {
+      "tier": 2,
+      "freeReward": {
+        "id": "t2_free",
+        "displayName": "§a16x Poké Ball",
+        "itemId": "cobblemon:poke_ball",
+        "type": "ITEM",
+        "amount": 16,
+        "lore": ["§7Ready for wild encounters."]
+      },
+      "premiumReward": {
+        "id": "t2_prem",
+        "displayName": "§610,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 10000,
+        "lore": ["§6Extra funding for training."]
+      }
+    },
+    {
+      "tier": 3,
+      "freeReward": {
+        "id": "t3_free",
+        "displayName": "§e5x Super Potion",
+        "itemId": "cobblemon:super_potion",
+        "type": "ITEM",
+        "amount": 5,
+        "lore": ["§7Restores 60 HP."]
+      },
+      "premiumReward": {
+        "id": "t3_prem",
+        "displayName": "§916x Great Ball",
+        "itemId": "cobblemon:great_ball",
+        "type": "ITEM",
+        "amount": 16,
+        "lore": ["§9Better catch rate."]
+      }
+    },
+    {
+      "tier": 4,
+      "freeReward": {
+        "id": "t4_free",
+        "displayName": "§b2 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 2,
+        "lore": ["§bShining gems."]
+      },
+      "premiumReward": {
+        "id": "t4_prem",
+        "displayName": "§d3x Rare Candy",
+        "itemId": "cobblemon:rare_candy",
+        "type": "ITEM",
+        "amount": 3,
+        "lore": ["§dInstant level ups!"]
+      }
+    },
+    {
+      "tier": 5,
+      "freeReward": {
+        "id": "t5_free",
+        "displayName": "§65,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 5000,
+        "lore": ["§6Tier 5 milestone reward!"]
+      },
+      "premiumReward": {
+        "id": "t5_prem",
+        "displayName": "§a1x Poké Key",
+        "itemId": "minecraft:tripwire_hook",
+        "type": "COMMAND",
+        "amount": 1,
+        "command": "crates key {player} poke 1 physical",
+        "lore": ["§aFree Poké Crate Key!"]
+      }
+    },
+    {
+      "tier": 6,
+      "freeReward": {
+        "id": "t6_free",
+        "displayName": "§98x Great Ball",
+        "itemId": "cobblemon:great_ball",
+        "type": "ITEM",
+        "amount": 8,
+        "lore": ["§9Improved catch spheres."]
+      },
+      "premiumReward": {
+        "id": "t6_prem",
+        "displayName": "§b8 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 8,
+        "lore": ["§bSparkling Gems haul."]
+      }
+    },
+    {
+      "tier": 7,
+      "freeReward": {
+        "id": "t7_free",
+        "displayName": "§e5x Revive",
+        "itemId": "cobblemon:revive",
+        "type": "ITEM",
+        "amount": 5,
+        "lore": ["§eRevive fainted Pokémon with half HP."]
+      },
+      "premiumReward": {
+        "id": "t7_prem",
+        "displayName": "§620,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 20000,
+        "lore": ["§6Nice purse of coins!"]
+      }
+    },
+    {
+      "tier": 8,
+      "freeReward": {
+        "id": "t8_free",
+        "displayName": "§d2x Rare Candy",
+        "itemId": "cobblemon:rare_candy",
+        "type": "ITEM",
+        "amount": 2,
+        "lore": ["§dLevel up sweet!"]
+      },
+      "premiumReward": {
+        "id": "t8_prem",
+        "displayName": "§e16x Ultra Ball",
+        "itemId": "cobblemon:ultra_ball",
+        "type": "ITEM",
+        "amount": 16,
+        "lore": ["§eHigh grade balls."]
+      }
+    },
+    {
+      "tier": 9,
+      "freeReward": {
+        "id": "t9_free",
+        "displayName": "§b3 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 3,
+        "lore": ["§bMore Gems!"]
+      },
+      "premiumReward": {
+        "id": "t9_prem",
+        "displayName": "§a3x Exp Candy L",
+        "itemId": "cobblemon:exp_candy_l",
+        "type": "ITEM",
+        "amount": 3,
+        "lore": ["§a10,000 EXP per candy!"]
+      }
+    },
+    {
+      "tier": 10,
+      "freeReward": {
+        "id": "t10_free",
+        "displayName": "§615,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 15000,
+        "lore": ["§6Tier 10 milestone!"]
+      },
+      "premiumReward": {
+        "id": "t10_prem",
+        "displayName": "§91x Great Key",
+        "itemId": "minecraft:tripwire_hook",
+        "type": "COMMAND",
+        "amount": 1,
+        "command": "crates key {player} great 1 physical",
+        "lore": ["§9Free Great Crate Key!"]
+      }
+    },
+    {
+      "tier": 11,
+      "freeReward": {
+        "id": "t11_free",
+        "displayName": "§e8x Ultra Ball",
+        "itemId": "cobblemon:ultra_ball",
+        "type": "ITEM",
+        "amount": 8,
+        "lore": ["§eSolid capture rate."]
+      },
+      "premiumReward": {
+        "id": "t11_prem",
+        "displayName": "§b10 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 10,
+        "lore": ["§bGems deposit."]
+      }
+    },
+    {
+      "tier": 12,
+      "freeReward": {
+        "id": "t12_free",
+        "displayName": "§e3x Max Potion",
+        "itemId": "cobblemon:max_potion",
+        "type": "ITEM",
+        "amount": 3,
+        "lore": ["§eFully heals a Pokémon."]
+      },
+      "premiumReward": {
+        "id": "t12_prem",
+        "displayName": "§630,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 30000,
+        "lore": ["§6Coins treasure."]
+      }
+    },
+    {
+      "tier": 13,
+      "freeReward": {
+        "id": "t13_free",
+        "displayName": "§d3x Rare Candy",
+        "itemId": "cobblemon:rare_candy",
+        "type": "ITEM",
+        "amount": 3,
+        "lore": ["§dLevel up treat."]
+      },
+      "premiumReward": {
+        "id": "t13_prem",
+        "displayName": "§a1x Leftovers",
+        "itemId": "cobblemon:leftovers",
+        "type": "ITEM",
+        "amount": 1,
+        "lore": ["§aHeals 1/16 HP per turn."]
+      }
+    },
+    {
+      "tier": 14,
+      "freeReward": {
+        "id": "t14_free",
+        "displayName": "§b4 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 4,
+        "lore": ["§bFour shiny Gems."]
+      },
+      "premiumReward": {
+        "id": "t14_prem",
+        "displayName": "§c1x Choice Scarf",
+        "itemId": "cobblemon:choice_scarf",
+        "type": "ITEM",
+        "amount": 1,
+        "lore": ["§cBoosts Speed by 50%!"]
+      }
+    },
+    {
+      "tier": 15,
+      "freeReward": {
+        "id": "t15_free",
+        "displayName": "§625,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 25000,
+        "lore": ["§6Halfway milestone!"]
+      },
+      "premiumReward": {
+        "id": "t15_prem",
+        "displayName": "§51x Ultra Key",
+        "itemId": "minecraft:tripwire_hook",
+        "type": "COMMAND",
+        "amount": 1,
+        "command": "crates key {player} ultra 1 physical",
+        "lore": ["§5Free Ultra Crate Key!"]
+      }
+    },
+    {
+      "tier": 16,
+      "freeReward": {
+        "id": "t16_free",
+        "displayName": "§e12x Ultra Ball",
+        "itemId": "cobblemon:ultra_ball",
+        "type": "ITEM",
+        "amount": 12,
+        "lore": ["§eCatch strong Pokémon."]
+      },
+      "premiumReward": {
+        "id": "t16_prem",
+        "displayName": "§b12 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 12,
+        "lore": ["§bShiny Gem stack."]
+      }
+    },
+    {
+      "tier": 17,
+      "freeReward": {
+        "id": "t17_free",
+        "displayName": "§e3x Max Revive",
+        "itemId": "cobblemon:max_revive",
+        "type": "ITEM",
+        "amount": 3,
+        "lore": ["§eRevive Pokémon with full HP!"]
+      },
+      "premiumReward": {
+        "id": "t17_prem",
+        "displayName": "§640,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 40000,
+        "lore": ["§6Large Coins haul."]
+      }
+    },
+    {
+      "tier": 18,
+      "freeReward": {
+        "id": "t18_free",
+        "displayName": "§d4x Rare Candy",
+        "itemId": "cobblemon:rare_candy",
+        "type": "ITEM",
+        "amount": 4,
+        "lore": ["§dLevel boost."]
+      },
+      "premiumReward": {
+        "id": "t18_prem",
+        "displayName": "§e1x Ability Capsule",
+        "itemId": "cobblemon:ability_capsule",
+        "type": "ITEM",
+        "amount": 1,
+        "lore": ["§eSwap ability variant!"]
+      }
+    },
+    {
+      "tier": 19,
+      "freeReward": {
+        "id": "t19_free",
+        "displayName": "§b5 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 5,
+        "lore": ["§bFive shiny Gems."]
+      },
+      "premiumReward": {
+        "id": "t19_prem",
+        "displayName": "§f1x Focus Sash",
+        "itemId": "cobblemon:focus_sash",
+        "type": "ITEM",
+        "amount": 1,
+        "lore": ["§fSurvive any 1-hit KO!"]
+      }
+    },
+    {
+      "tier": 20,
+      "freeReward": {
+        "id": "t20_free",
+        "displayName": "§635,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 35000,
+        "lore": ["§6Tier 20 milestone!"]
+      },
+      "premiumReward": {
+        "id": "t20_prem",
+        "displayName": "§51x Master Ball",
+        "itemId": "cobblemon:master_ball",
+        "type": "ITEM",
+        "amount": 1,
+        "lore": ["§5Guaranteed catch sphere!"]
+      }
+    },
+    {
+      "tier": 21,
+      "freeReward": {
+        "id": "t21_free",
+        "displayName": "§a16x Dusk Ball",
+        "itemId": "cobblemon:dusk_ball",
+        "type": "ITEM",
+        "amount": 16,
+        "lore": ["§a3.5x catch rate in caves & night."]
+      },
+      "premiumReward": {
+        "id": "t21_prem",
+        "displayName": "§b15 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 15,
+        "lore": ["§bBig Gem bounty."]
+      }
+    },
+    {
+      "tier": 22,
+      "freeReward": {
+        "id": "t22_free",
+        "displayName": "§e5x Full Restore",
+        "itemId": "cobblemon:full_restore",
+        "type": "ITEM",
+        "amount": 5,
+        "lore": ["§eHeals all HP and status!"]
+      },
+      "premiumReward": {
+        "id": "t22_prem",
+        "displayName": "§650,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 50000,
+        "lore": ["§6Fifty thousand Coins!"]
+      }
+    },
+    {
+      "tier": 23,
+      "freeReward": {
+        "id": "t23_free",
+        "displayName": "§d5x Rare Candy",
+        "itemId": "cobblemon:rare_candy",
+        "type": "ITEM",
+        "amount": 5,
+        "lore": ["§dFive instant levels."]
+      },
+      "premiumReward": {
+        "id": "t23_prem",
+        "displayName": "§41x Life Orb",
+        "itemId": "cobblemon:life_orb",
+        "type": "ITEM",
+        "amount": 1,
+        "lore": ["§4+30% damage boost."]
+      }
+    },
+    {
+      "tier": 24,
+      "freeReward": {
+        "id": "t24_free",
+        "displayName": "§b6 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 6,
+        "lore": ["§bSix Gems."]
+      },
+      "premiumReward": {
+        "id": "t24_prem",
+        "displayName": "§a5x Exp Candy XL",
+        "itemId": "cobblemon:exp_candy_xl",
+        "type": "ITEM",
+        "amount": 5,
+        "lore": ["§a150,000 total EXP!"]
+      }
+    },
+    {
+      "tier": 25,
+      "freeReward": {
+        "id": "t25_free",
+        "displayName": "§650,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 50000,
+        "lore": ["§6Tier 25 master milestone!"]
+      },
+      "premiumReward": {
+        "id": "t25_prem",
+        "displayName": "§61x Legendary Key",
+        "itemId": "minecraft:tripwire_hook",
+        "type": "COMMAND",
+        "amount": 1,
+        "command": "crates key {player} legendary 1 physical",
+        "lore": ["§6Free Mythic Legendary Key!"]
+      }
+    },
+    {
+      "tier": 26,
+      "freeReward": {
+        "id": "t26_free",
+        "displayName": "§e16x Quick Ball",
+        "itemId": "cobblemon:quick_ball",
+        "type": "ITEM",
+        "amount": 16,
+        "lore": ["§e5x catch rate on turn 1!"]
+      },
+      "premiumReward": {
+        "id": "t26_prem",
+        "displayName": "§b20 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 20,
+        "lore": ["§bTwenty Gems reward."]
+      }
+    },
+    {
+      "tier": 27,
+      "freeReward": {
+        "id": "t27_free",
+        "displayName": "§d6x Rare Candy",
+        "itemId": "cobblemon:rare_candy",
+        "type": "ITEM",
+        "amount": 6,
+        "lore": ["§dSix rare candies."]
+      },
+      "premiumReward": {
+        "id": "t27_prem",
+        "displayName": "§675,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 75000,
+        "lore": ["§6A fortune in Coins."]
+      }
+    },
+    {
+      "tier": 28,
+      "freeReward": {
+        "id": "t28_free",
+        "displayName": "§b8 Gems",
+        "itemId": "minecraft:amethyst_shard",
+        "type": "GEMS",
+        "amount": 8,
+        "lore": ["§bEight Gems."]
+      },
+      "premiumReward": {
+        "id": "t28_prem",
+        "displayName": "§82x Netherite Ingot",
+        "itemId": "minecraft:netherite_ingot",
+        "type": "ITEM",
+        "amount": 2,
+        "lore": ["§8Mythic ancient alloy."]
+      }
+    },
+    {
+      "tier": 29,
+      "freeReward": {
+        "id": "t29_free",
+        "displayName": "§665,000 Coins",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 65000,
+        "lore": ["§6Penultimate milestone!"]
+      },
+      "premiumReward": {
+        "id": "t29_prem",
+        "displayName": "§d1x Ability Patch",
+        "itemId": "cobblemon:ability_patch",
+        "type": "ITEM",
+        "amount": 1,
+        "lore": ["§dUnlocks Hidden Ability!"]
+      }
+    },
+    {
+      "tier": 30,
+      "freeReward": {
+        "id": "t30_free",
+        "displayName": "§6§l★ 100,000 Coins & 10 Gems ★",
+        "itemId": "minecraft:gold_block",
+        "type": "COINS",
+        "amount": 100000,
+        "lore": [
+          "§6Season 1 Grand Master Finish!",
+          "§7+10 Bonus Gems directly credited!"
+        ]
+      },
+      "premiumReward": {
+        "id": "t30_prem",
+        "displayName": "§d§l★ Master Ball & Ability Patch & 50 Gems ★",
+        "itemId": "cobblemon:master_ball",
+        "type": "ITEM",
+        "amount": 1,
+        "lore": [
+          "§d§l★ ULTIMATE CHAMPION REWARD ★",
+          "§51x Master Ball",
+          "§d1x Ability Patch",
+          "§b50x Gems directly credited!"
+        ]
+      }
+    }
+  ]
+}

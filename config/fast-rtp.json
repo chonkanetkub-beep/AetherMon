@@ -9,8 +9,8 @@
   "cooldown": 30,
   "blackListedBiomes": [
     "minecraft:the_void",
-    "minecraft:small_end_islands",
-    "minecraft:the_end"
+    "minecraft:the_end",
+    "minecraft:small_end_islands"
   ],
   "blackListedBiomeTags": [
     "minecraft:is_beach",

@@ -1,0 +1,276 @@
+{
+  "dailyPool": [
+    {
+      "id": "daily_catch_1",
+      "periodType": "DAILY",
+      "type": "CATCH_POKEMON",
+      "target": 3,
+      "title": "Wild Catcher I",
+      "description": "Catch 3 wild Pokémon in the wild",
+      "iconItem": "cobblemon:poke_ball",
+      "coins": 1000,
+      "gems": 2,
+      "items": [
+        {
+          "itemId": "cobblemon:poke_ball",
+          "count": 5,
+          "displayName": "5x Poké Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "daily_catch_2",
+      "periodType": "DAILY",
+      "type": "CATCH_POKEMON",
+      "target": 5,
+      "title": "Wild Catcher II",
+      "description": "Catch 5 wild Pokémon in the wild",
+      "iconItem": "cobblemon:great_ball",
+      "coins": 1800,
+      "gems": 5,
+      "items": [
+        {
+          "itemId": "cobblemon:great_ball",
+          "count": 3,
+          "displayName": "3x Great Balls"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "daily_battle_1",
+      "periodType": "DAILY",
+      "type": "WIN_BATTLE",
+      "target": 2,
+      "title": "Battle Champion I",
+      "description": "Win 2 Pokémon battles against trainers or wild Pokémon",
+      "iconItem": "minecraft:iron_sword",
+      "coins": 1200,
+      "gems": 2,
+      "items": [
+        {
+          "itemId": "cobblemon:revive",
+          "count": 2,
+          "displayName": "2x Revives"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "daily_battle_2",
+      "periodType": "DAILY",
+      "type": "WIN_BATTLE",
+      "target": 3,
+      "title": "Battle Champion II",
+      "description": "Win 3 Pokémon battles against trainers or wild Pokémon",
+      "iconItem": "minecraft:diamond_sword",
+      "coins": 2000,
+      "gems": 5,
+      "items": [
+        {
+          "itemId": "cobblemon:hyper_potion",
+          "count": 2,
+          "displayName": "2x Hyper Potions"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "daily_mine_1",
+      "periodType": "DAILY",
+      "type": "MINE_BLOCKS",
+      "target": 48,
+      "title": "Resource Gathering I",
+      "description": "Mine 48 blocks of stone, minerals, or logs",
+      "iconItem": "minecraft:iron_pickaxe",
+      "coins": 1000,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "minecraft:iron_ingot",
+          "count": 6,
+          "displayName": "6x Iron Ingots"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "daily_mine_2",
+      "periodType": "DAILY",
+      "type": "MINE_BLOCKS",
+      "target": 64,
+      "title": "Resource Gathering II",
+      "description": "Mine 64 blocks of stone, minerals, or logs",
+      "iconItem": "minecraft:diamond_pickaxe",
+      "coins": 1500,
+      "gems": 3,
+      "items": [
+        {
+          "itemId": "minecraft:gold_ingot",
+          "count": 4,
+          "displayName": "4x Gold Ingots"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "daily_walk_1",
+      "periodType": "DAILY",
+      "type": "WALK_BLOCKS",
+      "target": 500,
+      "title": "Explorer\u0027s Trail I",
+      "description": "Travel 500 blocks across the world",
+      "iconItem": "minecraft:compass",
+      "coins": 800,
+      "gems": 0,
+      "items": [
+        {
+          "itemId": "cobblemon:oran_berry",
+          "count": 5,
+          "displayName": "5x Oran Berries"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "daily_walk_2",
+      "periodType": "DAILY",
+      "type": "WALK_BLOCKS",
+      "target": 1000,
+      "title": "Explorer\u0027s Trail II",
+      "description": "Travel 1,000 blocks across the world",
+      "iconItem": "minecraft:map",
+      "coins": 1800,
+      "gems": 5,
+      "items": [
+        {
+          "itemId": "cobblemon:rare_candy",
+          "count": 1,
+          "displayName": "1x Rare Candy"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "daily_sell_1",
+      "periodType": "DAILY",
+      "type": "SHOP_SELL",
+      "target": 5,
+      "title": "Merchant\u0027s Day",
+      "description": "Sell 5 items to the server shop or player market",
+      "iconItem": "minecraft:emerald",
+      "coins": 1500,
+      "gems": 5,
+      "items": [],
+      "commands": []
+    }
+  ],
+  "weeklyPool": [
+    {
+      "id": "weekly_catch_1",
+      "periodType": "WEEKLY",
+      "type": "CATCH_POKEMON",
+      "target": 20,
+      "title": "Master Collector",
+      "description": "Catch 20 wild Pokémon this week",
+      "iconItem": "cobblemon:ultra_ball",
+      "coins": 10000,
+      "gems": 25,
+      "items": [
+        {
+          "itemId": "cobblemon:ultra_ball",
+          "count": 5,
+          "displayName": "5x Ultra Balls"
+        },
+        {
+          "itemId": "cobblemon:rare_candy",
+          "count": 1,
+          "displayName": "1x Rare Candy"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "weekly_battle_1",
+      "periodType": "WEEKLY",
+      "type": "WIN_BATTLE",
+      "target": 15,
+      "title": "Elite Competitor",
+      "description": "Win 15 Pokémon battles this week",
+      "iconItem": "minecraft:netherite_sword",
+      "coins": 12000,
+      "gems": 30,
+      "items": [
+        {
+          "itemId": "cobblemon:max_revive",
+          "count": 3,
+          "displayName": "3x Max Revives"
+        },
+        {
+          "itemId": "cobblemon:rare_candy",
+          "count": 2,
+          "displayName": "2x Rare Candies"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "weekly_mine_1",
+      "periodType": "WEEKLY",
+      "type": "MINE_BLOCKS",
+      "target": 300,
+      "title": "Industrial Excavation",
+      "description": "Mine 300 blocks of any type this week",
+      "iconItem": "minecraft:netherite_pickaxe",
+      "coins": 8000,
+      "gems": 20,
+      "items": [
+        {
+          "itemId": "minecraft:diamond",
+          "count": 5,
+          "displayName": "5x Diamonds"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "weekly_walk_1",
+      "periodType": "WEEKLY",
+      "type": "WALK_BLOCKS",
+      "target": 5000,
+      "title": "Grand Expedition",
+      "description": "Travel 5,000 blocks across the continents",
+      "iconItem": "minecraft:recovery_compass",
+      "coins": 10000,
+      "gems": 25,
+      "items": [
+        {
+          "itemId": "cobblemon:water_stone",
+          "count": 1,
+          "displayName": "1x Water Stone"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "id": "weekly_sell_1",
+      "periodType": "WEEKLY",
+      "type": "SHOP_SELL",
+      "target": 25,
+      "title": "Market Tycoon",
+      "description": "Sell 25 items across shop and auction house",
+      "iconItem": "minecraft:chest",
+      "coins": 15000,
+      "gems": 35,
+      "items": [
+        {
+          "itemId": "cobblemon:rare_candy",
+          "count": 2,
+          "displayName": "2x Rare Candies"
+        }
+      ],
+      "commands": []
+    }
+  ]
+}

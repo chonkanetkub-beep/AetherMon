@@ -1,0 +1,219 @@
+{
+  "pools": [
+    {
+      "id": "standard",
+      "displayName": "§b§lStandard Draw",
+      "description": [
+        "§7Spin for a chance at Coins,",
+        "§7Gems, and rare items!",
+        "",
+        "§aCost: §b1 Gem 💎"
+      ],
+      "costGems": 1,
+      "iconItemId": "minecraft:chest",
+      "prizes": [
+        {
+          "id": "std_coins_sm",
+          "displayName": "§6500 Coins",
+          "itemId": "minecraft:gold_ingot",
+          "type": "COINS",
+          "amount": 500,
+          "weight": 30,
+          "lore": [
+            "§7A small handful of Coins!"
+          ]
+        },
+        {
+          "id": "std_coins_md",
+          "displayName": "§61,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 1000,
+          "weight": 20,
+          "lore": [
+            "§7A decent pile of Coins!"
+          ]
+        },
+        {
+          "id": "std_coins_lg",
+          "displayName": "§65,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 5000,
+          "weight": 8,
+          "lore": [
+            "§eA nice stack of Coins!"
+          ]
+        },
+        {
+          "id": "std_gems_1",
+          "displayName": "§b1 Gem",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 1,
+          "weight": 15,
+          "lore": [
+            "§7A Gem! Back to the pool!"
+          ]
+        },
+        {
+          "id": "std_gems_3",
+          "displayName": "§b3 Gems",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 3,
+          "weight": 7,
+          "lore": [
+            "§bA few shiny Gems!"
+          ]
+        },
+        {
+          "id": "std_diamond",
+          "displayName": "§bDiamond",
+          "itemId": "minecraft:diamond",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 10,
+          "lore": [
+            "§7A rare mineral!"
+          ]
+        },
+        {
+          "id": "std_nether_star",
+          "displayName": "§dNether Star",
+          "itemId": "minecraft:nether_star",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 2,
+          "lore": [
+            "§d§lUltra rare!"
+          ]
+        },
+        {
+          "id": "std_empty",
+          "displayName": "§8Empty Slot",
+          "itemId": "minecraft:barrier",
+          "type": "NONE",
+          "amount": 0,
+          "weight": 8,
+          "lore": [
+            "§7Better luck next time!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "premium",
+      "displayName": "§d§lPremium Draw",
+      "description": [
+        "§7Higher-tier rewards await",
+        "§7the bold Aethermon trainer!",
+        "",
+        "§aCost: §b5 Gems 💎"
+      ],
+      "costGems": 5,
+      "iconItemId": "minecraft:ender_chest",
+      "prizes": [
+        {
+          "id": "pre_coins_md",
+          "displayName": "§65,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 5000,
+          "weight": 25,
+          "lore": [
+            "§7A generous pile of Coins!"
+          ]
+        },
+        {
+          "id": "pre_coins_lg",
+          "displayName": "§615,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 15000,
+          "weight": 15,
+          "lore": [
+            "§eA huge stack of Coins!"
+          ]
+        },
+        {
+          "id": "pre_coins_xl",
+          "displayName": "§650,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 50000,
+          "weight": 5,
+          "lore": [
+            "§6§lJACKPOT Coins!"
+          ]
+        },
+        {
+          "id": "pre_gems_5",
+          "displayName": "§b5 Gems",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 5,
+          "weight": 20,
+          "lore": [
+            "§bYour Gems returned plus extra!"
+          ]
+        },
+        {
+          "id": "pre_gems_15",
+          "displayName": "§b15 Gems",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 15,
+          "weight": 10,
+          "lore": [
+            "§b§lA sparkling haul!"
+          ]
+        },
+        {
+          "id": "pre_netherite",
+          "displayName": "§cNetherite Ingot",
+          "itemId": "minecraft:netherite_ingot",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 15,
+          "lore": [
+            "§cA precious material!"
+          ]
+        },
+        {
+          "id": "pre_totem",
+          "displayName": "§eTotem of Undying",
+          "itemId": "minecraft:totem_of_undying",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 8,
+          "lore": [
+            "§eWard off death once!"
+          ]
+        },
+        {
+          "id": "pre_nether_star",
+          "displayName": "§dNether Star",
+          "itemId": "minecraft:nether_star",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 2,
+          "lore": [
+            "§d§lIncredibly rare!"
+          ]
+        },
+        {
+          "id": "pre_empty",
+          "displayName": "§8Empty Slot",
+          "itemId": "minecraft:barrier",
+          "type": "NONE",
+          "amount": 0,
+          "weight": 0,
+          "lore": [
+            "§7Better luck next time!"
+          ]
+        }
+      ]
+    }
+  ]
+}

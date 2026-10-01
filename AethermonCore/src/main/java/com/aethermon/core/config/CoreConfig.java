@@ -24,6 +24,9 @@ public class CoreConfig {
     public boolean questsEnabled    = true;
     public boolean luckyDrawEnabled = true;
     public boolean worldBossEnabled = true;
+    public boolean cratesEnabled    = true;
+    public boolean battlePassEnabled = true;
+    public boolean duelEnabled       = true;
 
     // ── Economy ───────────────────────────────────────────────
     public long startingCoins = 50_000;

@@ -1,0 +1,422 @@
+{
+  "crates": [
+    {
+      "id": "poke",
+      "displayName": "§a§lPoké Crate",
+      "description": [
+        "§7A starter crate filled with essential",
+        "§7adventure supplies and starter resources.",
+        "",
+        "§eRequires: §a1x Poké Key"
+      ],
+      "iconItemId": "minecraft:chest",
+      "keyItemId": "minecraft:tripwire_hook",
+      "keyDisplayName": "§a§lPoké Key",
+      "keyLore": [
+        "§7Used to unlock a §a§lPoké Crate§7!",
+        "§8Right-click crate block or open in /crates."
+      ],
+      "rewards": [
+        {
+          "id": "poke_coins_sm",
+          "displayName": "§61,000 Coins",
+          "itemId": "minecraft:gold_ingot",
+          "type": "COINS",
+          "amount": 1000,
+          "weight": 25,
+          "lore": ["§7A pocket of Coins!"]
+        },
+        {
+          "id": "poke_coins_md",
+          "displayName": "§62,500 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 2500,
+          "weight": 18,
+          "lore": ["§eA stack of shiny Coins!"]
+        },
+        {
+          "id": "poke_gems_1",
+          "displayName": "§b1 Gem",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 1,
+          "weight": 15,
+          "lore": ["§bA sparkling Gem!"]
+        },
+        {
+          "id": "poke_gems_3",
+          "displayName": "§b3 Gems",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 3,
+          "weight": 8,
+          "lore": ["§bA small cluster of Gems!"]
+        },
+        {
+          "id": "poke_balls_16",
+          "displayName": "§a16x Poké Ball",
+          "itemId": "cobblemon:poke_ball",
+          "type": "ITEM",
+          "amount": 16,
+          "weight": 20,
+          "lore": ["§7Standard capture spheres."]
+        },
+        {
+          "id": "poke_great_8",
+          "displayName": "§98x Great Ball",
+          "itemId": "cobblemon:great_ball",
+          "type": "ITEM",
+          "amount": 8,
+          "weight": 14,
+          "lore": ["§7Higher catch rate than regular balls."]
+        },
+        {
+          "id": "poke_super_potions",
+          "displayName": "§e5x Super Potion",
+          "itemId": "cobblemon:super_potion",
+          "type": "ITEM",
+          "amount": 5,
+          "weight": 15,
+          "lore": ["§7Heals 60 HP in battle."]
+        },
+        {
+          "id": "poke_fire_stone",
+          "displayName": "§61x Fire Stone",
+          "itemId": "cobblemon:fire_stone",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 7,
+          "lore": ["§7Evolutionary stone for fiery Pokémon."]
+        },
+        {
+          "id": "poke_water_stone",
+          "displayName": "§b1x Water Stone",
+          "itemId": "cobblemon:water_stone",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 7,
+          "lore": ["§7Evolutionary stone for aquatic Pokémon."]
+        },
+        {
+          "id": "poke_thunder_stone",
+          "displayName": "§e1x Thunder Stone",
+          "itemId": "cobblemon:thunder_stone",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 7,
+          "lore": ["§7Evolutionary stone for electric Pokémon."]
+        }
+      ]
+    },
+    {
+      "id": "great",
+      "displayName": "§9§lGreat Crate",
+      "description": [
+        "§7Upgraded supplies and competitive held items",
+        "§7for experienced Pokémon trainers.",
+        "",
+        "§eRequires: §91x Great Key"
+      ],
+      "iconItemId": "minecraft:trapped_chest",
+      "keyItemId": "minecraft:tripwire_hook",
+      "keyDisplayName": "§9§lGreat Key",
+      "keyLore": [
+        "§7Used to unlock a §9§lGreat Crate§7!",
+        "§8Right-click crate block or open in /crates."
+      ],
+      "rewards": [
+        {
+          "id": "great_coins_10k",
+          "displayName": "§610,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 10000,
+          "weight": 22,
+          "lore": ["§7A hefty coin payout!"]
+        },
+        {
+          "id": "great_coins_25k",
+          "displayName": "§625,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 25000,
+          "weight": 14,
+          "lore": ["§6A bag of gold Coins!"]
+        },
+        {
+          "id": "great_gems_5",
+          "displayName": "§b5 Gems",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 5,
+          "weight": 18,
+          "lore": ["§bFive sparkling Gems!"]
+        },
+        {
+          "id": "great_gems_15",
+          "displayName": "§b15 Gems",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 15,
+          "weight": 8,
+          "lore": ["§bA sparkling haul of Gems!"]
+        },
+        {
+          "id": "great_ultra_16",
+          "displayName": "§e16x Ultra Ball",
+          "itemId": "cobblemon:ultra_ball",
+          "type": "ITEM",
+          "amount": 16,
+          "weight": 18,
+          "lore": ["§7High performance capture balls."]
+        },
+        {
+          "id": "great_candy_5",
+          "displayName": "§d5x Rare Candy",
+          "itemId": "cobblemon:rare_candy",
+          "type": "ITEM",
+          "amount": 5,
+          "weight": 15,
+          "lore": ["§dRaises Pokémon level by 1!"]
+        },
+        {
+          "id": "great_leftovers",
+          "displayName": "§a1x Leftovers",
+          "itemId": "cobblemon:leftovers",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 6,
+          "lore": ["§aRestores 1/16 max HP each turn."]
+        },
+        {
+          "id": "great_choice_band",
+          "displayName": "§c1x Choice Band",
+          "itemId": "cobblemon:choice_band",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 6,
+          "lore": ["§cBoosts Attack by 50% (locks move)."]
+        },
+        {
+          "id": "great_focus_sash",
+          "displayName": "§f1x Focus Sash",
+          "itemId": "cobblemon:focus_sash",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 6,
+          "lore": ["§fSurvives a lethal blow from full HP."]
+        },
+        {
+          "id": "great_life_orb",
+          "displayName": "§41x Life Orb",
+          "itemId": "cobblemon:life_orb",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 6,
+          "lore": ["§4Boosts damage by 30% at cost of HP."]
+        }
+      ]
+    },
+    {
+      "id": "ultra",
+      "displayName": "§5§lUltra Crate",
+      "description": [
+        "§7High-tier treasures, candies, and",
+        "§7rare competitive consumables.",
+        "",
+        "§eRequires: §51x Ultra Key"
+      ],
+      "iconItemId": "minecraft:barrel",
+      "keyItemId": "minecraft:tripwire_hook",
+      "keyDisplayName": "§5§lUltra Key",
+      "keyLore": [
+        "§7Used to unlock an §5§lUltra Crate§7!",
+        "§8Right-click crate block or open in /crates."
+      ],
+      "rewards": [
+        {
+          "id": "ultra_coins_50k",
+          "displayName": "§650,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 50000,
+          "weight": 22,
+          "lore": ["§6A rich reward of Coins!"]
+        },
+        {
+          "id": "ultra_coins_100k",
+          "displayName": "§6100,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 100000,
+          "weight": 10,
+          "lore": ["§6§lGrand coin jackpot!"]
+        },
+        {
+          "id": "ultra_gems_25",
+          "displayName": "§b25 Gems",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 25,
+          "weight": 18,
+          "lore": ["§bA treasure chest of Gems!"]
+        },
+        {
+          "id": "ultra_gems_50",
+          "displayName": "§b50 Gems",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 50,
+          "weight": 8,
+          "lore": ["§b§lMassive Gem windfall!"]
+        },
+        {
+          "id": "ultra_master_ball",
+          "displayName": "§51x Master Ball",
+          "itemId": "cobblemon:master_ball",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 5,
+          "lore": ["§5Never fails to catch any Pokémon!"]
+        },
+        {
+          "id": "ultra_candy_10",
+          "displayName": "§d10x Rare Candy",
+          "itemId": "cobblemon:rare_candy",
+          "type": "ITEM",
+          "amount": 10,
+          "weight": 15,
+          "lore": ["§dLevel up your team rapidly!"]
+        },
+        {
+          "id": "ultra_exp_xl_3",
+          "displayName": "§a3x Exp Candy XL",
+          "itemId": "cobblemon:exp_candy_xl",
+          "type": "ITEM",
+          "amount": 3,
+          "weight": 12,
+          "lore": ["§aGrants 30,000 EXP per candy!"]
+        },
+        {
+          "id": "ultra_ability_capsule",
+          "displayName": "§e1x Ability Capsule",
+          "itemId": "cobblemon:ability_capsule",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 6,
+          "lore": ["§eSwaps Pokémon ability to alternate!"]
+        },
+        {
+          "id": "ultra_diamond_block",
+          "displayName": "§b4x Diamond Block",
+          "itemId": "minecraft:diamond_block",
+          "type": "ITEM",
+          "amount": 4,
+          "weight": 10,
+          "lore": ["§bPure sparkling compressed diamond."]
+        }
+      ]
+    },
+    {
+      "id": "legendary",
+      "displayName": "§6§l★ Legendary Crate ★",
+      "description": [
+        "§7The ultimate crate with Mythic rewards,",
+        "§7Ability Patches, and Master Balls!",
+        "",
+        "§eRequires: §61x Legendary Key"
+      ],
+      "iconItemId": "minecraft:ender_chest",
+      "keyItemId": "minecraft:tripwire_hook",
+      "keyDisplayName": "§6§l★ Legendary Key ★",
+      "keyLore": [
+        "§7Used to unlock a §6§l★ Legendary Crate ★§7!",
+        "§8Right-click crate block or open in /crates."
+      ],
+      "rewards": [
+        {
+          "id": "leg_coins_150k",
+          "displayName": "§6150,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 150000,
+          "weight": 20,
+          "lore": ["§6A fortune in Coins!"]
+        },
+        {
+          "id": "leg_coins_350k",
+          "displayName": "§6350,000 Coins",
+          "itemId": "minecraft:gold_block",
+          "type": "COINS",
+          "amount": 350000,
+          "weight": 8,
+          "lore": ["§6§lLEGENDARY COIN JACKPOT!"]
+        },
+        {
+          "id": "leg_gems_50",
+          "displayName": "§b50 Gems",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 50,
+          "weight": 18,
+          "lore": ["§bFifty glistening Gems!"]
+        },
+        {
+          "id": "leg_gems_100",
+          "displayName": "§b100 Gems",
+          "itemId": "minecraft:amethyst_shard",
+          "type": "GEMS",
+          "amount": 100,
+          "weight": 8,
+          "lore": ["§b§lLEGENDARY GEM TREASURE!"]
+        },
+        {
+          "id": "leg_master_ball_2",
+          "displayName": "§52x Master Ball",
+          "itemId": "cobblemon:master_ball",
+          "type": "ITEM",
+          "amount": 2,
+          "weight": 8,
+          "lore": ["§5Two guaranteed catches!"]
+        },
+        {
+          "id": "leg_ability_patch",
+          "displayName": "§d1x Ability Patch",
+          "itemId": "cobblemon:ability_patch",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 5,
+          "lore": ["§dUnlocks a Pokémon's Hidden Ability!"]
+        },
+        {
+          "id": "leg_candy_25",
+          "displayName": "§d25x Rare Candy",
+          "itemId": "cobblemon:rare_candy",
+          "type": "ITEM",
+          "amount": 25,
+          "weight": 15,
+          "lore": ["§dInstant 25 levels for your team!"]
+        },
+        {
+          "id": "leg_netherite_ingot",
+          "displayName": "§84x Netherite Ingot",
+          "itemId": "minecraft:netherite_ingot",
+          "type": "ITEM",
+          "amount": 4,
+          "weight": 12,
+          "lore": ["§8Incredibly durable ancient alloy."]
+        },
+        {
+          "id": "leg_nether_star",
+          "displayName": "§f1x Nether Star",
+          "itemId": "minecraft:nether_star",
+          "type": "ITEM",
+          "amount": 1,
+          "weight": 6,
+          "lore": ["§fThe blazing core of a Wither."]
+        }
+      ]
+    }
+  ]
+}

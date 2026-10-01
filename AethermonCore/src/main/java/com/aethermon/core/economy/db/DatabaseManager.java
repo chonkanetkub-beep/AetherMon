@@ -180,7 +180,120 @@ public class DatabaseManager {
                 )
                 """);
 
-            AethermonCore.LOGGER.info("Database schema ready (economy, homes, market & rewards).");
+            // ── Quests: Daily and Weekly Quests ─────────────────────────
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS player_quests (
+                    id               INTEGER PRIMARY KEY AUTOINCREMENT,
+                    player_uuid      TEXT    NOT NULL,
+                    period_type      TEXT    NOT NULL,
+                    period_key       TEXT    NOT NULL,
+                    quest_id         TEXT    NOT NULL,
+                    slot_index       INTEGER NOT NULL DEFAULT 0,
+                    current_progress INTEGER NOT NULL DEFAULT 0,
+                    target_amount    INTEGER NOT NULL,
+                    completed        INTEGER NOT NULL DEFAULT 0,
+                    claimed          INTEGER NOT NULL DEFAULT 0,
+                    created_at       TEXT    NOT NULL DEFAULT (datetime('now')),
+                    UNIQUE(player_uuid, period_type, period_key, slot_index)
+                )
+                """);
+
+            stmt.execute("""
+                CREATE INDEX IF NOT EXISTS idx_player_quests_lookup
+                ON player_quests (player_uuid, period_type, period_key)
+                """);
+
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS player_quest_meta (
+                    player_uuid  TEXT PRIMARY KEY,
+                    reroll_date  TEXT NOT NULL,
+                    rerolls_used INTEGER NOT NULL DEFAULT 0,
+                    updated_at   TEXT NOT NULL DEFAULT (datetime('now'))
+                )
+                """);
+
+            // ── Lucky Draw: spin history ────────────────────────────────
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS lucky_draw_history (
+                    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+                    player_uuid TEXT    NOT NULL,
+                    player_name TEXT    NOT NULL,
+                    pool_id     TEXT    NOT NULL,
+                    prize_id    TEXT    NOT NULL,
+                    prize_type  TEXT    NOT NULL,
+                    prize_amount NUMERIC NOT NULL DEFAULT 0,
+                    cost_gems   INTEGER NOT NULL,
+                    spun_at     TEXT    NOT NULL DEFAULT (datetime('now'))
+                )
+                """);
+
+            stmt.execute("""
+                CREATE INDEX IF NOT EXISTS idx_lucky_draw_player
+                ON lucky_draw_history (player_uuid, spun_at DESC)
+                """);
+
+            // ── Crates: virtual keys & physical crate blocks ─────────────
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS player_crate_keys (
+                    player_uuid TEXT NOT NULL,
+                    crate_id    TEXT NOT NULL,
+                    amount      INTEGER NOT NULL DEFAULT 0,
+                    updated_at  TEXT NOT NULL DEFAULT (datetime('now')),
+                    PRIMARY KEY (player_uuid, crate_id)
+                )
+                """);
+
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS crate_blocks (
+                    world    TEXT NOT NULL,
+                    x        INTEGER NOT NULL,
+                    y        INTEGER NOT NULL,
+                    z        INTEGER NOT NULL,
+                    crate_id TEXT NOT NULL,
+                    PRIMARY KEY (world, x, y, z)
+                )
+                """);
+
+            // ── Battle Pass: seasonal player progression ────────────────
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS player_battlepass (
+                    player_uuid           TEXT NOT NULL,
+                    season                INTEGER NOT NULL DEFAULT 1,
+                    exp                   INTEGER NOT NULL DEFAULT 0,
+                    tier                  INTEGER NOT NULL DEFAULT 1,
+                    is_premium            INTEGER NOT NULL DEFAULT 0,
+                    claimed_free_tiers    TEXT NOT NULL DEFAULT '',
+                    claimed_premium_tiers TEXT NOT NULL DEFAULT '',
+                    updated_at            TEXT NOT NULL DEFAULT (datetime('now')),
+                    PRIMARY KEY (player_uuid, season)
+                )
+                """);
+
+            // ── Duel: fight history ─────────────────────────────────────────
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS duel_history (
+                    id               INTEGER PRIMARY KEY AUTOINCREMENT,
+                    challenger_uuid  TEXT    NOT NULL,
+                    challenger_name  TEXT    NOT NULL,
+                    target_uuid      TEXT    NOT NULL,
+                    target_name      TEXT    NOT NULL,
+                    winner_uuid      TEXT,
+                    wager_coins      NUMERIC NOT NULL DEFAULT 0,
+                    fought_at        TEXT    NOT NULL DEFAULT (datetime('now'))
+                )
+                """);
+
+            stmt.execute("""
+                CREATE INDEX IF NOT EXISTS idx_duel_history_challenger
+                ON duel_history (challenger_uuid, fought_at DESC)
+                """);
+
+            stmt.execute("""
+                CREATE INDEX IF NOT EXISTS idx_duel_history_target
+                ON duel_history (target_uuid, fought_at DESC)
+                """);
+
+            AethermonCore.LOGGER.info("Database schema ready (economy, homes, market, rewards, quests, luckydraw, crates, battlepass & duels).");
 
         } catch (SQLException e) {
             throw new RuntimeException("Failed to initialise database schema", e);

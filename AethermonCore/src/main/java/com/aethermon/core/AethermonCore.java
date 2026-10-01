@@ -24,6 +24,12 @@ public class AethermonCore implements ModInitializer {
     private com.aethermon.core.shop.ShopModule shopModule;
     private com.aethermon.core.market.MarketModule marketModule;
     private com.aethermon.core.rewards.RewardsModule rewardsModule;
+    private com.aethermon.core.quests.QuestsModule questsModule;
+    private com.aethermon.core.luckydraw.LuckyDrawModule luckyDrawModule;
+    private com.aethermon.core.worldboss.WorldBossModule  worldBossModule;
+    private com.aethermon.core.crates.CratesModule        cratesModule;
+    private com.aethermon.core.battlepass.BattlePassModule battlePassModule;
+    private com.aethermon.core.duel.DuelModule             duelModule;
 
     @Override
     public void onInitialize() {
@@ -55,6 +61,42 @@ public class AethermonCore implements ModInitializer {
             rewardsModule.init();
         }
 
+        // Module: Daily & Weekly Quests (/quests, /quest)
+        if (config.questsEnabled) {
+            questsModule = new com.aethermon.core.quests.QuestsModule(economyModule.getDatabaseManager(), economyModule.getService());
+            questsModule.init();
+        }
+
+        // Module: Lucky Draw (/luckydraw, /ld, /gacha)
+        if (config.luckyDrawEnabled) {
+            luckyDrawModule = new com.aethermon.core.luckydraw.LuckyDrawModule(economyModule.getService());
+            luckyDrawModule.init();
+        }
+
+        // Module: World Boss (/worldboss, /wbstatus)
+        if (config.worldBossEnabled) {
+            worldBossModule = new com.aethermon.core.worldboss.WorldBossModule(economyModule.getService());
+            worldBossModule.init();
+        }
+
+        // Module: Mystery Crates (/crates, /crate, /keys)
+        if (config.cratesEnabled) {
+            cratesModule = new com.aethermon.core.crates.CratesModule(economyModule.getDatabaseManager(), economyModule.getService());
+            cratesModule.init();
+        }
+
+        // Module: Battle Pass (/bp, /pass, /battlepass)
+        if (config.battlePassEnabled) {
+            battlePassModule = new com.aethermon.core.battlepass.BattlePassModule(economyModule.getDatabaseManager(), economyModule.getService());
+            battlePassModule.init();
+        }
+
+        // Module: Player Duels (/duel)
+        if (config.duelEnabled) {
+            duelModule = new com.aethermon.core.duel.DuelModule(economyModule.getDatabaseManager(), economyModule.getService());
+            duelModule.init();
+        }
+
         // Module: Menu (/menu, /help, /gui server-side chest GUI)
         menuModule = new com.aethermon.core.menu.MenuModule(economyModule.getService());
         menuModule.init();
@@ -72,4 +114,10 @@ public class AethermonCore implements ModInitializer {
     public com.aethermon.core.shop.ShopModule getShopModule() { return shopModule; }
     public com.aethermon.core.market.MarketModule getMarketModule() { return marketModule; }
     public com.aethermon.core.rewards.RewardsModule getRewardsModule() { return rewardsModule; }
+    public com.aethermon.core.quests.QuestsModule getQuestsModule() { return questsModule; }
+    public com.aethermon.core.luckydraw.LuckyDrawModule getLuckyDrawModule() { return luckyDrawModule; }
+    public com.aethermon.core.worldboss.WorldBossModule  getWorldBossModule()  { return worldBossModule; }
+    public com.aethermon.core.crates.CratesModule        getCratesModule()     { return cratesModule; }
+    public com.aethermon.core.battlepass.BattlePassModule getBattlePassModule() { return battlePassModule; }
+    public com.aethermon.core.duel.DuelModule             getDuelModule()       { return duelModule; }
 }

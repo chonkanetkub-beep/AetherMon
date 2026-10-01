@@ -130,6 +130,11 @@ public class RewardService {
 
                 if (dx > 0.05 || dy > 0.05 || dz > 0.05 || dYaw > 1.0f || dPitch > 1.0f) {
                     lastActiveTimes.put(uuid, now);
+
+                    int dist = (int) Math.round(Math.sqrt(dx * dx + dz * dz));
+                    if (dist > 0 && AethermonCore.getInstance() != null && AethermonCore.getInstance().getQuestsModule() != null) {
+                        AethermonCore.getInstance().getQuestsModule().getService().addProgress(player, com.aethermon.core.quests.model.QuestType.WALK_BLOCKS, dist);
+                    }
                 }
             }
             lastPositions.put(uuid, currentPos);

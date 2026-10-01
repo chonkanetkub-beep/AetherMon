@@ -84,6 +84,10 @@ public class ShopService {
                         "§aSold §e" + quantity + "x " + shopItem.displayName() +
                         " §afor §e" + shopItem.currency().format(totalReward) + " " + shopItem.currency().symbol +
                         "§a. New balance: §e" + shopItem.currency().format(result.getNewBalance())));
+
+                    if (AethermonCore.getInstance() != null && AethermonCore.getInstance().getQuestsModule() != null) {
+                        AethermonCore.getInstance().getQuestsModule().getService().addProgress(player, com.aethermon.core.quests.model.QuestType.SHOP_SELL, quantity);
+                    }
                 }
             });
         });
@@ -151,6 +155,10 @@ public class ShopService {
             (finalCoins.compareTo(BigDecimal.ZERO) > 0 ? "§e" + com.aethermon.core.economy.api.Currency.COINS.format(finalCoins) + " 🪙 " : "") +
             (finalGems.compareTo(BigDecimal.ZERO) > 0 ? "§b" + com.aethermon.core.economy.api.Currency.GEMS.format(finalGems) + " 💎" : "")
         ));
+
+        if (AethermonCore.getInstance() != null && AethermonCore.getInstance().getQuestsModule() != null) {
+            AethermonCore.getInstance().getQuestsModule().getService().addProgress(player, com.aethermon.core.quests.model.QuestType.SHOP_SELL, soldCount);
+        }
     }
 
     public int countItem(ServerPlayerEntity player, Item item) {

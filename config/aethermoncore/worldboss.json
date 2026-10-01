@@ -1,0 +1,34 @@
+{
+  "bosses": [
+    {
+      "id": "wither_king",
+      "displayName": "§4§lWither King",
+      "entityType": "minecraft:wither",
+      "healthMultiplier": 3.0,
+      "damageMultiplier": 1.5,
+      "movementSpeed": 0.3,
+      "prizeCoins": 100000,
+      "prizeGems": 50,
+      "prizeTopN": 10,
+      "bossBarColor": "PURPLE",
+      "spawnAnnouncement": "§4§l[⚡ WORLD BOSS ⚡] §cThe §4§lWither King §chas emerged! Fight it for §6Coins §cand §bGems §crewards!",
+      "deathAnnouncement": "§6§l[⚡ WORLD BOSS ⚡] §eThe §4§lWither King §ehas been slain! Prizes have been distributed to the top damage dealers!"
+    },
+    {
+      "id": "elder_titan",
+      "displayName": "§9§lElder Titan",
+      "entityType": "minecraft:elder_guardian",
+      "healthMultiplier": 5.0,
+      "damageMultiplier": 2.0,
+      "movementSpeed": 0.35,
+      "prizeCoins": 200000,
+      "prizeGems": 100,
+      "prizeTopN": 10,
+      "bossBarColor": "BLUE",
+      "spawnAnnouncement": "§9§l[⚡ WORLD BOSS ⚡] §bThe §9§lElder Titan §bhas awakened from the deep! Gather your forces and claim the rewards!",
+      "deathAnnouncement": "§6§l[⚡ WORLD BOSS ⚡] §eThe §9§lElder Titan §ehas fallen! Prizes distributed to the top §b10 §edamage dealers!"
+    }
+  ],
+  "spawnCooldownSeconds": 1800,
+  "allowedDimension": "minecraft:overworld"
+}
