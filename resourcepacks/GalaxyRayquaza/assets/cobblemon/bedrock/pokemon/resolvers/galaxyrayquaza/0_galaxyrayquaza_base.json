@@ -4,10 +4,17 @@
   "variations": [
     {
       "aspects": [],
-      "poser": "cobblemon:rayquaza",
-      "model": "cobblemon:rayquaza.geo",
+      "poser": "cobblemon:galaxyrayquaza",
+      "model": "cobblemon:galaxyrayquaza.geo",
       "texture": "cobblemon:textures/pokemon/galaxyrayquaza/galaxyrayquaza.png",
-      "layers": []
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/galaxyrayquaza/galaxyrayquaza_emissive.png",
+          "emissive": true,
+          "translucent": true
+        }
+      ]
     }
   ]
 }
