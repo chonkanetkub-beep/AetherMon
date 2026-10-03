@@ -1,0 +1,268 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-10-01 15:23:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_birch_forest": "2026-10-01 16:54:09 +0700",
+      "minecraft:beach": "2026-10-01 15:23:52 +0700",
+      "minecraft:desert": "2026-10-01 15:44:23 +0700",
+      "minecraft:ocean": "2026-10-01 15:23:30 +0700",
+      "minecraft:jungle": "2026-10-01 15:26:39 +0700",
+      "minecraft:deep_ocean": "2026-10-01 16:54:16 +0700",
+      "minecraft:river": "2026-10-01 15:23:41 +0700",
+      "minecraft:lukewarm_ocean": "2026-10-01 16:37:46 +0700"
+    },
+    "done": false
+  },
+  "cobblemon:recipes/misc/master_rod": {
+    "criteria": {
+      "has_ball": "2026-10-01 15:24:51 +0700"
+    },
+    "done": false
+  },
+  "cobblemon:craft_all_balls": {
+    "criteria": {
+      "master_ball": "2026-10-01 15:24:51 +0700"
+    },
+    "done": false
+  },
+  "cobblemon:craft_poke_ball": {
+    "criteria": {
+      "requirement": "2026-10-01 15:24:51 +0700"
+    },
+    "done": true
+  },
+  "cobblemon:first_catch": {
+    "criteria": {
+      "catch": "2026-10-01 15:25:06 +0700"
+    },
+    "done": true
+  },
+  "mega_showdown:recipes/misc/zygarde_cube": {
+    "criteria": {
+      "has_netherite": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_chestplate_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_sword_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_leggings_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_hoe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "mega_showdown:recipes/misc/omni_ring": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lodestone": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_helmet_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/netherite_block": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_boots_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_shovel_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_axe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_pickaxe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "mega_showdown:recipes/misc/dna_splicer": {
+    "criteria": {
+      "has_netherite": "2026-10-01 15:27:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/trapped_chest": {
+    "criteria": {
+      "has_tripwire_hook": "2026-10-01 15:27:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_tripwire_hook": "2026-10-01 15:27:42 +0700"
+    },
+    "done": true
+  },
+  "cobblemon:recipes/blocks/water_stone_block": {
+    "criteria": {
+      "has_water_stone": "2026-10-01 15:29:52 +0700"
+    },
+    "done": true
+  },
+  "cobblemon:recipes/held/damp_rock": {
+    "criteria": {
+      "has_stone": "2026-10-01 15:29:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/warped_hyphae": {
+    "criteria": {
+      "has_log": "2026-10-01 15:45:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/warped_planks": {
+    "criteria": {
+      "has_logs": "2026-10-01 15:45:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_warped_hyphae": {
+    "criteria": {
+      "has_log": "2026-10-01 15:45:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/warped_hanging_sign": {
+    "criteria": {
+      "has_stripped_logs": "2026-10-01 15:45:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_hoe": "2026-10-01 15:45:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_blasting": {
+    "criteria": {
+      "has_golden_hoe": "2026-10-01 15:45:40 +0700"
+    },
+    "done": true
+  },
+  "cobblemon:full_party": {
+    "criteria": {
+      "full_party": "2026-10-01 15:49:20 +0700"
+    },
+    "done": true
+  },
+  "cobblemon:recipes/transportation/apricorn_boat": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "cobblemon:recipes/transportation/saccharine_boat": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2026-10-01 16:40:49 +0700"
+    },
+    "done": true
+  },
+  "cobblemon:recipes/blocks/pasture": {
+    "criteria": {
+      "has_pc": "2026-10-01 16:49:41 +0700"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

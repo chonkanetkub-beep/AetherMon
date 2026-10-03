@@ -1,0 +1,63 @@
+{
+  "uuid": "ddc34864-090a-443c-8c89-0c09918ed8b9",
+  "starterPrompted": false,
+  "starterLocked": false,
+  "starterSelected": false,
+  "keyItems": [],
+  "battleTheme": "cobblemon:battle.pvp.default",
+  "extraData": {},
+  "advancementData": {
+    "totalCaptureCount": 9,
+    "totalEggsCollected": 0,
+    "totalEggsHatched": 0,
+    "totalEvolvedCount": 0,
+    "totalBattleVictoryCount": 0,
+    "totalPvPBattleVictoryCount": 0,
+    "totalPvWBattleVictoryCount": 0,
+    "totalPvNBattleVictoryCount": 0,
+    "totalShinyCaptureCount": 0,
+    "totalTradedCount": 0,
+    "totalTypeCaptureCounts": {
+      "normal": 2,
+      "fairy": 1,
+      "electric": 3,
+      "flying": 3,
+      "ground": 2,
+      "poison": 1,
+      "dark": 1,
+      "water": 1
+    },
+    "totalDefeatedCounts": {},
+    "aspectsCollected": {
+      "cobblemon:azurill": [
+        "male"
+      ],
+      "cobblemon:wattrel": [
+        "male"
+      ],
+      "cobblemon:silicobra": [
+        "female"
+      ],
+      "cobblemon:sandaconda": [
+        "female"
+      ],
+      "cobblemon:drapion": [
+        "female"
+      ],
+      "cobblemon:luxio": [
+        "male"
+      ],
+      "cobblemon:aipom": [
+        "male"
+      ],
+      "cobblemon:gyarados": [
+        "male",
+        "magikarp-jump-standard",
+        "gyarados-eye-color-purple"
+      ],
+      "cobblemon:kilowattrel": [
+        "male"
+      ]
+    }
+  }
+}

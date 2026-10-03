@@ -1,0 +1,295 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2026-09-30 01:56:27
+Description: Exception in server tick loop
+
+com.google.gson.JsonIOException: Failed making field 'java.util.Optional#value' accessible; either increase its visibility or write a custom TypeAdapter for its declaring type.
+	at knot//com.google.gson.internal.reflect.ReflectionHelper.makeAccessible(ReflectionHelper.java:38)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:286)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.MapTypeAdapterFactory.create(MapTypeAdapterFactory.java:125)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
+	at knot//com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
+	at knot//com.google.gson.Gson.getAdapter(Gson.java:556)
+	at knot//com.google.gson.Gson.toJson(Gson.java:834)
+	at knot//com.google.gson.Gson.toJson(Gson.java:812)
+	at knot//com.google.gson.Gson.toJson(Gson.java:759)
+	at knot//com.google.gson.Gson.toJson(Gson.java:736)
+	at knot//lynx.lobby.ExampleMod.writePlayerData(ExampleMod.java:249)
+	at knot//lynx.lobby.ExampleMod.lambda$onInitialize$7(ExampleMod.java:135)
+	at knot//net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents.lambda$static$4(ServerPlayConnectionEvents.java:59)
+	at knot//net.fabricmc.fabric.impl.networking.server.ServerPlayNetworkAddon.invokeDisconnectEvent(ServerPlayNetworkAddon.java:124)
+	at knot//net.fabricmc.fabric.impl.networking.AbstractNetworkAddon.handleDisconnect(AbstractNetworkAddon.java:160)
+	at knot//net.minecraft.class_2535.handler$bad000$fabric-networking-api-v1$disconnectAddon(class_2535.java:1819)
+	at knot//net.minecraft.class_2535.method_10768(class_2535.java:673)
+	at knot//net.minecraft.class_3242.method_14357(class_3242.java:189)
+	at knot//net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:1032)
+	at knot//net.minecraft.class_3176.method_3813(class_3176.java:299)
+	at knot//net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:912)
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:697)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.lang.Object java.util.Optional.value accessible: module java.base does not "opens java.util" to unnamed module @7748410a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:177)
+	at knot//com.google.gson.internal.reflect.ReflectionHelper.makeAccessible(ReflectionHelper.java:35)
+	... 71 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Cobblemon --
+Details:
+	Version: 1.7.3
+	Is Snapshot: false
+	Git Commit: 37264af (https://gitlab.com/cable-mc/cobblemon/-/commit/37264aff0f6c90c9f9a79bbdfc712bd11929a38c)
+	Branch: HEAD
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.11, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 153152416 bytes (146 MiB) / 1186988032 bytes (1132 MiB) up to 8527020032 bytes (8132 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i5-12400F
+	Identifier: Intel64 Family 6 Model 151 Stepping 5
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 2.50
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce RTX 4060
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 8188.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.16.1692
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MiB): 34564.11
+	Virtual memory used (MiB): 30910.09
+	Swap memory total (MiB): 2048.00
+	Swap memory used (MiB): 49.47
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 20866.55, total: 452916.00
+	Space in storage for workdir (MiB): available: 20866.55, total: 452916.00
+	JVM Flags: 0 total; 
+	Fabric Mods: 
+		accessories: Accessories 1.1.0-beta.53+1.21.1
+		architectury: Architectury 13.0.8
+		balm: Balm 21.0.58
+			kuma_api: KumaAPI 21.0.8
+		betterstats: Better Statistics Screen 3.13.9+fabric-1.21
+		blossom-lib: BlossomLib 2.5.9+1.21
+			server_translations_api: Server Translations API 2.3.1+1.21-pre2
+				packet_tweaker: Packet Tweaker 0.5.1+24w03b
+		blossom-warps: BlossomWarps 2.0.9+1.21
+		cloth-config: Cloth Config v15 15.0.140
+			cloth-basic-math: cloth-basic-math 0.6.1
+		cobblemon: Cobblemon 1.7.3+1.21.1
+		collective: Collective 8.22
+		craftingtweaks: Crafting Tweaks 21.1.10
+		durabilitytooltip: Durability Tooltip 1.1.6
+		entityculling: EntityCulling 1.10.2
+			transition: TRansition 1.0.19
+			trender: TRender 1.0.13
+		fabric-api: Fabric API 0.116.12+1.21.1
+			fabric-api-base: Fabric API Base 0.4.42+6573ed8c19
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.72+7b3d111d19
+			fabric-biome-api-v1: Fabric Biome API (v1) 13.0.31+d527f9fd19
+			fabric-block-api-v1: Fabric Block API (v1) 1.1.0+0bc3503219
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.11+ebb2264e19
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.49+f71b366f19
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.28+6ced4dd919
+			fabric-commands-v0: Fabric Commands (v0) 0.2.66+df3654b319
+			fabric-content-registries-v0: Fabric Content Registries (v0) 8.0.19+b559734419
+			fabric-convention-tags-v1: Fabric Convention Tags 2.1.7+7f945d5b19
+			fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.12.0+c3656daa19
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.29+0af3f5a719
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.4.7+5b36e0f719
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 20.2.38+60a6976219
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.1+65213ef819
+			fabric-entity-events-v1: Fabric Entity Events (v1) 1.8.0+2b27e0a419
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.7.14+ba9dae0619
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.53+6ced4dd919
+			fabric-item-api-v1: Fabric Item API (v1) 11.2.0+3b3cb2e819
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.1.7+def88e3a19
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.6.0+0865547519
+			fabric-loot-api-v2: Fabric Loot API (v2) 3.0.15+3f89f5a519
+			fabric-loot-api-v3: Fabric Loot API (v3) 1.0.3+3f89f5a519
+			fabric-message-api-v1: Fabric Message API (v1) 6.0.14+8aaf3aca19
+			fabric-networking-api-v1: Fabric Networking API (v1) 4.3.1+d30f6a7919
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 15.2.1+40875a9319
+			fabric-particles-v1: Fabric Particles (v1) 4.0.2+6573ed8c19
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 5.0.16+2475392c19
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 5.3.2+e3eddc2119
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.49+73761d2e19
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.6+1daea21519
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 4.3.0+8dc279b119
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 1.3.1+5b5275af19
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.91+b559734419
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 5.4.4+7b3d111d19
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 6.2.0+45b9699719
+		fabric-language-kotlin: Fabric Language Kotlin 1.13.12+kotlin.2.4.0
+			org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 2.4.0
+			org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 2.4.0
+			org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 2.4.0
+			org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 2.4.0
+			org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.33.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.11.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.11.0
+			org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.8.0
+			org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm: kotlinx-io-bytestring-jvm 0.9.0
+			org_jetbrains_kotlinx_kotlinx-io-core-jvm: kotlinx-io-core-jvm 0.9.0
+			org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.11.0
+			org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.11.0
+			org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.11.0
+		fabricloader: Fabric Loader 0.19.3
+			mixinextras: MixinExtras 0.5.4
+		fast-rtp: FastRTP 1.5.1-1.21
+			fabric-permissions-api-v0: fabric-permissions-api 0.3.1
+		ferritecore: FerriteCore 7.0.3
+		iceberg: Iceberg 1.3.2
+		impactor: Impactor 5.3.5+1.21.1
+			adventure-platform-fabric: adventure-platform-fabric 5.14.1
+				net_kyori_adventure-platform-api: adventure-platform-api 4.3.3
+				net_kyori_adventure-text-serializer-ansi: adventure-text-serializer-ansi 4.17.0
+				net_kyori_ansi: ansi 1.1.0
+				net_kyori_option: option 1.0.0
+			gooeylibs-api: GooeyLibs API 3.1.0
+			impactor-command-api: Impactor Command API 5.3.1+1.21.1
+				cloud: Cloud 2.0.0-beta.9
+					io_leangen_geantyref_geantyref: geantyref 1.3.15
+					org_incendo_cloud-brigadier: cloud-brigadier 2.0.0-beta.9
+					org_incendo_cloud-core: cloud-core 2.0.0
+					org_incendo_cloud-minecraft-modded-common-fabric-repack_: cloud-minecraft-modded-common-fabric-repack 2.0.0-beta.9
+					org_incendo_cloud-services: cloud-services 2.0.0
+			net_kyori_adventure-api: adventure-api 4.17.0
+			net_kyori_adventure-key: adventure-key 4.17.0
+			net_kyori_adventure-nbt: adventure-nbt 4.17.0
+			net_kyori_adventure-text-logger-slf4j: adventure-text-logger-slf4j 4.17.0
+			net_kyori_adventure-text-minimessage: adventure-text-minimessage 4.17.0
+			net_kyori_adventure-text-serializer-gson: adventure-text-serializer-gson 4.17.0
+			net_kyori_adventure-text-serializer-json: adventure-text-serializer-json 4.17.0
+			net_kyori_adventure-text-serializer-legacy: adventure-text-serializer-legacy 4.17.0
+			net_kyori_adventure-text-serializer-plain: adventure-text-serializer-plain 4.17.0
+			net_kyori_event-api: event-api 5.0.0-SNAPSHOT
+			net_kyori_examination-api: examination-api 1.3.0
+			net_kyori_examination-string: examination-string 1.3.0
+			org_incendo_cloud-annotations: cloud-annotations 2.0.0
+			org_incendo_cloud-minecraft-extras: cloud-minecraft-extras 2.0.0-beta.10
+			org_incendo_cloud-processors-common: cloud-processors-common 1.0.0-rc.1
+			org_incendo_cloud-processors-confirmation: cloud-processors-confirmation 1.0.0-rc.1
+		jade: Jade 15.10.5+fabric
+		java: OpenJDK 64-Bit Server VM 21
+		lithium: Lithium 0.15.3+mc1.21.1
+		lobby: Lobby 0.1.0
+		luckperms: LuckPerms 5.4.140
+		luckperms-placeholders: LuckPerms Placeholders 5.4-SNAPSHOT
+		mega_showdown: Cobblemon:Mega Showdown 1.8.4+1.7.3+1.21.1
+		minecraft: Minecraft 1.21.1
+		multiworld-bundle: Multiworld-bundle 1.8.1
+			multiworld: Multiworld 1.8.2
+				fantasy: Fantasy 0.6.3+1.21
+		owo: oωo 0.13.0-alpha.15+1.21
+			blue_endless_jankson: jankson 1.2.2
+			io_wispforest_endec: endec 0.1.5.1
+			io_wispforest_endec_gson: gson 0.1.3.1
+			io_wispforest_endec_jankson: jankson 0.1.3.1
+			io_wispforest_endec_netty: netty 0.1.2
+		placeholder-api: Placeholder API 2.4.2+1.21
+		roughlyenoughitems: Roughly Enough Items 16.0.799
+			error_notifier: Error Notifier 1.0.11
+		setworldspawnpoint: Set World Spawn Point 3.5
+		sound_physics_remastered: Sound Physics Remastered 1.21.1-1.5.1
+		ssc: SmoothServerCosmetics 1.0.0
+		styled-sidebars: Styled Sidebars 1.5.0+1.21
+			sidebar-api: Sidebar API 0.5.0+1.21
+		styledchat: Styled Chat 2.6.1+1.21
+			player-data-api: Player Data API 0.6.0+1.21
+			predicate-api: Predicate API 0.5.1+1.21
+		styledplayerlist: Styled Player List 3.5.1+1.21
+		supermartijn642configlib: SuperMartijn642's Config Lib 1.1.8
+		tcdcommons: TCD Commons API 3.12.7+fabric-1.21
+		voicechat: Simple Voice Chat 1.21.1-2.6.18
+			voicechat_api: Simple Voice Chat API 2.6.13
+		yet_another_config_lib_v3: YetAnotherConfigLib 3.8.2+1.21.1-fabric
+			com_twelvemonkeys_common_common-image: common-image 3.12.0
+			com_twelvemonkeys_common_common-io: common-io 3.12.0
+			com_twelvemonkeys_common_common-lang: common-lang 3.12.0
+			com_twelvemonkeys_imageio_imageio-core: imageio-core 3.12.0
+			com_twelvemonkeys_imageio_imageio-metadata: imageio-metadata 3.12.0
+			com_twelvemonkeys_imageio_imageio-webp: imageio-webp 3.12.0
+			org_quiltmc_parsers_gson: gson 0.2.1
+			org_quiltmc_parsers_json: json 0.2.1
+		zamega: zamega 1.7.3
+	Server Running: true
+	Player Count: 1 / 20; [class_3222['Antoinekub'/16, l='ServerLevel[lobby]', x=0.00, y=36.00, z=0.00]]
+	Active Data Packs: vanilla, fabric, accessories, balm (incompatible), blossom-lib, blossom-warps, cobblemon, collective, fabric-convention-tags-v2, fantasy, mega_showdown, server_translations_api, zamega
+	Available Data Packs: accessories, balm (incompatible), blossom-lib, blossom-warps, bundle, cobblemon, collective, fabric, fabric-convention-tags-v2, fantasy, mega_showdown, server_translations_api, trade_rebalance, vanilla, zamega
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 7259863091526448413
+	Is Modded: Definitely; Server brand changed to 'fabric'
+	Type: Dedicated Server (map_server.txt)

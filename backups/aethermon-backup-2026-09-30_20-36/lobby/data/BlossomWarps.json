@@ -1,0 +1,13 @@
+[
+  {
+    "name": "lobby",
+    "owner": "b9c3e430-9623-4182-9da0-ac5c9a2f4678",
+    "x": 0.5,
+    "y": 36.0,
+    "z": 0.5,
+    "yaw": 0.0,
+    "pitch": 0.0,
+    "world": "minecraft:overworld",
+    "global": true
+  }
+]

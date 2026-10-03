@@ -1,0 +1,37 @@
+{
+  "uuid": "b9c3e430-9623-4182-9da0-ac5c9a2f4678",
+  "starterPrompted": false,
+  "starterLocked": false,
+  "starterSelected": false,
+  "keyItems": [
+    "cobblemon:key_stone"
+  ],
+  "battleTheme": "cobblemon:battle.pvp.default",
+  "extraData": {},
+  "advancementData": {
+    "totalCaptureCount": 2,
+    "totalEggsCollected": 0,
+    "totalEggsHatched": 0,
+    "totalEvolvedCount": 0,
+    "totalBattleVictoryCount": 0,
+    "totalPvPBattleVictoryCount": 0,
+    "totalPvWBattleVictoryCount": 0,
+    "totalPvNBattleVictoryCount": 0,
+    "totalShinyCaptureCount": 0,
+    "totalTradedCount": 0,
+    "totalTypeCaptureCounts": {
+      "normal": 1,
+      "dark": 1
+    },
+    "totalDefeatedCounts": {},
+    "aspectsCollected": {
+      "cobblemon:wooloo": [
+        "male",
+        "color-none"
+      ],
+      "cobblemon:purrloin": [
+        "female"
+      ]
+    }
+  }
+}

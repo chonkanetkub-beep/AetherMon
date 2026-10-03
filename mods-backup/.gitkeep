@@ -1,0 +1,4 @@
+# mods-backup/
+# Store copies of your working mod sets here before upgrading.
+# Name folders like: 2026-09-30_stable-launch/
+# These JAR files are excluded from Git (too large).

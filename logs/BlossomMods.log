@@ -1,0 +1,343 @@
+[2026-06-08 15:48:34] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-06-08 15:48:41] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-06-08 15:48:41] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-06-08 15:48:41] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-06-08 15:48:41] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-06-08 15:48:54] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-06-08 15:48:54] [Server thread/ INFO] (BlossomLib): .\lobby\.\data\BlossomWarps.json (The system cannot find the file specified)
+[2026-06-08 15:48:54] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-06-08 15:48:56] [Server thread/DEBUG] (BlossomWarps): []
+[2026-06-08 15:51:30] [Server thread/DEBUG] (BlossomWarps): warp player [b9c3e430-9623-4182-9da0-ac5c9a2f4678] to global null
+[2026-06-08 15:55:09] [Server thread/ INFO] (BlossomWarps): adding warp Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}
+[2026-06-08 15:55:09] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-06-08 15:55:13] [Server thread/DEBUG] (BlossomWarps): warp player [b9c3e430-9623-4182-9da0-ac5c9a2f4678] to global Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}
+[2026-06-08 15:55:13] [Server thread/DEBUG] (BlossomLib): Create new genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 (3.0 s)
+[2026-06-08 15:55:16] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has ended
+[2026-06-08 15:56:49] [Server thread/DEBUG] (BlossomWarps): warp player [b9c3e430-9623-4182-9da0-ac5c9a2f4678] to global Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}
+[2026-06-08 15:56:49] [Server thread/DEBUG] (BlossomLib): Create new genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 (3.0 s)
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 12 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 1 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:50] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:51] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 1 ticks
+[2026-06-08 15:56:51] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:51] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:51] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:51] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 15:56:54] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has ended
+[2026-06-08 16:00:56] [Server thread/DEBUG] (BlossomWarps): warp player [b9c3e430-9623-4182-9da0-ac5c9a2f4678] to global Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}
+[2026-06-08 16:00:56] [Server thread/DEBUG] (BlossomLib): Create new genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 (3.0 s)
+[2026-06-08 16:00:59] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has ended
+[2026-06-08 16:02:15] [Server thread/DEBUG] (BlossomWarps): warp player [b9c3e430-9623-4182-9da0-ac5c9a2f4678] to global Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}
+[2026-06-08 16:02:15] [Server thread/DEBUG] (BlossomLib): Create new genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 (3.0 s)
+[2026-06-08 16:02:18] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has ended
+[2026-06-08 16:04:28] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-06-08 16:04:51] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-06-08 16:04:57] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-06-08 16:04:57] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-06-08 16:04:57] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-06-08 16:04:57] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-06-08 16:05:10] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-06-08 16:05:10] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-06-08 16:05:12] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-06-08 16:06:19] [Server thread/DEBUG] (BlossomWarps): warp player [b9c3e430-9623-4182-9da0-ac5c9a2f4678] to global Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}
+[2026-06-08 16:06:19] [Server thread/DEBUG] (BlossomLib): Create new genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 (3.0 s)
+[2026-06-08 16:06:22] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has ended
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomWarps): warp player [b9c3e430-9623-4182-9da0-ac5c9a2f4678] to global Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): Create new genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 (3.0 s)
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 6 ticks
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:17] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:18] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has been reset after 0 ticks
+[2026-06-08 16:16:21] [Server thread/DEBUG] (BlossomLib): genericCountdown for b9c3e430-9623-4182-9da0-ac5c9a2f4678 has ended
+[2026-06-08 16:16:54] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 01:52:24] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 01:52:34] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 01:52:34] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 01:52:34] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 01:52:34] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 01:52:54] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 01:52:54] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 01:52:57] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-09-30 01:56:27] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 01:58:55] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 01:59:04] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 01:59:04] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 01:59:04] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 01:59:04] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 01:59:21] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 01:59:21] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 01:59:24] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-09-30 02:04:14] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 19:55:58] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 19:56:04] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 19:56:04] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 19:56:04] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 19:56:04] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 19:56:18] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 19:56:18] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 19:56:20] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-09-30 20:03:48] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 20:03:56] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 20:04:02] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 20:04:02] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 20:04:02] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 20:04:02] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 20:04:14] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 20:04:14] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 20:04:16] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-09-30 20:07:16] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 20:07:24] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 20:07:30] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 20:07:30] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 20:07:30] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 20:07:30] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 20:07:43] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 20:07:43] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 20:07:45] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-09-30 20:12:12] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 20:12:20] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 20:12:26] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 20:12:26] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 20:12:26] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 20:12:26] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 20:12:37] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 20:12:37] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 20:12:39] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-09-30 22:21:48] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 22:22:08] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 22:22:15] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 22:22:15] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 22:22:15] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 22:22:15] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 22:22:28] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 22:22:28] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 22:22:30] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-09-30 22:28:36] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 22:28:47] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 22:28:54] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 22:28:54] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 22:28:54] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 22:28:54] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 22:29:06] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 22:29:06] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 22:29:08] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-09-30 22:31:04] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 22:31:13] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 22:31:20] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 22:31:20] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 22:31:20] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 22:31:20] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 22:31:33] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 22:31:33] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 22:31:35] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-09-30 22:41:37] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 22:43:01] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 22:43:08] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 22:43:08] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 22:43:08] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 22:43:08] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 22:43:20] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 22:43:20] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 22:43:22] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-09-30 22:54:51] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 22:54:58] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 22:54:58] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 22:54:58] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 22:54:58] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 23:03:06] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-09-30 23:03:13] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-09-30 23:03:13] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-09-30 23:03:13] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-09-30 23:03:13] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-09-30 23:03:26] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-09-30 23:03:26] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-09-30 23:03:28] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 01:52:39] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 01:52:46] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 01:52:46] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 01:52:46] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 01:52:46] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 01:52:58] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 01:52:58] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 01:53:01] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 02:00:50] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 02:00:56] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 02:00:56] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 02:00:56] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 02:00:56] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 02:01:08] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 02:01:08] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:01:11] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 02:08:29] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:08:45] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 02:08:51] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 02:08:51] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 02:08:51] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 02:08:51] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 02:09:04] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 02:09:04] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:09:06] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 02:11:29] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:11:38] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 02:11:45] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 02:11:45] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 02:11:45] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 02:11:45] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 02:11:57] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 02:11:57] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:11:59] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 02:19:04] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:19:20] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 02:19:26] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 02:19:26] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 02:19:26] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 02:19:26] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 02:19:39] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 02:19:39] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:19:41] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 02:27:39] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:35:30] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 02:35:37] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 02:35:37] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 02:35:37] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 02:35:37] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 02:35:49] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 02:35:49] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:35:51] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 02:50:58] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:51:15] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 02:51:21] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 02:51:21] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 02:51:21] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 02:51:21] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 02:51:33] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 02:51:33] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 02:51:35] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 03:00:28] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 03:00:40] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 03:00:47] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 03:00:47] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 03:00:47] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 03:00:47] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 03:00:59] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 03:00:59] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 03:01:01] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 03:09:18] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 03:09:24] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 03:09:24] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 03:09:24] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 03:09:24] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 03:09:36] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 03:09:36] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 03:09:38] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 03:25:54] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 03:26:01] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 03:26:01] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 03:26:01] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 03:26:01] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 03:26:12] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 03:26:12] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 03:26:15] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 03:33:33] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 03:33:39] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 03:33:39] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 03:33:39] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 03:33:39] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 03:33:52] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 03:33:52] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 03:33:55] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 03:44:04] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 03:44:13] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 03:44:19] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 03:44:19] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 03:44:19] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 03:44:19] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 03:44:32] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 03:44:32] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 03:44:35] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 03:52:58] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 03:53:08] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 03:53:14] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 03:53:14] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 03:53:14] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 03:53:14] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 03:53:27] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 03:53:27] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 03:53:29] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 04:14:29] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 04:14:39] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 04:14:45] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 04:14:45] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 04:14:45] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 04:14:45] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 04:14:57] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 04:14:57] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 04:15:00] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 05:03:13] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 05:03:19] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 05:03:19] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 05:03:19] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 05:03:19] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 05:09:02] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 05:09:08] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 05:09:08] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 05:09:08] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 05:09:08] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 05:09:20] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 05:09:20] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 05:09:22] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 14:48:13] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 14:48:20] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 14:48:20] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 14:48:20] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 14:48:20] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 14:48:32] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 14:48:32] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 14:48:34] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 14:59:51] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 15:00:07] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 15:00:14] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 15:00:14] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 15:00:14] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 15:00:14] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 15:00:25] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 15:00:25] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 15:00:27] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-01 23:28:37] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-01 23:28:44] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-01 23:28:44] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-01 23:28:44] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-01 23:28:44] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-01 23:28:59] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-01 23:28:59] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-01 23:29:02] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-03 15:31:30] [main/ INFO] (BlossomLib): BlossomLib mixins loading
+[2026-10-03 15:31:38] [main/ INFO] (BlossomLib): BlossomLib has starting
+[2026-10-03 15:31:38] [main/TRACE] (BlossomLib): loading config BlossomWarps.json
+[2026-10-03 15:31:38] [main/TRACE] (BlossomLib): saving config BlossomWarps.json
+[2026-10-03 15:31:38] [main/TRACE] (BlossomLib): register BlossomWarps
+[2026-10-03 15:31:53] [Server thread/TRACE] (BlossomLib): reading BlossomWarps
+[2026-10-03 15:31:53] [Server thread/TRACE] (BlossomLib): writing BlossomWarps
+[2026-10-03 15:31:55] [Server thread/DEBUG] (BlossomWarps): [Warp{name='lobby', world=minecraft:overworld, owner=b9c3e430-9623-4182-9da0-ac5c9a2f4678, x=0.5, y=36.0, z=0.5, yaw=0.0, pitch=0.0, global=true}]
+[2026-10-03 15:32:33] [Server thread/TRACE] (BlossomLib): writing BlossomWarps

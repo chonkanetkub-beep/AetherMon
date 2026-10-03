@@ -1,0 +1,6 @@
+namespace: multiworld
+path: survival
+environment: normal
+seed: 915603364
+worldFolderSaveMode: VANILLA
+isMultiworldWorld: true
