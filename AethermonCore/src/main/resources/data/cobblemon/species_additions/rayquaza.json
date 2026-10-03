@@ -1,0 +1,62 @@
+{
+  "target": "cobblemon:rayquaza",
+  "forms": [
+    {
+      "name": "Galaxy",
+      "primaryType": "dragon",
+      "secondaryType": "psychic",
+      "maleRatio": -1,
+      "height": 70,
+      "weight": 2065,
+      "pokedex": [
+        "A Rayquaza that absorbed cosmic energy from the far reaches of the universe. Its body shimmers with the light of a thousand stars."
+      ],
+      "labels": ["custom", "legendary", "restricted", "galaxy"],
+      "aspects": ["galaxy"],
+      "abilities": ["airlock", "h:airlock"],
+      "baseStats": {
+        "hp": 110,
+        "attack": 155,
+        "defence": 95,
+        "special_attack": 155,
+        "special_defence": 95,
+        "speed": 100
+      },
+      "drops": {
+        "amount": 5,
+        "entries": [
+          {"item": "minecraft:amethyst_shard", "quantityRange": "3-5"},
+          {"item": "minecraft:echo_shard", "quantityRange": "1-2"}
+        ]
+      },
+      "moves": [
+        "1:twister",
+        "1:scaryface",
+        "1:airslash",
+        "1:ancientpower",
+        "9:crunch",
+        "18:dragondance",
+        "27:extremespeed",
+        "36:dracometeor",
+        "45:moonblast",
+        "54:rest",
+        "63:fly",
+        "72:hurricane",
+        "81:outrage",
+        "90:hyperbeam",
+        "tm:dracometeor",
+        "tm:dragonclaw",
+        "tm:dragondance",
+        "tm:dragonpulse",
+        "tm:earthquake",
+        "tm:extremespeed",
+        "tm:fly",
+        "tm:moonblast",
+        "tm:outrage",
+        "tm:protect",
+        "tm:psychic",
+        "tm:shadowball"
+      ]
+    }
+  ]
+}
