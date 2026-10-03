@@ -3,16 +3,15 @@
   "update_tick_time": 20,
   "list_header": [
     "",
-    "<gr #4adeff #3d8eff><bold> Styled Player List</bold></gr> ⛏ ",
-    "",
-    "<color #555555><strikethrough>        </strikethrough>[ </color><color #FF5555>%server:online%<color #6666676>/</color>%server:max_players%</color><color #555555> ]<strikethrough>        </strikethrough></color>",
+    "<b><#00d2ff>AETHER<#3a7bd5>MON</b>",
+    "<gray>──────────────────────</gray>",
+    "<color #555555><strikethrough>     </strikethrough></color><color #555555> [ </color><green>%server:online%</green><gray>/</gray><white>%server:max_players%</white><color #555555> ] </color><color #555555><strikethrough>     </strikethrough></color>",
     ""
   ],
   "list_footer": [
     "",
-    "<color #555555><strikethrough>                          </strikethrough></color>",
-    "",
-    "<gray>TPS: %server:tps_colored% <dark_gray>|</dark_gray> <gray>Ping: <color:#ffba26>%player:ping%</color>",
+    "<gray>TPS: %server:tps_colored% <dark_gray>|</dark_gray> Ping: <color:#ffba26>%player:ping%ms</color>",
+    "<gray>──────────────────────</gray>",
     ""
   ],
   "hidden_in_commands": false
