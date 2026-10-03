@@ -7,7 +7,6 @@ import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.LoreComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -25,14 +24,12 @@ public class CratePreviewGui extends GenericContainerScreenHandler {
 
     private final ServerPlayerEntity player;
     private final CrateService service;
-    private final Crate crate;
 
     public CratePreviewGui(int syncId, PlayerInventory playerInventory, SimpleInventory inventory,
                            ServerPlayerEntity player, CrateService service, Crate crate) {
         super(ScreenHandlerType.GENERIC_9X6, syncId, playerInventory, inventory, 6);
         this.player = player;
         this.service = service;
-        this.crate = crate;
     }
 
     public static void open(ServerPlayerEntity player, CrateService service, Crate crate) {

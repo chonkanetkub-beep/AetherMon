@@ -6,7 +6,6 @@ import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.LoreComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -26,7 +25,6 @@ public class CratesMenuGui extends GenericContainerScreenHandler {
 
     private final ServerPlayerEntity player;
     private final CrateService service;
-    private final SimpleInventory inv;
     private final Map<Integer, Crate> slotToCrate = new HashMap<>();
 
     public CratesMenuGui(int syncId, PlayerInventory playerInventory, SimpleInventory inventory,
@@ -34,7 +32,6 @@ public class CratesMenuGui extends GenericContainerScreenHandler {
         super(ScreenHandlerType.GENERIC_9X6, syncId, playerInventory, inventory, 6);
         this.player = player;
         this.service = service;
-        this.inv = inventory;
     }
 
     public static void open(ServerPlayerEntity player, CrateService service) {

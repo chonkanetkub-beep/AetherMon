@@ -3,7 +3,6 @@ package com.aethermon.core.menu.gui;
 import com.aethermon.core.economy.api.Currency;
 import com.aethermon.core.economy.api.EconomyService;
 import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.type.ItemEnchantmentsComponent;
 import net.minecraft.component.type.LoreComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -28,13 +27,11 @@ import java.util.List;
 public class MenuScreenHandler extends GenericContainerScreenHandler {
 
     private final ServerPlayerEntity player;
-    private final EconomyService economy;
 
     public MenuScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory,
                              ServerPlayerEntity player, EconomyService economy) {
         super(ScreenHandlerType.GENERIC_9X3, syncId, playerInventory, inventory, 3);
         this.player = player;
-        this.economy = economy;
     }
 
     public static void open(ServerPlayerEntity player, EconomyService economy) {

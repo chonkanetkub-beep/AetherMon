@@ -9,7 +9,6 @@ import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.LoreComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -18,8 +17,6 @@ import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.SlotActionType;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 
 import java.util.*;
@@ -28,7 +25,6 @@ public class BattlePassGui extends GenericContainerScreenHandler {
 
     private final ServerPlayerEntity player;
     private final BattlePassService service;
-    private final SimpleInventory inv;
     private final PlayerBattlePass pass;
     private int page = 0;
 
@@ -42,7 +38,6 @@ public class BattlePassGui extends GenericContainerScreenHandler {
         super(ScreenHandlerType.GENERIC_9X6, syncId, playerInventory, inventory, 6);
         this.player = player;
         this.service = service;
-        this.inv = inventory;
         this.pass = pass;
         this.page = page;
     }
@@ -81,7 +76,6 @@ public class BattlePassGui extends GenericContainerScreenHandler {
         ItemStack header = new ItemStack(pass.isPremium ? Items.NETHER_STAR : Items.ENDER_EYE);
         header.set(DataComponentTypes.CUSTOM_NAME, Text.literal(config.seasonName));
 
-        int nextTierExp = pass.tier * config.expPerTier;
         int currentTierProgress = pass.exp % config.expPerTier;
         if (pass.tier >= config.maxTier) {
             currentTierProgress = config.expPerTier;

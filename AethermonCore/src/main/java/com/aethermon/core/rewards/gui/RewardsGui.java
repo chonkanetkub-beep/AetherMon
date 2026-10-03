@@ -1,6 +1,5 @@
 package com.aethermon.core.rewards.gui;
 
-import com.aethermon.core.AethermonCore;
 import com.aethermon.core.economy.api.Currency;
 import com.aethermon.core.rewards.model.DailyRewardTier;
 import com.aethermon.core.rewards.model.PlayerDailyData;
@@ -9,7 +8,6 @@ import com.aethermon.core.rewards.model.PlaytimeTier;
 import com.aethermon.core.rewards.model.RewardItem;
 import com.aethermon.core.rewards.service.RewardService;
 import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.type.ItemEnchantmentsComponent;
 import net.minecraft.component.type.LoreComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -25,7 +23,6 @@ import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.SlotActionType;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 
 import java.math.BigDecimal;

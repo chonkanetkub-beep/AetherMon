@@ -1,16 +1,12 @@
 package com.aethermon.core.shop.command;
 
 import com.aethermon.core.economy.api.EconomyService;
-import com.aethermon.core.shop.config.ShopConfig;
 import com.aethermon.core.shop.gui.ShopGui;
 import com.aethermon.core.shop.model.ShopCategory;
 import com.aethermon.core.shop.service.ShopService;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
-import net.minecraft.command.CommandRegistryAccess;
-import net.minecraft.command.CommandSource;
-import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;

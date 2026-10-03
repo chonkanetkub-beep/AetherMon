@@ -4,8 +4,6 @@ import com.aethermon.core.economy.db.DatabaseManager;
 import com.aethermon.core.economy.impl.SqliteEconomyService;
 import com.aethermon.core.quests.config.QuestsConfig;
 import com.aethermon.core.quests.model.PlayerQuestInstance;
-import com.aethermon.core.quests.model.QuestDefinition;
-import com.aethermon.core.quests.model.QuestType;
 import com.aethermon.core.quests.service.QuestService;
 import org.junit.jupiter.api.*;
 
@@ -62,8 +60,7 @@ class QuestServiceTest {
         assertTrue(questService.hasFreeReroll(TEST_PLAYER), "Player should start with a free reroll");
 
         List<PlayerQuestInstance> daily = questService.getDailyQuests(TEST_PLAYER);
-        PlayerQuestInstance firstQuest = daily.get(0);
-        String originalId = firstQuest.getQuestId();
+        assertNotNull(daily.get(0).getQuestId());
 
         // Reroll slot 0 (mock player by calling reroll logic directly via service)
         // Since rerollDailyQuest uses player entity, we test hasFreeReroll status

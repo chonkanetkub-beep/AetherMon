@@ -9,7 +9,6 @@ import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.LoreComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -77,7 +76,6 @@ public class LuckyDrawGui extends GenericContainerScreenHandler {
     };
     private static final int TOTAL_FRAMES     = FRAME_DELAYS_MS.length; // 26 frames
     private static final int FINAL_STEP       = TOTAL_FRAMES - 1;       // step 25
-    private static final int CENTER_SLOT      = 31;                     // roulette belt centre
     private static final int[] ROULETTE_SLOTS = {27, 28, 29, 30, 31, 32, 33, 34, 35};
 
     // ── State ────────────────────────────────────────────────────────────────

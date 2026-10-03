@@ -21,7 +21,6 @@ import java.sql.Statement;
  */
 public class DatabaseManager {
 
-    private static final String SCHEMA_VERSION = "1";
     private final String jdbcUrl;
 
     public DatabaseManager(Path dataDir) {

@@ -3,7 +3,6 @@ package com.aethermon.core.duel.service;
 import com.aethermon.core.AethermonCore;
 import com.aethermon.core.duel.model.DuelRecord;
 import com.aethermon.core.economy.api.Currency;
-import com.aethermon.core.economy.api.EconomyResult;
 import com.aethermon.core.economy.api.EconomyService;
 import com.aethermon.core.economy.db.DatabaseManager;
 import net.minecraft.server.MinecraftServer;

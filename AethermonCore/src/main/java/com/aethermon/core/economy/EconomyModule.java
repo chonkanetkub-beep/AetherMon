@@ -5,7 +5,6 @@ import com.aethermon.core.economy.api.EconomyService;
 import com.aethermon.core.economy.command.EconomyCommands;
 import com.aethermon.core.economy.db.DatabaseManager;
 import com.aethermon.core.economy.impl.SqliteEconomyService;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;

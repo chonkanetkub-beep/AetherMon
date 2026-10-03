@@ -1,6 +1,5 @@
 package com.aethermon.core.market.command;
 
-import com.aethermon.core.AethermonCore;
 import com.aethermon.core.economy.api.Currency;
 import com.aethermon.core.economy.api.EconomyService;
 import com.aethermon.core.market.gui.MarketGui;

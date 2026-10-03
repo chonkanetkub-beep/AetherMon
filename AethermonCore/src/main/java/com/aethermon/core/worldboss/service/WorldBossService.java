@@ -64,6 +64,7 @@ public class WorldBossService {
     public State getState()          { return state; }
     public BossDefinition getActive(){ return activeDef; }
     public LivingEntity getBossEntity() { return bossEntity; }
+    public Instant getSpawnedAt()    { return spawnedAt; }
 
     /** Returns seconds remaining on spawn cooldown, or 0 if ready. */
     public long getCooldownSecondsRemaining() {

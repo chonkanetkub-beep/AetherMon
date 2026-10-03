@@ -3,7 +3,6 @@ package com.aethermon.core.rewards.command;
 import com.aethermon.core.rewards.gui.RewardsGui;
 import com.aethermon.core.rewards.service.RewardService;
 import com.mojang.brigadier.CommandDispatcher;
-import com.mojang.brigadier.arguments.StringArgumentType;
 import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;

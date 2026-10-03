@@ -1,6 +1,5 @@
 package com.aethermon.core.rewards;
 
-import com.aethermon.core.economy.api.Currency;
 import com.aethermon.core.economy.db.DatabaseManager;
 import com.aethermon.core.economy.impl.SqliteEconomyService;
 import com.aethermon.core.rewards.config.RewardsConfig;

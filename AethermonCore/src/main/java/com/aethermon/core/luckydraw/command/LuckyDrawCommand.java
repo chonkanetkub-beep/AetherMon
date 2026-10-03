@@ -5,7 +5,6 @@ import com.aethermon.core.luckydraw.gui.LuckyDrawGui;
 import com.aethermon.core.luckydraw.service.LuckyDrawService;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
-import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
