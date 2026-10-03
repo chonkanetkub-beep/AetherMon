@@ -4,8 +4,8 @@
   "variations": [
     {
       "aspects": [],
-      "poser": "cobblemon:galaxyrayquaza",
-      "model": "cobblemon:galaxyrayquaza.geo",
+      "poser": "cobblemon:rayquaza",
+      "model": "cobblemon:rayquaza.geo",
       "texture": "cobblemon:textures/pokemon/galaxyrayquaza/galaxyrayquaza.png",
       "layers": [
         {
