@@ -1,25 +1,22 @@
 {
   "enabled": true,
-  "neededBaseBlocks": [],
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
   "spawns": [
     {
-      "id": "aethermon:galaxy_rayquaza",
+      "id": "galaxy_rayquaza-1",
       "pokemon": "galaxy_rayquaza",
+      "presets": ["natural"],
       "type": "pokemon",
-      "context": "air",
-      "bucket": "ultra_rare",
+      "spawnablePositionType": "grounded",
+      "bucket": "ultra-rare",
       "level": "60-100",
-      "weight": 0.1,
+      "weight": 0.05,
       "condition": {
-        "minY": 200,
+        "canSeeSky": true,
+        "minY": 150,
         "maxY": 320,
-        "structures": [],
-        "timeRange": "any",
-        "moonPhase": "any",
-        "canSeeSky": true
-      },
-      "anticondition": {
-        "structures": []
+        "biomes": ["#cobblemon:is_sky", "#cobblemon:is_mountain", "#cobblemon:is_overworld"]
       }
     }
   ]
