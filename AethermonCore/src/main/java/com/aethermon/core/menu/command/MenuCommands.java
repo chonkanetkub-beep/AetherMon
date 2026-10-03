@@ -21,9 +21,9 @@ public class MenuCommands {
 
     public void register() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-            AethermonCore.LOGGER.info("[Menu] Registering /menu, /help, and /gui commands...");
+            AethermonCore.LOGGER.info("[Menu] Registering /menu and /gui commands...");
 
-            for (String alias : new String[]{"menu", "help", "gui"}) {
+            for (String alias : new String[]{"menu", "gui"}) {
                 dispatcher.register(literal(alias)
                     .requires(src -> src.hasPermissionLevel(0))
                     .executes(ctx -> {

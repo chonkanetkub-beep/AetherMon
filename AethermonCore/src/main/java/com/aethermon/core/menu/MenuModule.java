@@ -2,10 +2,12 @@ package com.aethermon.core.menu;
 
 import com.aethermon.core.AethermonCore;
 import com.aethermon.core.economy.api.EconomyService;
+import com.aethermon.core.menu.command.HelpCommand;
 import com.aethermon.core.menu.command.MenuCommands;
 
 /**
- * Menu module — registers the server-side chest GUI menu commands (/menu, /help, /gui).
+ * Menu module — registers the server-side chest GUI menu commands (/menu, /gui)
+ * and the /help command that lists all available commands.
  */
 public class MenuModule {
 
@@ -18,6 +20,7 @@ public class MenuModule {
     public void init() {
         AethermonCore.LOGGER.info("[Menu] Initialising Menu module...");
         new MenuCommands(economy).register();
+        new HelpCommand().register();
         AethermonCore.LOGGER.info("[Menu] Menu module ready.");
     }
 }
