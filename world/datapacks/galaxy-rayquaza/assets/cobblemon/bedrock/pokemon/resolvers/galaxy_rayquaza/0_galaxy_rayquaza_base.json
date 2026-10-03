@@ -1,0 +1,13 @@
+{
+  "species": "cobblemon:galaxy_rayquaza",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:rayquaza",
+      "model": "cobblemon:rayquaza.geo",
+      "texture": "cobblemon:textures/pokemon/galaxy_rayquaza/galaxy_rayquaza.png",
+      "layers": []
+    }
+  ]
+}

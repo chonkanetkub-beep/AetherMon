@@ -1,0 +1,26 @@
+{
+  "enabled": true,
+  "neededBaseBlocks": [],
+  "spawns": [
+    {
+      "id": "aethermon:galaxy_rayquaza",
+      "pokemon": "galaxy_rayquaza",
+      "type": "pokemon",
+      "context": "air",
+      "bucket": "ultra_rare",
+      "level": "60-100",
+      "weight": 0.1,
+      "condition": {
+        "minY": 200,
+        "maxY": 320,
+        "structures": [],
+        "timeRange": "any",
+        "moonPhase": "any",
+        "canSeeSky": true
+      },
+      "anticondition": {
+        "structures": []
+      }
+    }
+  ]
+}
