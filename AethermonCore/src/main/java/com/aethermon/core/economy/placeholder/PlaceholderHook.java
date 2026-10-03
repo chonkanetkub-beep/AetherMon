@@ -15,10 +15,12 @@ import java.math.BigDecimal;
  * Exposes placeholders for styled-sidebars, styled-chat, tablist, etc.
  *
  * Placeholders:
- *   %aethermon:coins%      — e.g. "50,000"
- *   %aethermon:gems%       — e.g. "25"
+ *   %aethermon:coins%      — e.g. "50,000 Coins"
+ *   %aethermon:gems%       — e.g. "25 Gems"
  *   %aethermon:coins_raw%  — e.g. "50000"
  *   %aethermon:gems_raw%   — e.g. "25"
+ *   %aethermon:rank%       — e.g. "Admin" (primary LuckPerms group, capitalized)
+ *   %aethermon:prefix%     — e.g. "[Admin] " (raw LuckPerms prefix string)
  */
 public class PlaceholderHook {
 
@@ -59,7 +61,46 @@ public class PlaceholderHook {
                 return PlaceholderResult.value(bal.toPlainString());
             });
 
-            AethermonCore.LOGGER.info("[PlaceholderHook] Registered %aethermon:coins% and %aethermon:gems% successfully!");
+            // %aethermon:rank% — primary group name (capitalized), uses LuckPerms API directly
+            Placeholders.register(Identifier.of("aethermon", "rank"), (ctx, arg) -> {
+                if (!ctx.hasPlayer()) return PlaceholderResult.invalid("No player context");
+                if (!FabricLoader.getInstance().isModLoaded("luckperms")) {
+                    return PlaceholderResult.value("Player");
+                }
+                try {
+                    var lp = net.luckperms.api.LuckPermsProvider.get();
+                    var user = lp.getUserManager().getUser(ctx.player().getUuid());
+                    if (user == null) return PlaceholderResult.value("Player");
+                    String group = user.getPrimaryGroup();
+                    // Capitalize first letter
+                    String display = group.isEmpty() ? "Player"
+                            : Character.toUpperCase(group.charAt(0)) + group.substring(1);
+                    return PlaceholderResult.value(display);
+                } catch (Exception e) {
+                    AethermonCore.LOGGER.warn("[PlaceholderHook] Could not get LuckPerms rank: {}", e.getMessage());
+                    return PlaceholderResult.value("Player");
+                }
+            });
+
+            // %aethermon:prefix% — raw LuckPerms prefix string (may contain color codes)
+            Placeholders.register(Identifier.of("aethermon", "prefix"), (ctx, arg) -> {
+                if (!ctx.hasPlayer()) return PlaceholderResult.invalid("No player context");
+                if (!FabricLoader.getInstance().isModLoaded("luckperms")) {
+                    return PlaceholderResult.value("");
+                }
+                try {
+                    var lp = net.luckperms.api.LuckPermsProvider.get();
+                    var user = lp.getUserManager().getUser(ctx.player().getUuid());
+                    if (user == null) return PlaceholderResult.value("");
+                    String prefix = user.getCachedData().getMetaData().getPrefix();
+                    return PlaceholderResult.value(prefix != null ? prefix : "");
+                } catch (Exception e) {
+                    AethermonCore.LOGGER.warn("[PlaceholderHook] Could not get LuckPerms prefix: {}", e.getMessage());
+                    return PlaceholderResult.value("");
+                }
+            });
+
+            AethermonCore.LOGGER.info("[PlaceholderHook] Registered %aethermon:coins%, %aethermon:gems%, %aethermon:rank%, %aethermon:prefix% successfully!");
         } catch (Throwable t) {
             AethermonCore.LOGGER.warn("[PlaceholderHook] Failed to register placeholders: {}", t.getMessage());
         }

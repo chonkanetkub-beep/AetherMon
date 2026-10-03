@@ -11,7 +11,7 @@
   "lines": [
     "<gray>──────────────</gray>",
     "<gray>👤 <white>Player:</white> <yellow>%player:name%</yellow>",
-    "<gray>👑 <white>Rank:</white> %luckperms:prefix%%luckperms:primary_group%",
+    "<gray>👑 <white>Rank:</white> <gold>%aethermon:rank%</gold>",
     "",
     "<gray>🪙 <white>Coins:</white> <yellow>%aethermon:coins%</yellow>",
     "<gray>💎 <white>Gems:</white> <light_purple>%aethermon:gems%</light_purple>",

@@ -30,6 +30,9 @@ dependencies {
     // PlaceholderAPI (Optional hook)
     modCompileOnly "eu.pb4:placeholder-api:2.4.2+1.21"
 
+    // LuckPerms API (compile-only — provided at runtime by LuckPerms mod)
+    modCompileOnly "net.luckperms:api:5.4"
+
     // SQLite JDBC — bundled into our jar
     implementation include("org.xerial:sqlite-jdbc:3.47.1.0")
 
