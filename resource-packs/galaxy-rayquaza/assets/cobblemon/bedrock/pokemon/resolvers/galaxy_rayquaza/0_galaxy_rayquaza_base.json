@@ -1,0 +1,20 @@
+{
+  "species": "cobblemon:galaxy_rayquaza",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:rayquaza",
+      "model": "cobblemon:rayquaza.geo",
+      "texture": "cobblemon:textures/pokemon/galaxy_rayquaza/galaxy_rayquaza.png",
+      "layers": [
+        {
+          "name": "galaxy_glow",
+          "texture": "cobblemon:textures/pokemon/galaxy_rayquaza/galaxy_rayquaza_emissive.png",
+          "emissive": true,
+          "translucent": false
+        }
+      ]
+    }
+  ]
+}
