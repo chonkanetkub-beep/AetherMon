@@ -36,28 +36,28 @@ public class PlaceholderHook {
             // %aethermon:coins%
             Placeholders.register(Identifier.of("aethermon", "coins"), (ctx, arg) -> {
                 if (!ctx.hasPlayer()) return PlaceholderResult.invalid("No player context");
-                BigDecimal bal = service.getBalance(ctx.player().getUuid(), Currency.COINS).getNow(BigDecimal.ZERO);
+                BigDecimal bal = service.getBalance(ctx.player().getUuid(), Currency.COINS).join();
                 return PlaceholderResult.value(Currency.COINS.format(bal));
             });
 
             // %aethermon:gems%
             Placeholders.register(Identifier.of("aethermon", "gems"), (ctx, arg) -> {
                 if (!ctx.hasPlayer()) return PlaceholderResult.invalid("No player context");
-                BigDecimal bal = service.getBalance(ctx.player().getUuid(), Currency.GEMS).getNow(BigDecimal.ZERO);
+                BigDecimal bal = service.getBalance(ctx.player().getUuid(), Currency.GEMS).join();
                 return PlaceholderResult.value(Currency.GEMS.format(bal));
             });
 
             // %aethermon:coins_raw%
             Placeholders.register(Identifier.of("aethermon", "coins_raw"), (ctx, arg) -> {
                 if (!ctx.hasPlayer()) return PlaceholderResult.invalid("No player context");
-                BigDecimal bal = service.getBalance(ctx.player().getUuid(), Currency.COINS).getNow(BigDecimal.ZERO);
+                BigDecimal bal = service.getBalance(ctx.player().getUuid(), Currency.COINS).join();
                 return PlaceholderResult.value(bal.toPlainString());
             });
 
             // %aethermon:gems_raw%
             Placeholders.register(Identifier.of("aethermon", "gems_raw"), (ctx, arg) -> {
                 if (!ctx.hasPlayer()) return PlaceholderResult.invalid("No player context");
-                BigDecimal bal = service.getBalance(ctx.player().getUuid(), Currency.GEMS).getNow(BigDecimal.ZERO);
+                BigDecimal bal = service.getBalance(ctx.player().getUuid(), Currency.GEMS).join();
                 return PlaceholderResult.value(bal.toPlainString());
             });
 
